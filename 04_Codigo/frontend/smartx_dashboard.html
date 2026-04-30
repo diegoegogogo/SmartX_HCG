@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartX - Sistema de Triaje Médico | Hospital Civil de Guadalajara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+        body { font-family: 'JetBrains Mono', monospace; }
+
+        @keyframes criticalPulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(239,68,68,.7); }
+            50%       { transform: scale(1.02); box-shadow: 0 0 30px rgba(239,68,68,1); }
+        }
+        @keyframes emergencyBlink {
+            0%,50%  { opacity: 1; }
+            51%,100%{ opacity: .5; }
+        }
+        .critical-card      { animation: criticalPulse 1.5s infinite; }
+        .emergency-notification { animation: emergencyBlink 1s infinite; }
+        .medical-glow       { box-shadow: 0 0 15px currentColor; }
+        @keyframes heartbeat {
+            0%,100%{ transform: scale(1); }
+            50%    { transform: scale(1.05); }
+        }
+        .heartbeat { animation: heartbeat 1s infinite; }
+    </style>
+</head>
+<body class="min-h-screen bg-slate-900 text-white">
+
+<!-- ═══════════ HEADER ═══════════ -->
+<header class="bg-slate-800 border-b-4 border-blue-500 p-4 shadow-xl">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <div class="bg-blue-500 p-3 rounded-lg medical-glow">
+                <i class="fas fa-stethoscope text-3xl text-white"></i>
+            </div>
+            <div>
+                <h1 class="text-4xl font-bold text-blue-400 tracking-tight">SMARTX TRIAJE</h1>
+                <p class="text-slate-400 text-sm">Hospital Civil de Guadalajara | Sistema de Emergencias AI</p>
+            </div>
+        </div>
+        <div class="flex items-center space-x-6">
+            <!-- indicador de conexión con backend -->
+            <div id="apiStatus" class="flex items-center space-x-2 text-sm px-3 py-2 rounded-lg bg-slate-700 border border-slate-600">
+                <span id="apiDot" class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                <span id="apiLabel" class="text-slate-300">Conectando API…</span>
+            </div>
+            <div class="text-right">
+                <p class="text-2xl font-bold text-green-400" id="currentTime">--:--:--</p>
+                <p class="text-slate-400 text-sm" id="currentDate">Cargando…</p>
+            </div>
+            <button onclick="openNewPatientModal()"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold flex items-center space-x-3 transition-all transform hover:scale-105 shadow-lg medical-glow text-lg">
+                <i class="fas fa-plus text-xl"></i><span>NUEVO TRIAJE</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- ═══════════ STATS ═══════════ -->
+<div class="bg-slate-800 p-4 border-b border-slate-700">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div class="bg-red-500/20 border-2 border-red-500 rounded-lg p-4 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-3">
+                <i class="fas fa-bolt text-2xl text-red-400"></i>
+                <h3 class="text-red-400 font-bold text-lg">CRÍTICOS</h3>
+            </div>
+            <p class="text-4xl font-bold text-red-400" id="criticalCount">0</p>
+            <p class="text-red-300 text-sm mt-1">ATENCIÓN INMEDIATA</p>
+        </div>
+        <div class="bg-yellow-500/20 border-2 border-yellow-500 rounded-lg p-4 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-3">
+                <i class="fas fa-clock text-2xl text-yellow-400"></i>
+                <h3 class="text-yellow-400 font-bold text-lg">URGENTES</h3>
+            </div>
+            <p class="text-4xl font-bold text-yellow-400" id="urgentCount">0</p>
+            <p class="text-yellow-300 text-sm mt-1">&lt; 30 MINUTOS</p>
+        </div>
+        <div class="bg-green-500/20 border-2 border-green-500 rounded-lg p-4 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-3">
+                <i class="fas fa-check-circle text-2xl text-green-400"></i>
+                <h3 class="text-green-400 font-bold text-lg">ESTABLES</h3>
+            </div>
+            <p class="text-4xl font-bold text-green-400" id="stableCount">0</p>
+            <p class="text-green-300 text-sm mt-1">PUEDE ESPERAR</p>
+        </div>
+        <div class="bg-slate-600/20 border-2 border-slate-500 rounded-lg p-4 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-3">
+                <i class="fas fa-chart-line text-2xl text-slate-400"></i>
+                <h3 class="text-slate-400 font-bold text-lg">TOTAL HOY</h3>
+            </div>
+            <p class="text-4xl font-bold text-slate-400" id="totalCount">0</p>
+            <p class="text-slate-300 text-sm mt-1">PACIENTES</p>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════ DASHBOARD PRINCIPAL ═══════════ -->
+<main class="max-w-7xl mx-auto p-6">
+    <div class="flex items-center justify-between mb-8">
+        <h2 class="text-3xl font-bold text-slate-200">
+            <i class="fas fa-hospital-user mr-3 text-blue-400"></i>Dashboard de Pacientes — Tiempo Real
+        </h2>
+        <div class="text-right">
+            <p class="text-slate-400 text-sm">Actualizado:</p>
+            <p class="text-white font-bold" id="lastUpdate">--:--:--</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="patientsGrid"></div>
+
+    <div id="emptyState" class="text-center py-16 hidden">
+        <i class="fas fa-user-md text-6xl text-slate-600 mb-6"></i>
+        <h3 class="text-2xl text-slate-400 mb-4">No hay pacientes registrados hoy</h3>
+        <p class="text-slate-500 mb-8 text-lg">Haz clic en "NUEVO TRIAJE" para comenzar</p>
+        <button onclick="openNewPatientModal()"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">
+            <i class="fas fa-plus mr-2"></i>INICIAR TRIAJE
+        </button>
+    </div>
+</main>
+
+<!-- ═══════════ MODAL — NUEVO PACIENTE ═══════════ -->
+<div id="newPatientModal" class="fixed inset-0 bg-black/90 hidden items-center justify-center p-4 z-50">
+    <div class="bg-slate-800 rounded-xl p-8 w-full max-w-5xl max-h-screen overflow-y-auto border-2 border-slate-600 shadow-2xl">
+        <div class="flex items-center justify-between mb-8">
+            <h2 class="text-3xl font-bold text-blue-400">
+                <i class="fas fa-user-plus mr-3"></i>NUEVO TRIAJE DE PACIENTE
+            </h2>
+            <button onclick="closeNewPatientModal()" class="text-slate-400 hover:text-white text-3xl">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <form id="patientForm" onsubmit="processPatient(event)">
+
+            <!-- DATOS DEMOGRÁFICOS -->
+            <div class="bg-slate-700 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-slate-200 mb-4 flex items-center">
+                    <i class="fas fa-id-card mr-3 text-blue-400"></i>DATOS DEMOGRÁFICOS
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div>
+                        <label class="block text-slate-300 font-bold mb-2">
+                            <i class="fas fa-birthday-cake mr-2"></i>EDAD (años) *
+                        </label>
+                        <input type="number" id="edad" required min="0" max="120"
+                            class="w-full bg-slate-600 border-2 border-slate-500 rounded-lg px-4 py-3 text-white text-xl font-bold focus:ring-2 focus:ring-blue-500"
+                            placeholder="0-120"/>
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 font-bold mb-2">
+                            <i class="fas fa-venus-mars mr-2"></i>SEXO BIOLÓGICO *
+                        </label>
+                        <select id="sexo_biologico"
+                            class="w-full bg-slate-600 border-2 border-slate-500 rounded-lg px-4 py-3 text-white text-xl font-bold focus:ring-2 focus:ring-blue-500">
+                            <option value="M">Masculino (M)</option>
+                            <option value="F">Femenino (F)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 font-bold mb-2">
+                            <i class="fas fa-baby mr-2"></i>EMBARAZO
+                        </label>
+                        <select id="embarazo"
+                            class="w-full bg-slate-600 border-2 border-slate-500 rounded-lg px-4 py-3 text-white text-xl font-bold focus:ring-2 focus:ring-blue-500">
+                            <option value="No">No</option>
+                            <option value="Sí">Sí</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-slate-300 font-bold mb-2">
+                            <i class="fas fa-thermometer-half mr-2"></i>INTENSIDAD (0-10)
+                        </label>
+                        <input type="range" id="intensidad_sintoma" min="0" max="10" value="5"
+                            class="w-full h-3 bg-slate-600 rounded-lg appearance-none cursor-pointer"
+                            oninput="updateIntensityDisplay(this.value)"/>
+                        <div class="text-center mt-2">
+                            <span class="text-2xl font-bold text-yellow-400" id="intensityDisplay">5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BANDERAS ROJAS CRÍTICAS -->
+            <div class="bg-red-900/30 border-2 border-red-500 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-red-400 mb-4 flex items-center">
+                    <i class="fas fa-exclamation-triangle mr-3 text-2xl"></i>
+                    BANDERAS ROJAS CRÍTICAS
+                    <span class="ml-2 text-sm bg-red-600 px-2 py-1 rounded">BYPASS AUTOMÁTICO</span>
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <label class="flex items-center space-x-3 cursor-pointer bg-red-800/20 p-3 rounded border border-red-600 hover:bg-red-800/40 transition-all">
+                        <input type="checkbox" id="redflag_disnea_severa" class="w-6 h-6 text-red-500 rounded" onchange="checkCriticalFlags()"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-lungs text-red-400 text-xl"></i>
+                            <span class="text-red-300 font-bold">DISNEA SEVERA</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-red-800/20 p-3 rounded border border-red-600 hover:bg-red-800/40 transition-all">
+                        <input type="checkbox" id="redflag_sangrado_abundante" class="w-6 h-6 text-red-500 rounded" onchange="checkCriticalFlags()"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-tint text-red-400 text-xl"></i>
+                            <span class="text-red-300 font-bold">SANGRADO ABUNDANTE</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-red-800/20 p-3 rounded border border-red-600 hover:bg-red-800/40 transition-all">
+                        <input type="checkbox" id="redflag_deficit_neurologico_subito" class="w-6 h-6 text-red-500 rounded" onchange="checkCriticalFlags()"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-brain text-red-400 text-xl"></i>
+                            <span class="text-red-300 font-bold">DÉFICIT NEUROLÓGICO</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-red-800/20 p-3 rounded border border-red-600 hover:bg-red-800/40 transition-all">
+                        <input type="checkbox" id="redflag_dolor_toracico_opresivo_con_sudoracion" class="w-6 h-6 text-red-500 rounded" onchange="checkCriticalFlags()"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-heart text-red-400 text-xl"></i>
+                            <span class="text-red-300 font-bold">DOLOR TORÁCICO + SUDOR</span>
+                        </div>
+                    </label>
+                </div>
+                <div id="criticalFlagAlert" class="hidden mt-4 bg-red-600 border border-red-400 p-4 rounded-lg">
+                    <div class="flex items-center space-x-3">
+                        <i class="fas fa-siren text-2xl text-white emergency-notification"></i>
+                        <div>
+                            <h4 class="text-white font-bold text-lg">¡BANDERA ROJA ACTIVADA!</h4>
+                            <p class="text-red-100">Este paciente será clasificado como CRÍTICO (ROJO)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SÍNTOMAS ESPECÍFICOS -->
+            <div class="bg-slate-700 p-6 rounded-lg mb-6">
+                <h3 class="text-xl font-bold text-slate-200 mb-4 flex items-center">
+                    <i class="fas fa-heartbeat mr-3 text-green-400"></i>SÍNTOMAS ESPECÍFICOS
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <label class="flex items-center space-x-3 cursor-pointer bg-slate-600 p-3 rounded hover:bg-slate-500 transition-all">
+                        <input type="checkbox" id="fiebre_reportada" class="w-5 h-5 text-blue-500 rounded"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-thermometer-three-quarters text-orange-400"></i>
+                            <span class="text-slate-300 font-bold text-sm">FIEBRE</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-slate-600 p-3 rounded hover:bg-slate-500 transition-all">
+                        <input type="checkbox" id="tos" class="w-5 h-5 text-blue-500 rounded"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-head-side-cough text-blue-400"></i>
+                            <span class="text-slate-300 font-bold text-sm">TOS</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-slate-600 p-3 rounded hover:bg-slate-500 transition-all">
+                        <input type="checkbox" id="dificultad_respiratoria" class="w-5 h-5 text-blue-500 rounded"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-lungs text-cyan-400"></i>
+                            <span class="text-slate-300 font-bold text-sm">DISNEA</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-slate-600 p-3 rounded hover:bg-slate-500 transition-all">
+                        <input type="checkbox" id="dolor_toracico" class="w-5 h-5 text-blue-500 rounded"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-heart text-red-400"></i>
+                            <span class="text-slate-300 font-bold text-sm">DOLOR TORÁCICO</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-slate-600 p-3 rounded hover:bg-slate-500 transition-all">
+                        <input type="checkbox" id="dolor_al_orinar" class="w-5 h-5 text-blue-500 rounded"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-prescription-bottle text-yellow-400"></i>
+                            <span class="text-slate-300 font-bold text-sm">DOLOR ORINAR</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-slate-600 p-3 rounded hover:bg-slate-500 transition-all">
+                        <input type="checkbox" id="sangrado_activo" class="w-5 h-5 text-blue-500 rounded"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-tint text-red-500"></i>
+                            <span class="text-slate-300 font-bold text-sm">SANGRADO</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-slate-600 p-3 rounded hover:bg-slate-500 transition-all">
+                        <input type="checkbox" id="confusion" class="w-5 h-5 text-blue-500 rounded"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-brain text-purple-400"></i>
+                            <span class="text-slate-300 font-bold text-sm">CONFUSIÓN</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center space-x-3 cursor-pointer bg-slate-600 p-3 rounded hover:bg-slate-500 transition-all">
+                        <input type="checkbox" id="nausea" class="w-5 h-5 text-blue-500 rounded"/>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-dizzy text-green-400"></i>
+                            <span class="text-slate-300 font-bold text-sm">NÁUSEA</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- DESCRIPCIÓN LIBRE -->
+            <div class="bg-blue-900/30 border-2 border-blue-500 p-6 rounded-lg mb-8">
+                <h3 class="text-xl font-bold text-blue-400 mb-4 flex items-center">
+                    <i class="fas fa-stethoscope mr-3 text-2xl"></i>
+                    DESCRIPCIÓN LIBRE DE SÍNTOMAS
+                    <span class="ml-2 text-sm bg-blue-600 px-2 py-1 rounded">MOTOR IA</span>
+                </h3>
+                <textarea id="sintomas_texto" rows="4"
+                    class="w-full bg-slate-600 border-2 border-slate-500 rounded-lg px-4 py-3 text-white text-lg focus:ring-2 focus:ring-blue-500"
+                    placeholder="Describa los síntomas con al menos 10 caracteres. Ejemplo: 'Dolor fuerte en el pecho desde hace 2 horas, presión que irradia al brazo izquierdo con falta de aire…'"></textarea>
+                <p class="mt-3 text-blue-300 text-sm">
+                    <i class="fas fa-info-circle mr-2"></i>Este campo alimenta el análisis del motor SmartX (mínimo 10 caracteres).
+                </p>
+            </div>
+
+            <!-- BOTONES -->
+            <div class="flex space-x-4">
+                <button type="button" onclick="closeNewPatientModal()"
+                    class="flex-1 bg-slate-600 hover:bg-slate-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all">
+                    <i class="fas fa-times mr-2"></i>CANCELAR
+                </button>
+                <button type="submit" id="processBtn"
+                    class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-bold text-xl transition-all transform hover:scale-105 shadow-lg medical-glow">
+                    <i class="fas fa-cogs mr-2"></i>PROCESAR TRIAJE
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- ═══════════ MODAL — DETALLE PACIENTE ═══════════ -->
+<div id="patientDetailModal" class="fixed inset-0 bg-black/90 hidden items-center justify-center p-4 z-50">
+    <div class="bg-slate-800 rounded-xl p-8 w-full max-w-4xl max-h-screen overflow-y-auto border-2 border-slate-600 shadow-2xl">
+        <div class="flex items-center justify-between mb-6">
+            <h2 class="text-3xl font-bold text-blue-400" id="detailPatientTitle">DETALLE DEL PACIENTE</h2>
+            <button onclick="closePatientDetail()" class="text-slate-400 hover:text-white text-3xl">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div id="patientDetailContent"></div>
+    </div>
+</div>
+
+<!-- ═══════════ NOTIFICACIONES ═══════════ -->
+<div id="notifications" class="fixed top-4 right-4 space-y-4 z-50"></div>
+
+<!-- ═══════════ LOADING OVERLAY ═══════════ -->
+<div id="loadingOverlay" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-60">
+    <div class="bg-slate-800 rounded-xl p-8 text-center border-2 border-blue-500">
+        <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-blue-500 mx-auto mb-4"></div>
+        <h3 class="text-xl font-bold text-blue-400 mb-2">PROCESANDO TRIAJE</h3>
+        <p class="text-slate-300">Analizando con Motor SmartX…</p>
+        <div class="mt-4">
+            <div class="bg-slate-700 rounded-full h-2 w-64 mx-auto">
+                <div id="progressBar" class="bg-blue-500 h-2 rounded-full transition-all duration-500" style="width:0%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// ──────────────────────────────────────────────────────────
+//  ESTADO GLOBAL
+// ──────────────────────────────────────────────────────────
+let patients = [];
+let patientCounter = 1;
+const API = "http://localhost:8000";
+
+// ──────────────────────────────────────────────────────────
+//  UTILIDADES DE TIEMPO
+// ──────────────────────────────────────────────────────────
+function updateTime() {
+    const now = new Date();
+    document.getElementById("currentTime").textContent = now.toLocaleTimeString("es-ES");
+    document.getElementById("currentDate").textContent = now.toLocaleDateString("es-ES", {
+        day: "numeric", month: "long", year: "numeric"
+    });
+    document.getElementById("lastUpdate").textContent = now.toLocaleTimeString("es-ES");
+}
+
+// ──────────────────────────────────────────────────────────
+//  HEALTH CHECK AL BACKEND
+// ──────────────────────────────────────────────────────────
+async function checkApiStatus() {
+    const dot   = document.getElementById("apiDot");
+    const label = document.getElementById("apiLabel");
+    try {
+        const res = await fetch(`${API}/health`, { signal: AbortSignal.timeout(3000) });
+        if (res.ok) {
+            dot.className   = "w-3 h-3 rounded-full bg-green-400";
+            label.textContent = "API conectada";
+            label.className = "text-green-300";
+        } else {
+            throw new Error();
+        }
+    } catch {
+        dot.className   = "w-3 h-3 rounded-full bg-red-400";
+        label.textContent = "API sin conexión";
+        label.className = "text-red-300";
+    }
+}
+
+// ──────────────────────────────────────────────────────────
+//  MAPEADOR: campos del formulario → SintomasInput (Pydantic)
+// ──────────────────────────────────────────────────────────
+function buildPayload(f) {
+    const disnea =
+        document.getElementById("redflag_disnea_severa").checked ||
+        document.getElementById("dificultad_respiratoria").checked;
+
+    const perdida =
+        document.getElementById("redflag_deficit_neurologico_subito").checked ||
+        document.getElementById("confusion").checked;
+
+    const sangrado =
+        document.getElementById("redflag_sangrado_abundante").checked ||
+        document.getElementById("sangrado_activo").checked;
+
+    const intensidad = parseInt(document.getElementById("intensidad_sintoma").value);
+
+    const texto = document.getElementById("sintomas_texto").value.trim();
+
+    const sexo = document.getElementById("sexo_biologico").value;
+    const embarazoSi = document.getElementById("embarazo").value === "Sí";
+    const embarazoPosible = (sexo === "F" && embarazoSi) ? true : null;
+
+    return {
+        edad: parseInt(document.getElementById("edad").value),
+        sexo_biologico: sexo,
+        disnea_presente: disnea,
+        perdida_conciencia: perdida,
+        sangrado_activo: sangrado,
+        fiebre_presente: document.getElementById("fiebre_reportada").checked,
+        temperatura_celsius: null,
+        intensidad_dolor_eva: intensidad,
+        duracion_sintoma_horas: null,
+        sintomas_texto: texto.length >= 10 ? texto : null,
+        diabetes_mellitus: false,
+        hipertension: false,
+        cardiopatia_isquemica: document.getElementById("redflag_dolor_toracico_opresivo_con_sudoracion").checked,
+        epoc_asma: false,
+        embarazo_posible: embarazoPosible,
+        semanas_gestacion: null,
+    };
+}
+
+// ──────────────────────────────────────────────────────────
+//  LLAMADA REAL AL BACKEND
+// ──────────────────────────────────────────────────────────
+async function callAPI(payload) {
+    const res = await fetch(`${API}/api/v1/inferencia`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        signal: AbortSignal.timeout(15000),
+    });
+    if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err?.error?.detalle || err?.error || `HTTP ${res.status}`);
+    }
+    return res.json();
+}
+
+// ──────────────────────────────────────────────────────────
+//  FALLBACK LOCAL (cuando el backend no responde)
+// ──────────────────────────────────────────────────────────
+function simulateTriage(payload) {
+    let nivel = "verde";
+    let justificacion = "Sintomatología Leve";
+    let accion = "SALA DE ESPERA";
+    let banderasRojas = [];
+
+    if (payload.disnea_presente || payload.sangrado_activo ||
+        payload.perdida_conciencia || payload.cardiopatia_isquemica) {
+        nivel = "rojo"; justificacion = "Bandera Roja Crítica";
+        accion = "PASAR A CHOQUE";
+        banderasRojas = ["Bandera roja detectada (modo sin conexión)"];
+    } else if (payload.intensidad_dolor_eva >= 7) {
+        nivel = "amarillo"; justificacion = "Síntomas Moderados"; accion = "MONITOREO 30MIN";
+    }
+
+    return {
+        nivel_ia: nivel,
+        probabilidades: { rojo: nivel === "rojo" ? 0.9 : 0.1, amarillo: 0.3, verde: 0.6 },
+        escenarios: [{ nombre: "Patrón estimado (sin conexión)", probabilidad: 0.7, cie10: "Z99" }],
+        explicacion_shap: "Motor no disponible — clasificación local sin SHAP",
+        analisis_llm: null,
+        _modo: "simulacion",
+    };
+}
+
+// ──────────────────────────────────────────────────────────
+//  MAPEAR RESPUESTA API → displayResult
+// ──────────────────────────────────────────────────────────
+function apiResponseToDisplayResult(apiResp, payload) {
+    const nivel = apiResp.nivel_ia || "verde";
+    const labelMap = {
+        rojo:     { justificacion: "Alerta Crítica Detectada", accion: "PASAR A CHOQUE", banderasRojas: ["Nivel crítico — motor IA"] },
+        amarillo: { justificacion: "Síntomas Moderados",       accion: "MONITOREO 30MIN", banderasRojas: [] },
+        verde:    { justificacion: "Sintomatología Leve",       accion: "SALA DE ESPERA",  banderasRojas: [] },
+    };
+    const label = labelMap[nivel] || labelMap.verde;
+
+    const escenarioTop = (apiResp.escenarios || [])[0] || {};
+    return {
+        nivel,
+        justificacion:    label.justificacion,
+        accion:           label.accion,
+        banderas_rojas:   label.banderasRojas,
+        patron_referencia: escenarioTop.nombre
+            ? `${escenarioTop.nombre} (${Math.round((escenarioTop.probabilidad || 0) * 100)}%)`
+            : "Patrón clínico identificado",
+        escenarios:     apiResp.escenarios || [],
+        shap:           apiResp.explicacion_shap || "",
+        analisis_llm:   apiResp.analisis_llm || null,
+        modo:           apiResp._modo || "api",
+    };
+}
+
+// ──────────────────────────────────────────────────────────
+//  SUBMIT DEL FORMULARIO
+// ──────────────────────────────────────────────────────────
+async function processPatient(event) {
+    event.preventDefault();
+
+    const payload = buildPayload();
+    const loading = showLoading();
+
+    let apiResp;
+    try {
+        apiResp = await callAPI(payload);
+    } catch (err) {
+        console.warn("API no disponible, usando simulación local:", err.message);
+        addNotification("warning", "API sin conexión", "Usando clasificación local de respaldo.");
+        apiResp = simulateTriage(payload);
+    }
+
+    await loading;
+
+    const result = apiResponseToDisplayResult(apiResp, payload);
+
+    const newPatient = {
+        id:                `PX-${String(patientCounter).padStart(3, "0")}`,
+        edad:              parseInt(document.getElementById("edad").value),
+        hora_ingreso:      new Date().toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" }),
+        nivel:             result.nivel,
+        justificacion:     result.justificacion,
+        accion:            result.accion,
+        tiempo_espera:     0,
+        banderas_rojas:    result.banderas_rojas,
+        patron_referencia: result.patron_referencia,
+        escenarios:        result.escenarios,
+        shap:              result.shap,
+        analisis_llm:      result.analisis_llm,
+        modo:              result.modo,
+    };
+
+    patients.unshift(newPatient);
+    patientCounter++;
+
+    updateStats();
+    renderPatients();
+
+    if (result.nivel === "rojo") {
+        addNotification("critical", "CASO CRÍTICO DETECTADO", `${newPatient.id}: ${result.justificacion}`);
+    } else if (result.nivel === "amarillo") {
+        addNotification("warning", "CASO URGENTE PROCESADO", `${newPatient.id}: requiere atención en 30 min`);
+    } else {
+        addNotification("success", "PACIENTE PROCESADO", `${newPatient.id}: sala de espera`);
+    }
+
+    closeNewPatientModal();
+}
+
+// ──────────────────────────────────────────────────────────
+//  RENDER DE TARJETAS
+// ──────────────────────────────────────────────────────────
+function updateStats() {
+    document.getElementById("criticalCount").textContent = patients.filter(p => p.nivel === "rojo").length;
+    document.getElementById("urgentCount").textContent   = patients.filter(p => p.nivel === "amarillo").length;
+    document.getElementById("stableCount").textContent   = patients.filter(p => p.nivel === "verde").length;
+    document.getElementById("totalCount").textContent    = patients.length;
+}
+
+function renderPatients() {
+    const grid  = document.getElementById("patientsGrid");
+    const empty = document.getElementById("emptyState");
+    if (patients.length === 0) { grid.innerHTML = ""; empty.classList.remove("hidden"); return; }
+    empty.classList.add("hidden");
+
+    const sorted = [...patients].sort((a, b) => {
+        const order = { rojo: 3, amarillo: 2, verde: 1 };
+        return (order[b.nivel] - order[a.nivel]) || (b.tiempo_espera - a.tiempo_espera);
+    });
+    grid.innerHTML = sorted.map(createPatientCard).join("");
+}
+
+function createPatientCard(patient) {
+    const colors = {
+        rojo:     "bg-red-500 border-red-700 shadow-red-500/50 critical-card",
+        amarillo: "bg-yellow-500 border-yellow-700 shadow-yellow-500/30",
+        verde:    "bg-green-500 border-green-700 shadow-green-500/20",
+    };
+    const icons = { rojo: "fa-bolt", amarillo: "fa-clock", verde: "fa-check-circle" };
+    const modoBadge = patient.modo === "simulacion"
+        ? `<span class="text-xs bg-orange-600 text-white px-1 rounded ml-2">sin conexión</span>` : "";
+
+    const banderasHtml = patient.banderas_rojas.length
+        ? `<div class="mb-4"><div class="bg-red-800/50 border border-red-400 rounded-lg p-3">
+               <div class="flex items-center space-x-2">
+                 <i class="fas fa-exclamation-triangle text-red-200 text-lg emergency-notification"></i>
+                 <span class="text-red-200 font-bold text-sm">BANDERAS ROJAS ACTIVAS</span>
+               </div></div></div>` : "";
+
+    return `
+    <div class="${colors[patient.nivel]} p-6 rounded-xl border-2 shadow-xl cursor-pointer transform transition-all hover:scale-105"
+         onclick="showPatientDetail('${patient.id}')">
+        <div class="flex items-center justify-between mb-4">
+            <div>
+                <h3 class="text-2xl font-bold text-white">${patient.id}${modoBadge}</h3>
+                <p class="text-white/80 text-sm">${patient.hora_ingreso} | ${patient.edad} años</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <i class="fas ${icons[patient.nivel]} text-4xl text-white mb-1"></i>
+                <span class="text-xs font-bold text-white">${patient.nivel.toUpperCase()}</span>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h4 class="text-white font-bold text-xl text-center bg-black/20 rounded-lg p-3">${patient.justificacion}</h4>
+        </div>
+        <div class="mb-4">
+            <div class="bg-white/20 rounded-lg p-4 border-2 border-white/30">
+                <p class="text-white font-bold text-center text-lg tracking-wide">${patient.accion}</p>
+            </div>
+        </div>
+        ${banderasHtml}
+        <div class="flex items-center justify-between text-white/80 text-sm">
+            <span><i class="fas fa-clock mr-2"></i>Espera: ${patient.tiempo_espera} min</span>
+        </div>
+    </div>`;
+}
+
+// ──────────────────────────────────────────────────────────
+//  MODAL DETALLE PACIENTE
+// ──────────────────────────────────────────────────────────
+function showPatientDetail(patientId) {
+    const patient = patients.find(p => p.id === patientId);
+    if (!patient) return;
+    if (patient.nivel === "rojo") playAlertSound();
+
+    const colors = {
+        rojo:     "bg-red-500 border-red-700 critical-card",
+        amarillo: "bg-yellow-500 border-yellow-700",
+        verde:    "bg-green-500 border-green-700",
+    };
+
+    const escenarioHtml = (patient.escenarios || []).length
+        ? patient.escenarios.map((e, i) => `
+            <div class="bg-slate-600 p-3 rounded-lg flex items-center justify-between">
+                <span class="text-white font-bold">${i + 1}. ${e.nombre || e}</span>
+                <span class="text-blue-300 text-sm">${e.probabilidad !== undefined ? Math.round(e.probabilidad * 100) + "%" : ""} ${e.cie10 ? "· " + e.cie10 : ""}</span>
+            </div>`).join("")
+        : `<p class="text-slate-400">No disponible</p>`;
+
+    const shapHtml = patient.shap
+        ? `<p class="text-white bg-slate-600 p-3 rounded-lg text-sm">${patient.shap}</p>`
+        : `<p class="text-slate-400 text-sm">No disponible</p>`;
+
+    const llmHtml = patient.analisis_llm
+        ? `<div class="bg-indigo-900/30 border-2 border-indigo-500 p-6 rounded-lg mb-6">
+               <h4 class="text-xl font-bold text-indigo-400 mb-3"><i class="fas fa-robot mr-2"></i>ANÁLISIS LLM</h4>
+               <p class="text-white text-sm whitespace-pre-wrap">${patient.analisis_llm}</p>
+           </div>` : "";
+
+    const banderasHtml = patient.banderas_rojas.length
+        ? `<div class="bg-red-900/30 border-2 border-red-500 p-6 rounded-lg mb-6">
+               <h4 class="text-xl font-bold text-red-400 mb-4 flex items-center">
+                   <i class="fas fa-exclamation-triangle mr-3 text-2xl emergency-notification"></i>BANDERAS ROJAS ACTIVAS</h4>
+               <ul class="space-y-2">
+                   ${patient.banderas_rojas.map(b => `<li class="text-red-300 font-bold flex items-center"><i class="fas fa-arrow-right mr-3 text-red-400"></i>${b}</li>`).join("")}
+               </ul></div>` : "";
+
+    document.getElementById("detailPatientTitle").innerHTML =
+        `<i class="fas fa-user-md mr-3"></i>PACIENTE: ${patient.id}`;
+
+    document.getElementById("patientDetailContent").innerHTML = `
+        <div class="${colors[patient.nivel]} p-8 rounded-xl mb-6">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-4xl font-bold text-white mb-3">${patient.nivel.toUpperCase()}</h3>
+                    <p class="text-white text-2xl font-bold mb-3">${patient.justificacion}</p>
+                    <p class="text-white/90 text-xl font-bold bg-black/20 rounded-lg p-3 inline-block">${patient.accion}</p>
+                </div>
+                <i class="fas ${patient.nivel === "rojo" ? "fa-bolt" : patient.nivel === "amarillo" ? "fa-clock" : "fa-check-circle"} text-6xl text-white"></i>
+            </div>
+        </div>
+
+        <!-- Escenarios diferenciales del motor -->
+        <div class="bg-blue-900/30 border-2 border-blue-500 p-6 rounded-lg mb-6">
+            <h4 class="text-xl font-bold text-blue-400 mb-4"><i class="fas fa-brain mr-3"></i>ESCENARIOS DIFERENCIALES</h4>
+            <div class="space-y-2">${escenarioHtml}</div>
+        </div>
+
+        <!-- SHAP -->
+        <div class="bg-slate-700 p-6 rounded-lg mb-6">
+            <h4 class="text-xl font-bold text-slate-200 mb-3"><i class="fas fa-chart-bar mr-3 text-yellow-400"></i>EXPLICACIÓN SHAP</h4>
+            ${shapHtml}
+        </div>
+
+        ${llmHtml}
+        ${banderasHtml}
+
+        <div class="bg-slate-700 p-6 rounded-lg">
+            <h4 class="text-xl font-bold text-slate-200 mb-4"><i class="fas fa-info-circle mr-3"></i>INFORMACIÓN GENERAL</h4>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="text-center"><p class="text-slate-400 text-sm mb-1">EDAD</p><p class="text-white font-bold text-2xl">${patient.edad}</p><p class="text-slate-400 text-xs">años</p></div>
+                <div class="text-center"><p class="text-slate-400 text-sm mb-1">INGRESO</p><p class="text-white font-bold text-2xl">${patient.hora_ingreso}</p><p class="text-slate-400 text-xs">hoy</p></div>
+                <div class="text-center"><p class="text-slate-400 text-sm mb-1">ESPERA</p><p class="text-white font-bold text-2xl">${patient.tiempo_espera}</p><p class="text-slate-400 text-xs">minutos</p></div>
+                <div class="text-center"><p class="text-slate-400 text-sm mb-1">FUENTE</p><p class="text-white font-bold text-lg">${patient.modo === "simulacion" ? "LOCAL" : "MOTOR IA"}</p></div>
+            </div>
+        </div>`;
+
+    const modal = document.getElementById("patientDetailModal");
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+}
+
+function closePatientDetail() {
+    const m = document.getElementById("patientDetailModal");
+    m.classList.add("hidden"); m.classList.remove("flex");
+}
+
+// ──────────────────────────────────────────────────────────
+//  MODALES HELPERS
+// ──────────────────────────────────────────────────────────
+function openNewPatientModal() {
+    const m = document.getElementById("newPatientModal");
+    m.classList.remove("hidden"); m.classList.add("flex");
+}
+function closeNewPatientModal() {
+    const m = document.getElementById("newPatientModal");
+    m.classList.add("hidden"); m.classList.remove("flex");
+    document.getElementById("patientForm").reset();
+    document.getElementById("intensityDisplay").textContent = "5";
+    document.getElementById("criticalFlagAlert").classList.add("hidden");
+}
+function updateIntensityDisplay(val) {
+    document.getElementById("intensityDisplay").textContent = val;
+}
+function checkCriticalFlags() {
+    const flags = ["redflag_disnea_severa","redflag_sangrado_abundante",
+                   "redflag_deficit_neurologico_subito","redflag_dolor_toracico_opresivo_con_sudoracion"];
+    const any = flags.some(id => document.getElementById(id).checked);
+    document.getElementById("criticalFlagAlert").classList.toggle("hidden", !any);
+    if (any) playAlertSound();
+}
+
+// ──────────────────────────────────────────────────────────
+//  LOADING + NOTIFICACIONES + SONIDO
+// ──────────────────────────────────────────────────────────
+function showLoading() {
+    const overlay = document.getElementById("loadingOverlay");
+    const bar     = document.getElementById("progressBar");
+    overlay.classList.remove("hidden"); overlay.classList.add("flex");
+    let p = 0;
+    const iv = setInterval(() => {
+        p += Math.random() * 25;
+        if (p >= 95) { p = 95; clearInterval(iv); }
+        bar.style.width = p + "%";
+    }, 200);
+    return new Promise(res => setTimeout(() => {
+        bar.style.width = "100%";
+        setTimeout(() => {
+            overlay.classList.add("hidden"); overlay.classList.remove("flex");
+            bar.style.width = "0%";
+            res();
+        }, 300);
+    }, 1800));
+}
+
+function addNotification(type, title, message) {
+    const container = document.getElementById("notifications");
+    const id = Date.now();
+    const colors = { critical: "bg-red-600 border-red-400", warning: "bg-yellow-600 border-yellow-400", success: "bg-green-600 border-green-400" };
+    const icons  = { critical: "fa-exclamation-triangle", warning: "fa-exclamation-circle", success: "fa-check-circle" };
+    container.insertAdjacentHTML("beforeend", `
+        <div id="notif-${id}" class="${colors[type]} border-2 rounded-lg p-4 shadow-xl max-w-sm ${type === "critical" ? "emergency-notification" : ""}">
+            <div class="flex items-center space-x-3">
+                <i class="fas ${icons[type]} text-2xl text-white"></i>
+                <div><h4 class="text-white font-bold text-lg">${title}</h4><p class="text-white/90">${message}</p></div>
+            </div>
+        </div>`);
+    if (type === "critical") playAlertSound();
+    setTimeout(() => document.getElementById(`notif-${id}`)?.remove(), 8000);
+}
+
+function playAlertSound() {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.frequency.setValueAtTime(880, ctx.currentTime);
+    gain.gain.setValueAtTime(0.3, ctx.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
+    osc.start(); osc.stop(ctx.currentTime + 0.5);
+}
+
+function updateWaitTimes() {
+    patients.forEach(p => p.tiempo_espera++);
+    renderPatients();
+}
+
+// ──────────────────────────────────────────────────────────
+//  INIT
+// ──────────────────────────────────────────────────────────
+document.addEventListener("DOMContentLoaded", () => {
+    updateTime();
+    updateStats();
+    renderPatients();
+    checkApiStatus();
+
+    setInterval(updateTime, 1000);
+    setInterval(updateWaitTimes, 60000);
+    setInterval(checkApiStatus, 30000);
+
+    setTimeout(() => addNotification("success", "SMARTX SISTEMA ACTIVO",
+        "Sistema de triaje listo para procesar pacientes"), 800);
+});
+</script>
+</body>
+</html>

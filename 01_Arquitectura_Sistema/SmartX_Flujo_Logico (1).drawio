@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2339" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ═══════════════════════════════════════════════
+         TÍTULO PRINCIPAL
+    ════════════════════════════════════════════════ -->
+    <mxCell id="title" value="SMART X — Flujo Lógico del Sistema" style="text;html=1;strokeColor=none;fillColor=#1F4E79;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#FFFFFF;fontSize=22;fontStyle=1;fontFamily=Arial;" vertex="1" parent="1">
+      <mxGeometry x="20" y="20" width="820" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="subtitle" value="Paciente → IA → Médico | Sistema de Priorización Inteligente para Primer Nivel de Atención" style="text;html=1;strokeColor=#2E75B6;fillColor=#D6E4F0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#1F4E79;fontSize=11;fontStyle=2;fontFamily=Arial;" vertex="1" parent="1">
+      <mxGeometry x="20" y="76" width="820" height="28" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════════════════════
+         FASE 1 — ENTRADA DE DATOS (Azul)
+    ════════════════════════════════════════════════ -->
+    <!-- Swimlane F1 -->
+    <mxCell id="sw1" value="FASE 1 — ENTRADA DE DATOS DEL PACIENTE" style="swimlane;startSize=36;fillColor=#D6E4F0;strokeColor=#2E75B6;fontColor=#1F4E79;fontStyle=1;fontSize=12;fontFamily=Arial;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="20" y="120" width="820" height="310" as="geometry" />
+    </mxCell>
+
+    <!-- INICIO -->
+    <mxCell id="f1_start" value="INICIO&#xa;Paciente abre Smart X" style="ellipse;whiteSpace=wrap;html=1;fillColor=#1F4E79;strokeColor=#1F4E79;fontColor=#FFFFFF;fontStyle=1;fontSize=11;fontFamily=Arial;" vertex="1" parent="sw1">
+      <mxGeometry x="20" y="60" width="140" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Autenticación NSS -->
+    <mxCell id="f1_auth" value="Autenticación&#xa;NSS / CURP +&#xa;fecha de nacimiento" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw1">
+      <mxGeometry x="200" y="60" width="130" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Decisión auth -->
+    <mxCell id="f1_dec_auth" value="¿Autenticación&#xa;exitosa?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw1">
+      <mxGeometry x="370" y="52" width="120" height="76" as="geometry" />
+    </mxCell>
+
+    <!-- Error auth -->
+    <mxCell id="f1_err_auth" value="Error: reintento&#xa;(máx. 3 intentos)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C00000;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw1">
+      <mxGeometry x="370" y="168" width="120" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Motivo de consulta -->
+    <mxCell id="f1_motivo" value="Selección motivo&#xa;de consulta&#xa;(iconos)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw1">
+      <mxGeometry x="530" y="60" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Decisión emergencia -->
+    <mxCell id="f1_dec_emg" value="¿Síntoma de&#xa;alarma grave?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw1">
+      <mxGeometry x="530" y="168" width="120" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Alerta emergencia -->
+    <mxCell id="f1_alert" value="🚨 ALERTA INMEDIATA&#xa;al personal&#xa;Atención directa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C00000;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw1">
+      <mxGeometry x="690" y="168" width="110" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Síntomas + cuestionario -->
+    <mxCell id="f1_sintomas" value="Descripción libre&#xa;de síntomas +&#xa;Cuestionario guiado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw1">
+      <mxGeometry x="370" y="248" width="130" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Antecedentes -->
+    <mxCell id="f1_antec" value="Confirmación de&#xa;antecedentes y&#xa;alergias (expediente)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw1">
+      <mxGeometry x="530" y="248" width="120" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Consentimiento + envío -->
+    <mxCell id="f1_envio" value="Consentimiento&#xa;informado +&#xa;Envío cifrado TLS 1.3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#1F4E79;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw1">
+      <mxGeometry x="690" y="248" width="110" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- FLECHAS FASE 1 -->
+    <mxCell id="e1_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f1_start" target="f1_auth" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e1_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f1_auth" target="f1_dec_auth" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e1_3" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f1_dec_auth" target="f1_err_auth" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e1_4" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f1_dec_auth" target="f1_motivo" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e1_5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f1_motivo" target="f1_dec_emg" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e1_6" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f1_dec_emg" target="f1_alert" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e1_7" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f1_dec_emg" target="f1_sintomas" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e1_8" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f1_sintomas" target="f1_antec" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e1_9" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f1_antec" target="f1_envio" parent="sw1"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- ═══════════════════════════════════════════════
+         FASE 2 — PROCESAMIENTO IA (Teal)
+    ════════════════════════════════════════════════ -->
+    <mxCell id="sw2" value="FASE 2 — PROCESAMIENTO BACKEND / IA" style="swimlane;startSize=36;fillColor=#E0F7FA;strokeColor=#006064;fontColor=#006064;fontStyle=1;fontSize=12;fontFamily=Arial;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="20" y="448" width="820" height="270" as="geometry" />
+    </mxCell>
+
+    <!-- API Gateway -->
+    <mxCell id="f2_api" value="API Gateway&#xa;Validación token +&#xa;Log de auditoría" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#006064;strokeColor=#006064;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw2">
+      <mxGeometry x="20" y="60" width="130" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Dec validación -->
+    <mxCell id="f2_dec_val" value="¿Paquete&#xa;válido?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw2">
+      <mxGeometry x="186" y="52" width="100" height="76" as="geometry" />
+    </mxCell>
+
+    <!-- Error paquete -->
+    <mxCell id="f2_err" value="Rechazo + log&#xa;de error" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C00000;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw2">
+      <mxGeometry x="186" y="168" width="100" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- NLP -->
+    <mxCell id="f2_nlp" value="Pipeline NLP&#xa;spaCy + BioBERT-es&#xa;Extracción entidades" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#00B0F0;strokeColor=#006064;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw2">
+      <mxGeometry x="326" y="55" width="130" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Vectorización -->
+    <mxCell id="f2_vec" value="Vectorización +&#xa;normalización" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#00B0F0;strokeColor=#006064;fontColor=#FFFFFF;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw2">
+      <mxGeometry x="496" y="55" width="120" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- XGBoost -->
+    <mxCell id="f2_xgb" value="Modelo XGBoost&#xa;Clasificación&#xa;P(rojo/amarillo/verde)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1F4E79;strokeColor=#006064;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw2">
+      <mxGeometry x="326" y="168" width="130" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Dec conservadurismo -->
+    <mxCell id="f2_dec_cons" value="¿Diferencia&#xa;rojo-amarillo&#xa;&lt; 0.10?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw2">
+      <mxGeometry x="496" y="160" width="110" height="86" as="geometry" />
+    </mxCell>
+
+    <!-- SHAP -->
+    <mxCell id="f2_shap" value="SHAP — Explicabilidad&#xa;Texto en español&#xa;para el médico" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1F4E79;strokeColor=#006064;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw2">
+      <mxGeometry x="650" y="160" width="140" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Conservadurismo -->
+    <mxCell id="f2_conserv" value="Asignar nivel MÁS ALTO&#xa;(seguridad clínica)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C00000;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw2">
+      <mxGeometry x="496" y="220" width="110" height="46" as="geometry" />
+    </mxCell>
+
+    <!-- FLECHAS FASE 2 -->
+    <mxCell id="e2_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f2_api" target="f2_dec_val" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2_2" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f2_dec_val" target="f2_err" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2_3" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f2_dec_val" target="f2_nlp" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2_4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f2_nlp" target="f2_vec" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2_5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f2_vec" target="f2_xgb" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2_6" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f2_xgb" target="f2_dec_cons" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2_7" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f2_dec_cons" target="f2_conserv" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2_8" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f2_dec_cons" target="f2_shap" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e2_9" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f2_conserv" target="f2_shap" parent="sw2"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- ═══════════════════════════════════════════════
+         FASE 3 — OUTPUT DEL MODELO (Azul medio)
+    ════════════════════════════════════════════════ -->
+    <mxCell id="sw3" value="FASE 3 — OUTPUT DEL MODELO" style="swimlane;startSize=36;fillColor=#DBEAFE;strokeColor=#2E75B6;fontColor=#1F4E79;fontStyle=1;fontSize=12;fontFamily=Arial;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="20" y="732" width="820" height="200" as="geometry" />
+    </mxCell>
+
+    <!-- 3 Escenarios -->
+    <mxCell id="f3_esc" value="Clasificador multi-etiqueta&#xa;→ 3 Escenarios CIE-10&#xa;con probabilidad" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#2E75B6;strokeColor=#1F4E79;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw3">
+      <mxGeometry x="20" y="60" width="160" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Especialidad -->
+    <mxCell id="f3_esp" value="Asignación de especialidad&#xa;sugerida por escenario&#xa;(según UMF)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw3">
+      <mxGeometry x="220" y="65" width="150" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Historial HL7 -->
+    <mxCell id="f3_hl7" value="Historial clínico&#xa;estructurado HL7-FHIR&#xa;(NOM-004-SSA3)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#E0F7FA;strokeColor=#006064;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw3">
+      <mxGeometry x="410" y="55" width="140" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Empaquetado -->
+    <mxCell id="f3_pack" value="Empaquetado +&#xa;firma digital del output&#xa;→ Panel médico" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D6E4F0;strokeColor=#1F4E79;fontColor=#1F4E79;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw3">
+      <mxGeometry x="600" y="65" width="150" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- FLECHAS FASE 3 -->
+    <mxCell id="e3_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f3_esc" target="f3_esp" parent="sw3"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e3_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f3_esp" target="f3_hl7" parent="sw3"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e3_3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f3_hl7" target="f3_pack" parent="sw3"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- ═══════════════════════════════════════════════
+         FASE 4 — VALIDACIÓN MÉDICA (Verde oscuro)
+    ════════════════════════════════════════════════ -->
+    <mxCell id="sw4" value="FASE 4 — VALIDACIÓN MÉDICA (Decisión Ineludible)" style="swimlane;startSize=36;fillColor=#E2EFDA;strokeColor=#375623;fontColor=#375623;fontStyle=1;fontSize=12;fontFamily=Arial;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="20" y="946" width="820" height="420" as="geometry" />
+    </mxCell>
+
+    <!-- Cola pacientes -->
+    <mxCell id="f4_cola" value="Panel médico&#xa;Cola de pacientes&#xa;(ordenada por semáforo)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#375623;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="20" y="60" width="130" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Historial -->
+    <mxCell id="f4_hist" value="Vista historial clínico&#xa;del paciente&#xa;(sin escenarios IA aún)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#375623;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="190" y="60" width="130" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Dec ver escenarios -->
+    <mxCell id="f4_dec_ver" value="¿Médico consulta&#xa;apoyo Smart X?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw4">
+      <mxGeometry x="360" y="50" width="120" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Ver escenarios -->
+    <mxCell id="f4_ver" value="Muestra 3 escenarios +&#xa;razón SHAP en texto&#xa;natural" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#375623;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="360" y="170" width="130" height="55" as="geometry" />
+    </mxCell>
+
+    <!-- Dec semáforo -->
+    <mxCell id="f4_dec_sem" value="¿Confirma nivel&#xa;de semáforo IA?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw4">
+      <mxGeometry x="530" y="50" width="120" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Modifica semáforo -->
+    <mxCell id="f4_mod_sem" value="Selecciona nuevo nivel +&#xa;justificación extendida&#xa;obligatoria" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C00000;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="530" y="170" width="130" height="55" as="geometry" />
+    </mxCell>
+
+    <!-- Dec escenario -->
+    <mxCell id="f4_dec_esc" value="¿Confirma algún&#xa;escenario IA?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw4">
+      <mxGeometry x="690" y="50" width="110" height="80" as="geometry" />
+    </mxCell>
+
+    <!-- Diagnóstico propio -->
+    <mxCell id="f4_diag" value="Diagnóstico propio&#xa;con CIE-10&#xa;(campo libre)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C00000;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="690" y="170" width="110" height="55" as="geometry" />
+    </mxCell>
+
+    <!-- Justificación -->
+    <mxCell id="f4_just" value="Justificación clínica&#xa;estructurada obligatoria&#xa;(4 campos + cédula)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#375623;strokeColor=#375623;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="190" y="270" width="140" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Dec justificación completa -->
+    <mxCell id="f4_dec_just" value="¿Justificación&#xa;completa y cédula&#xa;válida?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw4">
+      <mxGeometry x="380" y="260" width="120" height="90" as="geometry" />
+    </mxCell>
+
+    <!-- Incompleto -->
+    <mxCell id="f4_inc" value="Campos faltantes&#xa;marcados en rojo&#xa;(sistema bloquea cierre)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCE4D6;strokeColor=#C00000;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="380" y="368" width="120" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Plan de manejo -->
+    <mxCell id="f4_plan" value="Plan de manejo +&#xa;cierre con sello&#xa;timestamp UTC" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#375623;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="545" y="270" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- Log auditoría -->
+    <mxCell id="f4_log" value="Log de auditoría&#xa;inmutable&#xa;(SHA-256)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#D6E4F0;strokeColor=#1F4E79;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw4">
+      <mxGeometry x="700" y="260" width="100" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- FIN -->
+    <mxCell id="f4_end" value="FIN&#xa;Expediente cerrado" style="ellipse;whiteSpace=wrap;html=1;fillColor=#375623;strokeColor=#375623;fontColor=#FFFFFF;fontStyle=1;fontSize=11;fontFamily=Arial;" vertex="1" parent="sw4">
+      <mxGeometry x="700" y="355" width="110" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- FLECHAS FASE 4 -->
+    <mxCell id="e4_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f4_cola" target="f4_hist" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f4_hist" target="f4_dec_ver" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_3" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f4_dec_ver" target="f4_ver" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_4" value="SÍ / NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#555555;fontFamily=Arial;fontSize=10;" edge="1" source="f4_dec_ver" target="f4_dec_sem" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_5" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f4_dec_sem" target="f4_mod_sem" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_6" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f4_dec_sem" target="f4_dec_esc" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_7" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f4_dec_esc" target="f4_diag" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_8" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f4_mod_sem" target="f4_just" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_9" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f4_diag" target="f4_just" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_10" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f4_just" target="f4_dec_just" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_11" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f4_dec_just" target="f4_inc" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_12" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f4_dec_just" target="f4_plan" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_13" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f4_plan" target="f4_log" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e4_14" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f4_log" target="f4_end" parent="sw4"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- ═══════════════════════════════════════════════
+         FASE 5 — RETROALIMENTACIÓN (Morado)
+    ════════════════════════════════════════════════ -->
+    <mxCell id="sw5" value="FASE 5 — RETROALIMENTACIÓN Y MEJORA CONTINUA" style="swimlane;startSize=36;fillColor=#EDE7F6;strokeColor=#4A148C;fontColor=#4A148C;fontStyle=1;fontSize=12;fontFamily=Arial;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="20" y="1380" width="820" height="260" as="geometry" />
+    </mxCell>
+
+    <!-- Motor retro -->
+    <mxCell id="f5_motor" value="Motor de&#xa;Retroalimentación&#xa;(evento de cierre)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#4A148C;strokeColor=#4A148C;fontColor=#FFFFFF;fontStyle=1;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw5">
+      <mxGeometry x="20" y="80" width="130" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Dec desacuerdo -->
+    <mxCell id="f5_dec_des" value="¿Hubo desacuerdo&#xa;médico–IA?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw5">
+      <mxGeometry x="190" y="72" width="120" height="86" as="geometry" />
+    </mxCell>
+
+    <!-- Dataset retro -->
+    <mxCell id="f5_dataset" value="Par [input→etiqueta médico]&#xa;→ Dataset reentrenamiento" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;fillColor=#EDE7F6;strokeColor=#4A148C;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw5">
+      <mxGeometry x="360" y="60" width="140" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Confirmación -->
+    <mxCell id="f5_conf" value="Confirmación guardada&#xa;(menor peso de aprendizaje)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4A148C;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw5">
+      <mxGeometry x="360" y="160" width="140" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- Dec drift -->
+    <mxCell id="f5_dec_drift" value="¿Tasa desacuerdo&#xa;&gt; 15% mensual?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;fontStyle=1;" vertex="1" parent="sw5">
+      <mxGeometry x="544" y="60" width="120" height="86" as="geometry" />
+    </mxCell>
+
+    <!-- Reentrenamiento -->
+    <mxCell id="f5_retrain" value="Reentrenamiento&#xa;controlado + validación&#xa;clínica (médico)" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#4A148C;strokeColor=#4A148C;fontColor=#FFFFFF;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw5">
+      <mxGeometry x="700" y="60" width="100" height="70" as="geometry" />
+    </mxCell>
+
+    <!-- Sin drift -->
+    <mxCell id="f5_ok" value="Continuar operación&#xa;normal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E2EFDA;strokeColor=#375623;fontFamily=Arial;fontSize=10;" vertex="1" parent="sw5">
+      <mxGeometry x="700" y="170" width="100" height="50" as="geometry" />
+    </mxCell>
+
+    <!-- FLECHAS FASE 5 -->
+    <mxCell id="e5_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f5_motor" target="f5_dec_des" parent="sw5"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e5_2" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f5_dec_des" target="f5_dataset" parent="sw5"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e5_3" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f5_dec_des" target="f5_conf" parent="sw5"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e5_4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="f5_dataset" target="f5_dec_drift" parent="sw5"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e5_5" value="SÍ" style="edgeStyle=orthogonalEdgeStyle;fontColor=#C00000;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f5_dec_drift" target="f5_retrain" parent="sw5"><mxGeometry relative="1" as="geometry" /></mxCell>
+    <mxCell id="e5_6" value="NO" style="edgeStyle=orthogonalEdgeStyle;fontColor=#375623;fontStyle=1;fontFamily=Arial;fontSize=10;" edge="1" source="f5_dec_drift" target="f5_ok" parent="sw5"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+    <!-- ═══════════════════════════════════════════════
+         CONECTORES INTER-FASES
+    ════════════════════════════════════════════════ -->
+    <!-- F1 envio → F2 api -->
+    <mxCell id="inter_1_2" value="Datos cifrados TLS 1.3" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#1F4E79;fontColor=#1F4E79;fontStyle=2;fontFamily=Arial;fontSize=10;" edge="1" source="f1_envio" target="f2_api" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- F2 shap → F3 esc -->
+    <mxCell id="inter_2_3" value="Nivel + vector + SHAP" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#006064;fontColor=#006064;fontStyle=2;fontFamily=Arial;fontSize=10;" edge="1" source="f2_shap" target="f3_esc" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- F3 pack → F4 cola -->
+    <mxCell id="inter_3_4" value="Output firmado → Panel médico" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#2E75B6;fontColor=#2E75B6;fontStyle=2;fontFamily=Arial;fontSize=10;" edge="1" source="f3_pack" target="f4_cola" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- F4 log → F5 motor -->
+    <mxCell id="inter_4_5" value="Evento de cierre" style="edgeStyle=orthogonalEdgeStyle;dashed=1;strokeColor=#4A148C;fontColor=#4A148C;fontStyle=2;fontFamily=Arial;fontSize=10;" edge="1" source="f4_log" target="f5_motor" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ═══════════════════════════════════════════════
+         LEYENDA
+    ════════════════════════════════════════════════ -->
+    <mxCell id="leyenda_bg" value="LEYENDA DE FORMAS" style="swimlane;startSize=28;fillColor=#F5F5F5;strokeColor=#BDBDBD;fontColor=#333333;fontStyle=1;fontSize=11;fontFamily=Arial;rounded=1;" vertex="1" parent="1">
+      <mxGeometry x="20" y="1658" width="820" height="100" as="geometry" />
+    </mxCell>
+    <mxCell id="leg1" value="▭ Proceso" style="rounded=1;fillColor=#FFFFFF;strokeColor=#2E75B6;fontFamily=Arial;fontSize=10;" vertex="1" parent="leyenda_bg"><mxGeometry x="20" y="40" width="110" height="40" as="geometry" /></mxCell>
+    <mxCell id="leg2" value="◇ Decisión" style="rhombus;fillColor=#FFF9C4;strokeColor=#F9A825;fontFamily=Arial;fontSize=10;" vertex="1" parent="leyenda_bg"><mxGeometry x="150" y="32" width="110" height="56" as="geometry" /></mxCell>
+    <mxCell id="leg3" value="⬭ Inicio / Fin" style="ellipse;fillColor=#1F4E79;strokeColor=#1F4E79;fontColor=#FFFFFF;fontFamily=Arial;fontSize=10;" vertex="1" parent="leyenda_bg"><mxGeometry x="280" y="36" width="110" height="44" as="geometry" /></mxCell>
+    <mxCell id="leg4" value="⬠ Proceso IA/ML" style="shape=hexagon;perimeter=hexagonPerimeter2;fixedSize=1;fillColor=#006064;strokeColor=#006064;fontColor=#FFFFFF;fontFamily=Arial;fontSize=10;" vertex="1" parent="leyenda_bg"><mxGeometry x="410" y="34" width="120" height="48" as="geometry" /></mxCell>
+    <mxCell id="leg5" value="⬡ Base de Datos" style="shape=cylinder3;whiteSpace=wrap;boundedLbl=1;backgroundOutline=1;fillColor=#D6E4F0;strokeColor=#1F4E79;fontFamily=Arial;fontSize=10;" vertex="1" parent="leyenda_bg"><mxGeometry x="550" y="30" width="110" height="56" as="geometry" /></mxCell>
+    <mxCell id="leg6" value="- - → Flujo inter-fase" style="text;html=1;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=10;fontStyle=2;" vertex="1" parent="leyenda_bg"><mxGeometry x="680" y="42" width="120" height="30" as="geometry" /></mxCell>
+
+  </root>
+</mxGraphModel>
