@@ -25,7 +25,10 @@
 ║                                                                              ║
 ║  5. Documentación interactiva (Swagger):                                      ║
 ║     http://localhost:8000/docs                                               ║
-║                                                                              ║
+║                                      
+
+
+                                        ║
 ║  SINCRONIZACIÓN FRONTEND-BACKEND:                                            ║
 ║    - Frontend (Streamlit) en puerto 8501                                     ║
 ║    - Backend (FastAPI) en puerto 8000                                        ║
