@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "Bash(python -c \"import smartx_api\")",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(dir /s /b)",
+      "Bash(findstr /v \"__pycache__\\\\\\\\.pyc\\\\\\\\.git\")",
+      "Bash(findstr /v \"\\\\.pyc\")",
+      "Bash(findstr /v \"__pycache__\")",
+      "Bash(findstr /v \"\\\\.git\\\\\\\\\")",
+      "Bash(cd \"c:\\\\Users\\\\charo\\\\OneDrive\\\\Desktop\\\\Diego\\\\LIACD\\\\S2\\\\Gestion de Proyectos\\\\SmartX_HCG\" && dir /s /b 2>nul)",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Users\\\\charo\\\\OneDrive\\\\Desktop\\\\Diego\\\\LIACD\\\\S2\\\\Gestion de Proyectos\\\\SmartX_HCG\" -Recurse -File | Where-Object { $_.FullName -notmatch '__pycache__|\\\\.pyc|\\\\.git' } | Select-Object -ExpandProperty FullName)",
+      "PowerShell(Get-ChildItem -Path \"c:\\\\Users\\\\charo\\\\OneDrive\\\\Desktop\\\\Diego\\\\LIACD\\\\S2\\\\Gestion de Proyectos\\\\SmartX_HCG\" -Recurse -File | Where-Object { $_.FullName -notmatch '__pycache__|\\\\.pyc|\\\\.git|\\\\.venv' } | Select-Object -ExpandProperty FullName)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\charo\\OneDrive\\Desktop\\Diego\\LIACD\\S2\\Gestion de Proyectos\\SmartX_HCG"
     ]
   }
 }
