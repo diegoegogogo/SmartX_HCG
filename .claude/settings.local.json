@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import smartx_api\")",
+      "Bash(python -c ' *)"
+    ]
+  }
+}

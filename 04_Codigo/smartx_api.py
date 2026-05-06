@@ -11,9 +11,9 @@
 ║                                                                              ║
 ║  2. Activar entorno:                                                         ║
 ║     # Windows CMD:                                                           ║
-║     .venv\Scripts\activate.bat                                               ║
+║     .venv\\Scripts\\activate.bat                                             ║
 ║     # Windows PowerShell:                                                    ║
-║     .venv\Scripts\Activate.ps1                                               ║
+║     .venv\\Scripts\\Activate.ps1                                               ║
 ║     # macOS/Linux:                                                           ║
 ║     source .venv/bin/activate                                                ║
 ║                                                                              ║
@@ -23,12 +23,10 @@
 ║  4. Ejecutar servidor:                                                       ║
 ║     uvicorn smartx_api:app --reload --port 8000                              ║
 ║                                                                              ║
-║  5. Documentación interactiva (Swagger):                                      ║
+║  5. Documentación interactiva (Swagger):                                     ║
 ║     http://localhost:8000/docs                                               ║
-║                                      
-
-
-                                        ║
+║                                                                              ║
+║                                                                              ║
 ║  SINCRONIZACIÓN FRONTEND-BACKEND:                                            ║
 ║    - Frontend (Streamlit) en puerto 8501                                     ║
 ║    - Backend (FastAPI) en puerto 8000                                        ║
@@ -45,7 +43,6 @@ import json
 import time
 import hashlib
 from datetime import datetime, timezone
-from types import SimpleNamespace
 from typing import Optional
 
 # ─── IMPORTACIONES FASTAPI ────────────────────────────────────────────────────
@@ -57,6 +54,7 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 # ─── MOTOR DE INFERENCIA (relativo al mismo directorio) ───────────────────────
 # Importar desde smartx_motor_inferencia.py (es el que está activo en este proyecto)
 from smartx_motor_inferencia import (
+    CATALOGO_MOTIVOS,
     MotorInferenciaSmartX,
     Paciente,
     NivelSemaforo,
@@ -117,6 +115,15 @@ class SintomasInput(BaseModel):
     sexo_biologico: str   = Field(default="M",
                                   description="'M' para masculino, 'F' para femenino")
 
+    # ── Motivo de consulta (catálogo del dataset) ──────────────────────────────
+    motivo_consulta: Optional[str] = Field(
+        default=None,
+        description=(
+            "Motivo principal de consulta. Si se omite, se infiere de los síntomas. "
+            f"Valores válidos: {CATALOGO_MOTIVOS}"
+        ),
+    )
+
     # ── Alertas críticas (disparan ROJO inmediato si son True) ────────────────
     disnea_presente    : bool = Field(default=False, description="¿Dificultad para respirar?")
     perdida_conciencia : bool = Field(default=False, description="¿Pérdida o alteración de consciencia?")
@@ -146,6 +153,16 @@ class SintomasInput(BaseModel):
     semanas_gestacion    : Optional[int] = Field(default=None, ge=0, le=42)
 
     # ── Validación de consistencia lógica (NOM-004) ───────────────────────────
+    @field_validator("motivo_consulta")
+    @classmethod
+    def validar_motivo(cls, v: Optional[str]) -> Optional[str]:
+        if v is not None and v not in CATALOGO_MOTIVOS:
+            raise ValueError(
+                f"motivo_consulta '{v}' no reconocido. "
+                f"Valores válidos: {CATALOGO_MOTIVOS}"
+            )
+        return v
+
     @field_validator("sexo_biologico")
     @classmethod
     def validar_sexo(cls, v: str) -> str:
@@ -299,49 +316,99 @@ async def clasificar_paciente(datos: SintomasInput) -> dict:
       5. Devuelve al frontend
     """
     try:
-        # ── Paso 1: Construir objeto Paciente desde el input del API ──────────
-        paciente = Paciente(
-            id_paciente            = datos.id_paciente,
-            id_consulta            = str(uuid.uuid4()),  # Nueva consulta
-            unidad_atencion        = datos.unidad_atencion,
-            edad                   = datos.edad,
-            sexo_biologico         = datos.sexo_biologico,
-            disnea_presente        = datos.disnea_presente,
-            perdida_conciencia     = datos.perdida_conciencia,
-            sangrado_activo        = datos.sangrado_activo,
-            fiebre_presente        = datos.fiebre_presente,
-            temperatura_celsius    = datos.temperatura_celsius,
-            intensidad_dolor_eva   = datos.intensidad_dolor_eva,
-            duracion_sintoma_horas = datos.duracion_sintoma_horas,
-            peso_kg                = datos.peso_kg,
-            talla_cm               = datos.talla_cm,
-            diabetes_mellitus      = datos.diabetes_mellitus,
-            hipertension           = datos.hipertension,
-            cardiopatia_isquemica  = datos.cardiopatia_isquemica,
-            epoc_asma              = datos.epoc_asma,
-            embarazo_posible       = datos.embarazo_posible,
-            semanas_gestacion      = datos.semanas_gestacion,
-            sintomas_texto         = datos.sintomas_texto,
+        # ── Paso 1: Inferir motivo_consulta si el frontend no lo envió ────────
+        motivo = datos.motivo_consulta
+        if not motivo:
+            if datos.disnea_presente:
+                motivo = "Dificultad respiratoria"
+            elif datos.embarazo_posible:
+                motivo = "Embarazo o síntoma relacionado con embarazo"
+            elif datos.fiebre_presente:
+                motivo = "Fiebre sin foco claro"
+            elif datos.perdida_conciencia:
+                motivo = "Mareo o desmayo"
+            elif datos.sangrado_activo:
+                motivo = "Problema gastrointestinal"
+            else:
+                motivo = "Fiebre sin foco claro"
+
+        # ── Paso 2: Construir antecedentes_riesgo desde campos booleanos ──────
+        antec: list[str] = []
+        if datos.diabetes_mellitus:      antec.append("Diabetes")
+        if datos.hipertension:           antec.append("Hipertensión")
+        if datos.cardiopatia_isquemica:  antec.append("Cardiopatía")
+        if datos.epoc_asma:              antec.append("Asma/EPOC")
+        antecedentes = ", ".join(antec) if antec else "Ninguno"
+
+        # ── Paso 3: Derivar el redflag de dolor torácico opresivo ────────────
+        # Se activa cuando el motivo es dolor torácico con antecedente cardíaco
+        # e intensidad alta (patrón clínico de IAM).
+        redflag_toracico = (
+            motivo == "Dolor torácico"
+            and datos.cardiopatia_isquemica
+            and (datos.intensidad_dolor_eva or 0) >= 7
         )
 
-        # ── Paso 2: Ejecutar el motor de inferencia ───────────────────────────
+        # ── Paso 4: Construir objeto Paciente con campos exactos del dataset ──
+        paciente = Paciente(
+            # Metadata
+            id_paciente     = datos.id_paciente,
+            id_consulta     = str(uuid.uuid4()),
+            unidad_atencion = datos.unidad_atencion,
+            # Features del modelo (17 columnas del dataset)
+            edad                    = datos.edad,
+            embarazo                = datos.embarazo_posible or False,
+            motivo_consulta         = motivo,
+            tiempo_evolucion_horas  = datos.duracion_sintoma_horas or 0,
+            intensidad_sintoma      = datos.intensidad_dolor_eva or 0,
+            fiebre_reportada        = datos.fiebre_presente,
+            tos                     = False,   # no capturado directamente por el formulario
+            dificultad_respiratoria = datos.disnea_presente,
+            dolor_toracico          = (motivo == "Dolor torácico"),
+            dolor_al_orinar         = False,   # no capturado directamente por el formulario
+            sangrado_activo         = datos.sangrado_activo,
+            confusion               = datos.perdida_conciencia,
+            disminucion_movimientos_fetales = (
+                (datos.embarazo_posible or False)
+                and (datos.semanas_gestacion or 0) > 0
+            ),
+            redflag_disnea_severa                          = datos.disnea_presente,
+            redflag_sangrado_abundante                     = datos.sangrado_activo,
+            redflag_deficit_neurologico_subito             = datos.perdida_conciencia,
+            redflag_dolor_toracico_opresivo_con_sudoracion = redflag_toracico,
+            # Columnas del dataset no usadas como features (trazabilidad)
+            antecedentes_riesgo = antecedentes,
+            sintomas_digestivos = "Ninguno",
+            # Metadata clínica adicional
+            sexo_biologico = datos.sexo_biologico,
+            peso_kg        = datos.peso_kg,
+            talla_cm       = datos.talla_cm,
+            sintomas_texto = datos.sintomas_texto,
+        )
+
+        # ── Paso 5: Ejecutar el motor de inferencia ───────────────────────────
         resultado = motor.procesar(paciente)
 
-        # ── Paso 3: Parsear el JSON del resultado y devolver ──────────────────
-        resultado_dict = json.loads(resultado.to_json())
-        resultado_ml = SimpleNamespace(
-            nivel=resultado_dict.get("nivel_ia"),
-            probabilidades=resultado_dict.get("probabilidades"),
-            escenarios=resultado_dict.get("escenarios_diferenciales"),
-            shap=resultado_dict.get("shap_explicacion"),
-        )
-        analisis_llm = resultado_dict.get("analisis_llm")
+        # ── Paso 6: Serializar y devolver respuesta completa al frontend ──────
+        r = json.loads(resultado.to_json())
         return {
-            "nivel_ia": resultado_ml.nivel,
-            "probabilidades": resultado_ml.probabilidades,
-            "escenarios": resultado_ml.escenarios,
-            "explicacion_shap": resultado_ml.shap,
-            "analisis_llm": analisis_llm,
+            "nivel_ia":                 r.get("nivel_ia"),
+            "fuente_nivel":             r.get("fuente_nivel"),
+            "conservadurismo_aplicado": r.get("conservadurismo_aplicado"),
+            "probabilidades":           r.get("probabilidades"),
+            "escenarios":               r.get("escenarios_diferenciales"),
+            "especialidad_sugerida":    r.get("especialidad_sugerida"),
+            "explicacion_shap":         r.get("shap_explicacion"),
+            "shap_variables_top3":      r.get("shap_variables_top3"),
+            "alerta_critica":           r.get("alerta_critica"),
+            "alertas_detalle":          r.get("alertas_detalle"),
+            "imc_calculado":            r.get("imc_calculado"),
+            "modelo_version":           r.get("modelo_version"),
+            "tiempo_procesamiento_ms":  r.get("tiempo_procesamiento_ms"),
+            "id_resultado":             r.get("id_resultado"),
+            "id_consulta":              r.get("id_consulta"),
+            "timestamp_utc":            r.get("timestamp_utc"),
+            "analisis_llm":             r.get("analisis_llm"),
         }
 
     except ValueError as e:
