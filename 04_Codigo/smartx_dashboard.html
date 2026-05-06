@@ -926,7 +926,12 @@
             });
             
             // Simular procesamiento del motor SmartX
-            const resultado = simulateTriageProcessing(patientData);
+            const response = await fetch("http://localhost:8000/api/v1/inferencia", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(patientData)
+});
+const resultado = await response.json();
             
             // Crear nuevo paciente
             const newPatient = {
