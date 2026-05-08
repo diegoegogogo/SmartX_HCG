@@ -1,0 +1,21 @@
+variable,tipo_de_dato,catalogo,importancia_en_dataset,uso_previsto,justificacion_de_permanencia
+patient_id,Texto autogenerado,,Identifica cada registro de forma única,"Trazabilidad, integridad y gestión de casos",Permite administrar la base de datos sin duplicidades
+edad,Numérico entero,0-120,Modifica el riesgo basal y la prioridad clínica,Apoyo a reglas de clasificación por grupo etario,Aporta valor transversal en múltiples padecimientos
+embarazo,Booleana,Sí; No,Activa la rama obstétrica del prototipo,Diferenciar casos obstétricos y materno-fetales,Cambia la interpretación de varios síntomas
+motivo_consulta,Categórica nominal,Tos o síntomas respiratorios; Dificultad respiratoria; Dolor torácico; Dolor abdominal; Problema gastrointestinal; Problema urinario; Dolor de cabeza; Mareo o desmayo; Embarazo o síntoma relacionado con embarazo; Fiebre sin foco claro,Organiza el flujo inicial del caso,Enrutamiento clínico inicial,Es la entrada principal para la lógica del sistema
+tiempo_evolucion_horas,Numérico entero,0-8760,Distingue cuadros agudos y persistentes,Contextualizar la evolución del caso,Mejora la interpretación temporal de los síntomas
+intensidad_sintoma,Numérico entero,0-10,Estima gravedad subjetiva del síntoma principal,Gradación de severidad,"Es simple, universal y útil para priorización"
+antecedentes_riesgo,Categórica multiselección,Diabetes; Hipertensión; Cardiopatía; Asma/EPOC; Uso de anticoagulantes; Ninguno,Resume comorbilidades relevantes,Ajuste de riesgo clínico,Conserva alto valor clínico con menos columnas
+fiebre_reportada,Booleana,Sí; No,Aporta evidencia de proceso infeccioso o inflamatorio,"Apoyo a ramas respiratoria, urinaria y gastrointestinal",Es un síntoma transversal frecuente
+tos,Booleana,Sí; No,Fortalece cobertura respiratoria,Identificar cuadros respiratorios comunes y complicados,Amplía la capacidad diagnóstica con bajo costo estructural
+dificultad_respiratoria,Booleana,Sí; No,Marca posible compromiso respiratorio,Escalamiento de prioridad clínica,Es una de las variables de mayor impacto en la clasificación
+dolor_toracico,Booleana,Sí; No,Cubre una rama clínica de alto riesgo,Detección de cuadros cardiacos y cardiopulmonares,Es esencial por su asociación con urgencias mayores
+sintomas_digestivos,Categórica multiselección,Náusea; Vómito; Diarrea; Ninguno,Resume síntomas gastrointestinales,Cobertura digestiva sin exceso de columnas,Mantiene valor clínico con estructura compacta
+dolor_al_orinar,Booleana,Sí; No,Permite abrir la rama urinaria,Sospecha de infección o irritación urinaria,Aporta cobertura diagnóstica relevante
+sangrado_activo,Booleana,Sí; No,Se relaciona con seguridad del paciente,Detección de hemorragia o pérdida sanguínea,Su presencia cambia significativamente la urgencia
+confusion,Booleana,Sí; No,Sugiere deterioro neurológico o sistémico,Detección de gravedad,Es un marcador clínico de alarma importante
+disminucion_movimientos_fetales,Booleana / No aplica,Sí; No; No aplica,Específica para pacientes embarazadas,Vigilancia obstétrica prioritaria,Justifica y fortalece la ruta materno-fetal
+redflag_disnea_severa,Booleana,Sí; No,Señal de alarma respiratoria mayor,Activación de clasificación roja,Red flag dura de altísimo valor clínico
+redflag_sangrado_abundante,Booleana,Sí; No,Señal de alarma hemorrágica mayor,Activación de clasificación roja,Permite reconocer urgencias sin diagnóstico definitivo
+redflag_deficit_neurologico_subito,Booleana,Sí; No,Señal de alarma neurológica mayor,Activación de clasificación roja,Hace visible la detección temprana de eventos neurológicos agudos
+redflag_dolor_toracico_opresivo_con_sudoracion,Booleana,Sí; No,Señal de alarma cardiaca mayor,Activación de clasificación roja,Fortalece la capacidad del prototipo para priorizar cuadros coronarios

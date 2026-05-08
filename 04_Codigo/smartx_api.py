@@ -1,7 +1,7 @@
 """
 ╔══════════════════════════════════════════════════════════════════════════════╗
 ║        SMART X — API REST (FastAPI)                                          ║
-║        Conexión Frontend ↔ Motor de Inferencia ↔ Base de Datos               ║
+║        Conexión Frontend ↔ Motor de Inferencia ↔ Supabase                   ║
 ║        Hospital Civil Viejo de Guadalajara | Piloto v1.0                     ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║  Ejecución:                                                                  ║
@@ -13,21 +13,16 @@
 ║                                                                              ║
 ║  NORMATIVAS: NOM-004-SSA3 · NOM-024-SSA3 · LFPDPPP                           ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
-
-CONTRATO DEL API — Nombres de campos en SintomasInput:
-  Los campos clínicos usan exactamente los mismos nombres que las columnas
-  del dataset (y las features del modelo XGBoost). Esto evita cualquier mapeo
-  y es la causa raíz de los errores 422 anteriores.
-
-  Campos requeridos : edad
-  Campos opcionales : todos los demás (tienen defaults seguros)
 """
 
-import uuid
+import logging
+import os
 import time
+import uuid
 from datetime import datetime, timezone
 from typing import Optional
 
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -37,12 +32,37 @@ from smartx_motor_inferencia import (
     CATALOGO_MOTIVOS,
     MotorInferenciaSmartX,
     Paciente,
-    NivelSemaforo,
 )
+
+load_dotenv()
+
+logger = logging.getLogger(__name__)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SECCIÓN 1 — CLIENTE SUPABASE
+# ══════════════════════════════════════════════════════════════════════════════
+
+_sb = None
+
+def _init_supabase():
+    global _sb
+    url = os.getenv("SUPABASE_URL", "")
+    key = os.getenv("SUPABASE_SECRET_KEY", "")
+    if not url or not key:
+        logger.warning("SUPABASE_URL / SUPABASE_SECRET_KEY no configuradas — sin persistencia")
+        return
+    try:
+        from supabase import create_client
+        _sb = create_client(url, key)
+        logger.info("Supabase conectado: %s", url)
+    except Exception as exc:
+        logger.warning("No se pudo conectar a Supabase: %s", exc)
+
+_init_supabase()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 1 — INICIALIZACIÓN DE LA APP
+# SECCIÓN 2 — INICIALIZACIÓN DE LA APP
 # ══════════════════════════════════════════════════════════════════════════════
 
 app = FastAPI(
@@ -57,66 +77,65 @@ app = FastAPI(
     redoc_url= "/redoc",
 )
 
+_CORS_ORIGINS = [
+    "http://localhost:8000",
+    "http://localhost:8501",   # Streamlit dev
+    "http://127.0.0.1:8000",
+    "http://127.0.0.1:8501",
+    # Agrega aquí el dominio de producción cuando se despliegue
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins     = ["*"],
-    allow_credentials = True,
+    allow_origins     = _CORS_ORIGINS,
+    allow_credentials = False,         # True solo si usas cookies/sesiones
     allow_methods     = ["GET", "POST"],
-    allow_headers     = ["*"],
+    allow_headers     = ["Content-Type", "Authorization", "apikey"],
 )
 
 motor = MotorInferenciaSmartX()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 2 — MODELO PYDANTIC DE ENTRADA
+# SECCIÓN 3 — MODELO PYDANTIC DE ENTRADA
 # ══════════════════════════════════════════════════════════════════════════════
 
 class SintomasInput(BaseModel):
     """
     Cuerpo del POST /api/v1/inferencia.
-
-    Los nombres de los campos clínicos son idénticos a las columnas del dataset
-    y a las features del modelo XGBoost. No hay mapeo intermedio.
-
-    Solo 'edad' es estrictamente requerido; todos los demás tienen defaults.
+    Solo 'edad' es requerido; todos los demás tienen defaults.
     """
 
-    # ── Metadata del paciente (trazabilidad, no son features del modelo) ───────
-    id_paciente:     str           = Field(default_factory=lambda: str(uuid.uuid4()),
-                                           description="UUID seudonimizado (LFPDPPP)")
-    unidad_atencion: str           = Field(default="HCG_URGENCIAS",
-                                           description="HCG_URGENCIAS | HCG_MED_INTERNA")
-    sexo_biologico:  str           = Field(default="M",   description="'M' | 'F'")
+    # ── Metadata ───────────────────────────────────────────────────────────────
+    id_paciente:     str           = Field(default_factory=lambda: str(uuid.uuid4()))
+    unidad_atencion: str           = Field(default="HCG_URGENCIAS")
+    sexo_biologico:  str           = Field(default="M")
     peso_kg:         Optional[float] = Field(default=None, ge=1.0,  le=300.0)
     talla_cm:        Optional[float] = Field(default=None, ge=30.0, le=250.0)
-    sintomas_texto:  Optional[str]   = Field(default=None, description="Descripción libre")
+    sintomas_texto:  Optional[str]   = Field(default=None, max_length=2000,
+                                             description="Descripción libre — mín 10 chars si se envía")
+    antecedentes_riesgo: str = Field(default="Ninguno", max_length=500)
+    sintomas_digestivos: str = Field(default="Ninguno", max_length=500)
 
-    # ── Columnas del dataset fuera del modelo (trazabilidad) ───────────────────
-    antecedentes_riesgo: str = Field(default="Ninguno",
-                                     description="Ej: 'Diabetes, Hipertensión'")
-    sintomas_digestivos: str = Field(default="Ninguno",
-                                     description="Ej: 'Náusea, Vómito'")
+    @field_validator("sintomas_texto")
+    @classmethod
+    def validar_sintomas_texto(cls, v: Optional[str]) -> Optional[str]:
+        if v is None:
+            return None
+        v = v.strip()
+        if len(v) == 0:
+            return None
+        if len(v) < 10:
+            raise ValueError("sintomas_texto debe tener al menos 10 caracteres o no enviarse")
+        return v
 
-    # ── Features del modelo — nombres exactos del dataset ──────────────────────
-    edad: int = Field(..., ge=0, le=120, description="Edad en años (requerido)")
+    # ── Features del modelo ────────────────────────────────────────────────────
+    edad: int = Field(..., ge=0, le=120)
 
-    embarazo: bool = Field(default=False,
-                           description="¿Paciente está o puede estar embarazada?")
-
-    motivo_consulta: str = Field(
-        default="Fiebre sin foco claro",
-        description=(
-            "Motivo principal. Valores válidos: "
-            + ", ".join(f'"{m}"' for m in CATALOGO_MOTIVOS)
-        ),
-    )
-
-    tiempo_evolucion_horas: int = Field(default=0, ge=0,
-                                        description="Horas desde inicio del síntoma")
-
-    intensidad_sintoma: int = Field(default=0, ge=0, le=10,
-                                    description="Escala EVA 0–10")
+    embarazo: bool = Field(default=False)
+    motivo_consulta: str = Field(default="Fiebre sin foco claro")
+    tiempo_evolucion_horas: int = Field(default=0, ge=0)
+    intensidad_sintoma: int = Field(default=0, ge=0, le=10)
 
     fiebre_reportada:        bool = Field(default=False)
     tos:                     bool = Field(default=False)
@@ -124,25 +143,19 @@ class SintomasInput(BaseModel):
     dolor_toracico:          bool = Field(default=False)
     dolor_al_orinar:         bool = Field(default=False)
     sangrado_activo:         bool = Field(default=False)
-    confusion:               bool = Field(default=False,
-                                          description="Alteración de consciencia")
+    confusion:               bool = Field(default=False)
     disminucion_movimientos_fetales: bool = Field(default=False)
 
-    # ── 4 Redflags — disparan ROJO inmediato sin pasar por ML ──────────────────
     redflag_disnea_severa:                          bool = Field(default=False)
     redflag_sangrado_abundante:                     bool = Field(default=False)
     redflag_deficit_neurologico_subito:             bool = Field(default=False)
     redflag_dolor_toracico_opresivo_con_sudoracion: bool = Field(default=False)
 
-    # ── Validaciones ───────────────────────────────────────────────────────────
     @field_validator("motivo_consulta")
     @classmethod
     def validar_motivo(cls, v: str) -> str:
         if v not in CATALOGO_MOTIVOS:
-            raise ValueError(
-                f"'{v}' no es un motivo válido. "
-                f"Opciones: {CATALOGO_MOTIVOS}"
-            )
+            raise ValueError(f"'{v}' no es válido. Opciones: {CATALOGO_MOTIVOS}")
         return v
 
     @field_validator("sexo_biologico")
@@ -155,64 +168,51 @@ class SintomasInput(BaseModel):
     class Config:
         json_schema_extra = {
             "example": {
-                "edad"                    : 45,
-                "sexo_biologico"          : "M",
-                "motivo_consulta"         : "Fiebre sin foco claro",
-                "tiempo_evolucion_horas"  : 12,
-                "intensidad_sintoma"      : 6,
-                "fiebre_reportada"        : True,
-                "tos"                     : False,
-                "dificultad_respiratoria" : False,
-                "dolor_toracico"          : False,
-                "dolor_al_orinar"         : False,
-                "sangrado_activo"         : False,
-                "confusion"               : False,
-                "disminucion_movimientos_fetales"                : False,
-                "redflag_disnea_severa"                         : False,
-                "redflag_sangrado_abundante"                    : False,
-                "redflag_deficit_neurologico_subito"            : False,
-                "redflag_dolor_toracico_opresivo_con_sudoracion": False,
-                "embarazo"                : False,
-                "antecedentes_riesgo"     : "Hipertensión",
-                "peso_kg"                 : 75.0,
-                "talla_cm"                : 170.0,
+                "edad": 45, "sexo_biologico": "M",
+                "motivo_consulta": "Fiebre sin foco claro",
+                "tiempo_evolucion_horas": 12, "intensidad_sintoma": 6,
+                "fiebre_reportada": True,
             }
         }
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 3 — MIDDLEWARE DE AUDITORÍA
+# SECCIÓN 4 — MIDDLEWARE DE AUDITORÍA
 # ══════════════════════════════════════════════════════════════════════════════
 
 @app.middleware("http")
 async def middleware_auditoria(request: Request, call_next):
-    """Registra cada request. En producción escribe en tabla AUDITORIA (NOM-024)."""
     inicio   = time.time()
     response = await call_next(request)
-    log_entry = {
-        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
-        "metodo"       : request.method,
-        "ruta"         : str(request.url.path),
-        "ip_origen"    : request.client.host if request.client else "unknown",
-        "status_code"  : response.status_code,
-        "duracion_ms"  : int((time.time() - inicio) * 1000),
-    }
-    # print(f"[AUDIT] {json.dumps(log_entry)}")  # descomentar para debug
+    duracion = int((time.time() - inicio) * 1000)
+
+    if _sb:
+        try:
+            _sb.table("auditoria_api").insert({
+                "metodo"      : request.method,
+                "ruta"        : str(request.url.path),
+                "ip_origen"   : request.client.host if request.client else "unknown",
+                "status_code" : response.status_code,
+                "duracion_ms" : duracion,
+            }).execute()
+        except Exception as _audit_err:
+            logger.warning("Auditoría Supabase falló (no interrumpe la respuesta): %s", _audit_err)
+
     return response
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 4 — ENDPOINTS
+# SECCIÓN 5 — ENDPOINTS
 # ══════════════════════════════════════════════════════════════════════════════
 
 @app.get("/", tags=["Sistema"])
 async def raiz():
-    """Health check básico."""
     return {
         "sistema"  : "Smart X API",
         "version"  : "1.0.0-piloto",
         "unidad"   : "Hospital Civil Viejo de Guadalajara",
         "estado"   : "operativo",
+        "supabase" : "conectado" if _sb else "no configurado",
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "docs"     : "/docs",
     }
@@ -220,10 +220,10 @@ async def raiz():
 
 @app.get("/health", tags=["Sistema"])
 async def health_check():
-    """Estado del motor de inferencia."""
     return {
         "status"        : "ok",
         "motor_version" : motor.MODELO_VERSION,
+        "supabase"      : "conectado" if _sb else "no configurado",
         "timestamp_utc" : datetime.now(timezone.utc).isoformat(),
     }
 
@@ -234,26 +234,13 @@ async def health_check():
     status_code    = status.HTTP_200_OK,
     tags           = ["Triage"],
     summary        = "Clasificar urgencia del paciente",
-    description    = (
-        "Recibe síntomas y antecedentes del paciente, ejecuta el pipeline "
-        "del Motor de Inferencia Smart X y devuelve el nivel de urgencia "
-        "(semáforo rojo/amarillo/verde). Conforme a NOM-004-SSA3 y NOM-024-SSA3."
-    ),
 )
 async def clasificar_paciente(datos: SintomasInput) -> dict:
-    """
-    Pipeline:
-      1. Construye Paciente desde SintomasInput (campos 1-a-1, sin mapeo)
-      2. Ejecuta motor.procesar(paciente)
-      3. Devuelve nivel_ia, fuente_nivel y probabilidades
-    """
     try:
         paciente = Paciente(
-            # Metadata
             id_paciente     = datos.id_paciente,
             id_consulta     = str(uuid.uuid4()),
             unidad_atencion = datos.unidad_atencion,
-            # 17 features del modelo
             edad                    = datos.edad,
             embarazo                = datos.embarazo,
             motivo_consulta         = datos.motivo_consulta,
@@ -271,7 +258,6 @@ async def clasificar_paciente(datos: SintomasInput) -> dict:
             redflag_sangrado_abundante                   = datos.redflag_sangrado_abundante,
             redflag_deficit_neurologico_subito           = datos.redflag_deficit_neurologico_subito,
             redflag_dolor_toracico_opresivo_con_sudoracion = datos.redflag_dolor_toracico_opresivo_con_sudoracion,
-            # Trazabilidad
             antecedentes_riesgo = datos.antecedentes_riesgo,
             sintomas_digestivos = datos.sintomas_digestivos,
             sexo_biologico      = datos.sexo_biologico,
@@ -282,10 +268,61 @@ async def clasificar_paciente(datos: SintomasInput) -> dict:
 
         resultado = motor.procesar(paciente)
 
+        # ── Persistir en Supabase ─────────────────────────────────────────────
+        if _sb:
+            try:
+                _sb.table("inferencias").insert({
+                    "id_paciente"  : datos.id_paciente,
+                    "id_consulta"  : paciente.id_consulta,
+                    "unidad_atencion": datos.unidad_atencion,
+                    "sexo_biologico" : datos.sexo_biologico,
+                    "peso_kg"        : datos.peso_kg,
+                    "talla_cm"       : datos.talla_cm,
+                    "edad"                                         : datos.edad,
+                    "embarazo"                                     : datos.embarazo,
+                    "motivo_consulta"                              : datos.motivo_consulta,
+                    "tiempo_evolucion_horas"                       : datos.tiempo_evolucion_horas,
+                    "intensidad_sintoma"                           : datos.intensidad_sintoma,
+                    "fiebre_reportada"                             : datos.fiebre_reportada,
+                    "tos"                                          : datos.tos,
+                    "dificultad_respiratoria"                      : datos.dificultad_respiratoria,
+                    "dolor_toracico"                               : datos.dolor_toracico,
+                    "dolor_al_orinar"                              : datos.dolor_al_orinar,
+                    "sangrado_activo"                              : datos.sangrado_activo,
+                    "confusion"                                    : datos.confusion,
+                    "disminucion_movimientos_fetales"              : datos.disminucion_movimientos_fetales,
+                    "redflag_disnea_severa"                        : datos.redflag_disnea_severa,
+                    "redflag_sangrado_abundante"                   : datos.redflag_sangrado_abundante,
+                    "redflag_deficit_neurologico_subito"           : datos.redflag_deficit_neurologico_subito,
+                    "redflag_dolor_toracico_opresivo_con_sudoracion": datos.redflag_dolor_toracico_opresivo_con_sudoracion,
+                    "antecedentes_riesgo"   : datos.antecedentes_riesgo,
+                    "sintomas_digestivos"   : datos.sintomas_digestivos,
+                    "sintomas_texto"        : datos.sintomas_texto,
+                    "nivel_ia"              : resultado.nivel_ia,
+                    "fuente_nivel"          : resultado.fuente_nivel,
+                    "probabilidad_rojo"     : resultado.probabilidades.get("rojo", 0),
+                    "probabilidad_amarillo" : resultado.probabilidades.get("amarillo", 0),
+                    "probabilidad_verde"    : resultado.probabilidades.get("verde", 0),
+                    "alerta_critica"        : resultado.alerta_critica,
+                    "imc_calculado"         : resultado.imc_calculado,
+                    "hash_resultado"        : resultado.hash_resultado,
+                    "tiempo_procesamiento_ms": resultado.tiempo_procesamiento_ms,
+                    "modelo_version"        : resultado.modelo_version,
+                }).execute()
+            except Exception as exc:
+                logger.warning("No se pudo persistir en Supabase: %s", exc)
+
         return {
             "nivel_ia"      : resultado.nivel_ia,
             "fuente_nivel"  : resultado.fuente_nivel,
             "probabilidades": resultado.probabilidades,
+            "escenarios"    : resultado.escenarios_diferenciales,
+            "explicacion_shap": resultado.shap_explicacion,
+            "alerta_critica": resultado.alerta_critica,
+            "alertas_detalle": resultado.alertas_detalle,
+            "imc_calculado" : resultado.imc_calculado,
+            "modelo_version": resultado.modelo_version,
+            "tiempo_procesamiento_ms": resultado.tiempo_procesamiento_ms,
         }
 
     except ValueError as e:
@@ -306,15 +343,57 @@ async def clasificar_paciente(datos: SintomasInput) -> dict:
     summary = "Historial de clasificaciones del paciente",
 )
 async def historial_paciente(id_paciente: str):
-    """En producción consulta mv_historial_longitudinal de PostgreSQL."""
-    return {
-        "id_paciente"        : id_paciente,
-        "nota"               : "En producción conecta a mv_historial_longitudinal (PostgreSQL).",
-        "total_visitas"      : 0,
-        "visitas"            : [],
-        "condiciones_cronicas": [],
-        "alerta_alergias"    : [],
-    }
+    if not _sb:
+        return {
+            "id_paciente": id_paciente,
+            "nota": "Supabase no configurado.",
+            "total_visitas": 0,
+            "visitas": [],
+        }
+
+    try:
+        resp = (
+            _sb.table("inferencias")
+            .select("id_consulta, nivel_ia, fuente_nivel, motivo_consulta, intensidad_sintoma, created_at")
+            .eq("id_paciente", id_paciente)
+            .order("created_at", desc=True)
+            .limit(50)
+            .execute()
+        )
+        visitas = resp.data or []
+        return {
+            "id_paciente"  : id_paciente,
+            "total_visitas": len(visitas),
+            "visitas"      : visitas,
+        }
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
+
+
+@app.get(
+    "/api/v1/inferencias/recientes",
+    tags    = ["Triage"],
+    summary = "Últimas N inferencias (para cargar el dashboard)",
+)
+async def inferencias_recientes(limite: int = 50):
+    if not _sb:
+        return {"inferencias": [], "nota": "Supabase no configurado."}
+
+    try:
+        resp = (
+            _sb.table("inferencias")
+            .select(
+                "id_consulta, id_paciente, edad, sexo_biologico, motivo_consulta, "
+                "nivel_ia, fuente_nivel, probabilidad_rojo, probabilidad_amarillo, "
+                "probabilidad_verde, alerta_critica, intensidad_sintoma, created_at"
+            )
+            .order("created_at", desc=True)
+            .limit(min(limite, 200))
+            .execute()
+        )
+        return {"inferencias": resp.data or []}
+    except Exception as exc:
+        raise HTTPException(status_code=500, detail=str(exc))
 
 
 @app.get(
@@ -340,7 +419,7 @@ async def catalogo_motivos():
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 5 — MANEJO GLOBAL DE ERRORES
+# SECCIÓN 6 — MANEJO GLOBAL DE ERRORES
 # ══════════════════════════════════════════════════════════════════════════════
 
 @app.exception_handler(HTTPException)
@@ -370,14 +449,14 @@ async def generic_exception_handler(request: Request, exc: Exception):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 6 — PUNTO DE ENTRADA (desarrollo local)
+# SECCIÓN 7 — PUNTO DE ENTRADA (desarrollo local)
 # ══════════════════════════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
     import uvicorn
 
     print("\n╔══════════════════════════════════════════════════════════════╗")
-    print("║   SMART X API — Motor de Triage HCG  |  Piloto v1.0            ║")
+    print("║   SMART X API — Motor de Triage HCG  |  Piloto v1.0           ║")
     print("╠════════════════════════════════════════════════════════════════╣")
     print("║   Swagger UI  : http://localhost:8000/docs                     ║")
     print("║   Health check: http://localhost:8000/health                   ║")

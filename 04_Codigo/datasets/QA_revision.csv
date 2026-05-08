@@ -1,0 +1,15 @@
+Chequeo,Resultado
+Total entrenamiento,1540
+Total validación,330
+Total prueba,330
+IDs duplicados entre splits,0
+IDs faltantes o desalineados en hojas de etiquetas,0
+Duplicados exactos dentro de cada split (sin patient_id),0
+Duplicados exactos entre splits (sin patient_id),0
+Casos Amarillo con red flags activas,0
+Ruido en entrenamiento,140
+Ruido en validación,30
+Ruido en prueba,30
+Distribución por enfermedad,Objetivo original + fila adicional de ruido
+Distribución por gravedad,Se conserva la proporción general con ruido supervisado
+Observación,Dataset sintético con 200 registros inconsistentes añadidos para robustez; usable para prototipo

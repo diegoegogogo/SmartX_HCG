@@ -1,0 +1,331 @@
+patient_id,enfermedad_simulada,gravedad_esperada_IA
+PX-VA-000163,Dolor torácico no cardiaco,Verde
+PX-VA-000291,Otitis media,Verde
+PX-VA-000084,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-VA-000005,Hiperémesis gravídica,Verde
+PX-VA-000100,Influenza / COVID leve-moderado,Verde
+PX-VA-000208,Síndrome coronario agudo,Rojo
+PX-VA-000280,Hiperémesis gravídica,Amarillo
+PX-VA-000269,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-VA-000081,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-VA-000115,Síndrome coronario agudo,Rojo
+PX-VA-000293,Pielonefritis,Rojo
+PX-VA-000157,Neumonía,Rojo
+PX-VA-000139,EVC / ACV,Rojo
+PX-VA-000074,Gastroenteritis,Amarillo
+PX-VA-000179,Gastroenteritis,Verde
+PX-VA-000053,Hiperémesis gravídica,Amarillo
+PX-VA-000148,Otitis media,Amarillo
+PX-VA-000109,Dengue,Amarillo
+PX-VA-000224,Bronquitis aguda,Verde
+PX-VA-000051,Disminución de movimientos fetales,Amarillo
+PX-VA-000120,Gastroenteritis,Verde
+PX-VA-000329,Registro inconsistente / ruido,Rojo
+PX-VA-000177,Migraña / cefalea tensional,Verde
+PX-VA-000288,Neumonía,Amarillo
+PX-VA-000210,Migraña / cefalea tensional,Verde
+PX-VA-000278,Gastroenteritis,Verde
+PX-VA-000252,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-VA-000107,Faringoamigdalitis,Verde
+PX-VA-000024,Faringoamigdalitis,Amarillo
+PX-VA-000246,Pielonefritis,Amarillo
+PX-VA-000330,Registro inconsistente / ruido,Rojo
+PX-VA-000230,Neumonía,Amarillo
+PX-VA-000295,Resfriado común,Verde
+PX-VA-000010,Abdomen agudo / peritonitis,Rojo
+PX-VA-000165,Dolor torácico no cardiaco,Verde
+PX-VA-000032,Influenza / COVID leve-moderado,Verde
+PX-VA-000096,Pielonefritis,Rojo
+PX-VA-000202,Otitis media,Verde
+PX-VA-000097,Dolor torácico no cardiaco,Amarillo
+PX-VA-000264,Dengue,Rojo
+PX-VA-000041,Influenza / COVID leve-moderado,Verde
+PX-VA-000307,Registro inconsistente / ruido,Verde
+PX-VA-000156,Gastritis / dispepsia,Verde
+PX-VA-000170,Sinusitis,Verde
+PX-VA-000175,Dengue,Rojo
+PX-VA-000185,Migraña / cefalea tensional,Amarillo
+PX-VA-000204,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000079,Cistitis / IVU baja,Verde
+PX-VA-000281,Infección viral febril inespecífica,Verde
+PX-VA-000095,Resfriado común,Verde
+PX-VA-000046,Apendicitis,Rojo
+PX-VA-000305,Registro inconsistente / ruido,Verde
+PX-VA-000110,Gastritis / dispepsia,Verde
+PX-VA-000249,Faringoamigdalitis,Verde
+PX-VA-000283,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000141,Apendicitis,Amarillo
+PX-VA-000287,Migraña / cefalea tensional,Verde
+PX-VA-000279,Gastroenteritis,Verde
+PX-VA-000258,Cistitis / IVU baja,Amarillo
+PX-VA-000173,Exacerbación asmática,Rojo
+PX-VA-000248,Otitis media,Verde
+PX-VA-000056,Gastroenteritis,Amarillo
+PX-VA-000267,Dolor torácico no cardiaco,Verde
+PX-VA-000168,Resfriado común,Verde
+PX-VA-000142,Confusión metabólica / deshidratación severa,Amarillo
+PX-VA-000245,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000299,Síndrome coronario agudo,Rojo
+PX-VA-000189,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-VA-000050,Resfriado común,Verde
+PX-VA-000271,Exacerbación asmática,Rojo
+PX-VA-000231,Infección viral febril inespecífica,Verde
+PX-VA-000088,Confusión metabólica / deshidratación severa,Verde
+PX-VA-000131,Gastroenteritis,Verde
+PX-VA-000105,Disminución de movimientos fetales,Amarillo
+PX-VA-000044,Pielonefritis,Amarillo
+PX-VA-000072,Apendicitis,Amarillo
+PX-VA-000322,Registro inconsistente / ruido,Amarillo
+PX-VA-000240,Confusión metabólica / deshidratación severa,Amarillo
+PX-VA-000274,Faringoamigdalitis,Verde
+PX-VA-000206,Apendicitis,Amarillo
+PX-VA-000137,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-VA-000155,Influenza / COVID leve-moderado,Verde
+PX-VA-000031,Gastroenteritis,Verde
+PX-VA-000054,Cólico biliar / colecistitis,Verde
+PX-VA-000122,Confusión metabólica / deshidratación severa,Rojo
+PX-VA-000152,Abdomen agudo / peritonitis,Rojo
+PX-VA-000234,Sinusitis,Verde
+PX-VA-000012,Apendicitis,Amarillo
+PX-VA-000020,Otitis media,Verde
+PX-VA-000316,Registro inconsistente / ruido,Amarillo
+PX-VA-000034,Síndrome coronario agudo,Rojo
+PX-VA-000082,Cólico renal,Amarillo
+PX-VA-000029,Amenaza de aborto / aborto espontáneo,Rojo
+PX-VA-000094,Hiperémesis gravídica,Amarillo
+PX-VA-000228,Exacerbación asmática,Amarillo
+PX-VA-000089,Exacerbación asmática,Amarillo
+PX-VA-000027,Cólico renal,Amarillo
+PX-VA-000220,Sinusitis,Amarillo
+PX-VA-000048,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-VA-000011,Neumonía,Amarillo
+PX-VA-000080,Neumonía,Rojo
+PX-VA-000002,Apendicitis,Rojo
+PX-VA-000247,Neumonía,Amarillo
+PX-VA-000198,Neumonía,Rojo
+PX-VA-000061,Hiperémesis gravídica,Rojo
+PX-VA-000319,Registro inconsistente / ruido,Amarillo
+PX-VA-000253,Amenaza de aborto / aborto espontáneo,Rojo
+PX-VA-000111,EVC / ACV,Rojo
+PX-VA-000099,Hiperémesis gravídica,Amarillo
+PX-VA-000216,Cólico biliar / colecistitis,Rojo
+PX-VA-000286,Migraña / cefalea tensional,Amarillo
+PX-VA-000129,Sinusitis,Verde
+PX-VA-000294,Resfriado común,Amarillo
+PX-VA-000132,Bronquitis aguda,Amarillo
+PX-VA-000037,Resfriado común,Verde
+PX-VA-000062,Gastroenteritis,Amarillo
+PX-VA-000282,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000236,Migraña / cefalea tensional,Verde
+PX-VA-000229,Confusión metabólica / deshidratación severa,Amarillo
+PX-VA-000194,Resfriado común,Amarillo
+PX-VA-000083,Apendicitis,Rojo
+PX-VA-000116,Gastroenteritis,Amarillo
+PX-VA-000238,Otitis media,Verde
+PX-VA-000176,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000134,Dolor torácico no cardiaco,Verde
+PX-VA-000114,Faringoamigdalitis,Amarillo
+PX-VA-000212,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-VA-000178,Faringoamigdalitis,Amarillo
+PX-VA-000219,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-VA-000193,Infección viral febril inespecífica,Amarillo
+PX-VA-000130,Cistitis / IVU baja,Amarillo
+PX-VA-000309,Registro inconsistente / ruido,Verde
+PX-VA-000195,Cólico biliar / colecistitis,Amarillo
+PX-VA-000203,Dengue,Amarillo
+PX-VA-000015,Resfriado común,Verde
+PX-VA-000232,Resfriado común,Verde
+PX-VA-000250,Exacerbación asmática,Amarillo
+PX-VA-000025,Cistitis / IVU baja,Verde
+PX-VA-000241,Exacerbación asmática,Amarillo
+PX-VA-000315,Registro inconsistente / ruido,Amarillo
+PX-VA-000146,Gastroenteritis,Verde
+PX-VA-000276,Gastroenteritis,Amarillo
+PX-VA-000068,Gastritis / dispepsia,Verde
+PX-VA-000284,Influenza / COVID leve-moderado,Verde
+PX-VA-000211,Bronquitis aguda,Verde
+PX-VA-000235,Amenaza de aborto / aborto espontáneo,Rojo
+PX-VA-000277,Gastroenteritis,Amarillo
+PX-VA-000049,Cistitis / IVU baja,Verde
+PX-VA-000086,Cistitis / IVU baja,Amarillo
+PX-VA-000188,Infección viral febril inespecífica,Verde
+PX-VA-000093,Faringoamigdalitis,Verde
+PX-VA-000312,Registro inconsistente / ruido,Amarillo
+PX-VA-000297,Resfriado común,Verde
+PX-VA-000030,Faringoamigdalitis,Amarillo
+PX-VA-000308,Registro inconsistente / ruido,Verde
+PX-VA-000026,Resfriado común,Verde
+PX-VA-000058,Dolor torácico no cardiaco,Verde
+PX-VA-000326,Registro inconsistente / ruido,Rojo
+PX-VA-000197,Síndrome coronario agudo,Rojo
+PX-VA-000123,Hiperémesis gravídica,Amarillo
+PX-VA-000039,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000200,Faringoamigdalitis,Verde
+PX-VA-000243,Bronquitis aguda,Amarillo
+PX-VA-000147,Dengue,Rojo
+PX-VA-000183,Exacerbación asmática,Amarillo
+PX-VA-000227,Dengue,Rojo
+PX-VA-000101,Apendicitis,Amarillo
+PX-VA-000128,Cólico biliar / colecistitis,Amarillo
+PX-VA-000007,Resfriado común,Verde
+PX-VA-000321,Registro inconsistente / ruido,Amarillo
+PX-VA-000117,Neumonía,Amarillo
+PX-VA-000306,Registro inconsistente / ruido,Verde
+PX-VA-000065,Cólico renal,Rojo
+PX-VA-000014,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-VA-000149,Gastroenteritis,Verde
+PX-VA-000242,Infección viral febril inespecífica,Verde
+PX-VA-000085,Resfriado común,Amarillo
+PX-VA-000135,Abdomen agudo / peritonitis,Rojo
+PX-VA-000119,Síndrome coronario agudo,Rojo
+PX-VA-000042,Cistitis / IVU baja,Amarillo
+PX-VA-000266,Dolor torácico no cardiaco,Verde
+PX-VA-000162,Sinusitis,Amarillo
+PX-VA-000302,Registro inconsistente / ruido,Verde
+PX-VA-000036,Cólico renal,Amarillo
+PX-VA-000298,Sinusitis,Verde
+PX-VA-000296,Resfriado común,Verde
+PX-VA-000314,Registro inconsistente / ruido,Amarillo
+PX-VA-000223,Abdomen agudo / peritonitis,Amarillo
+PX-VA-000259,Cistitis / IVU baja,Verde
+PX-VA-000237,Gastroenteritis,Amarillo
+PX-VA-000290,Otitis media,Amarillo
+PX-VA-000009,Resfriado común,Verde
+PX-VA-000001,Resfriado común,Verde
+PX-VA-000126,Confusión metabólica / deshidratación severa,Amarillo
+PX-VA-000144,Gastritis / dispepsia,Amarillo
+PX-VA-000300,Síndrome coronario agudo,Rojo
+PX-VA-000166,Bronquitis aguda,Amarillo
+PX-VA-000040,Cistitis / IVU baja,Verde
+PX-VA-000090,Cólico biliar / colecistitis,Amarillo
+PX-VA-000067,Resfriado común,Verde
+PX-VA-000087,Neumonía,Amarillo
+PX-VA-000106,EVC / ACV,Rojo
+PX-VA-000273,Faringoamigdalitis,Verde
+PX-VA-000251,Abdomen agudo / peritonitis,Rojo
+PX-VA-000323,Registro inconsistente / ruido,Rojo
+PX-VA-000018,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-VA-000092,Abdomen agudo / peritonitis,Rojo
+PX-VA-000304,Registro inconsistente / ruido,Verde
+PX-VA-000167,Abdomen agudo / peritonitis,Rojo
+PX-VA-000151,Faringoamigdalitis,Verde
+PX-VA-000184,Gastroenteritis,Verde
+PX-VA-000076,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000070,Faringoamigdalitis,Verde
+PX-VA-000217,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000038,Síndrome coronario agudo,Amarillo
+PX-VA-000069,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-VA-000158,Amenaza de aborto / aborto espontáneo,Rojo
+PX-VA-000075,Cistitis / IVU baja,Amarillo
+PX-VA-000103,Pielonefritis,Amarillo
+PX-VA-000013,Influenza / COVID leve-moderado,Verde
+PX-VA-000292,Pielonefritis,Amarillo
+PX-VA-000073,Confusión metabólica / deshidratación severa,Rojo
+PX-VA-000255,Apendicitis,Rojo
+PX-VA-000104,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-VA-000201,Pielonefritis,Amarillo
+PX-VA-000064,Migraña / cefalea tensional,Amarillo
+PX-VA-000066,Gastritis / dispepsia,Verde
+PX-VA-000063,Otitis media,Verde
+PX-VA-000262,Cólico biliar / colecistitis,Amarillo
+PX-VA-000327,Registro inconsistente / ruido,Rojo
+PX-VA-000057,EVC / ACV,Amarillo
+PX-VA-000022,Gastroenteritis,Amarillo
+PX-VA-000091,Otitis media,Amarillo
+PX-VA-000260,Cistitis / IVU baja,Verde
+PX-VA-000275,Gastritis / dispepsia,Verde
+PX-VA-000324,Registro inconsistente / ruido,Rojo
+PX-VA-000207,Neumonía,Rojo
+PX-VA-000272,Faringoamigdalitis,Amarillo
+PX-VA-000017,Neumonía,Rojo
+PX-VA-000289,Neumonía,Rojo
+PX-VA-000127,Síndrome coronario agudo,Rojo
+PX-VA-000325,Registro inconsistente / ruido,Rojo
+PX-VA-000071,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-VA-000161,Disminución de movimientos fetales,Amarillo
+PX-VA-000045,EVC / ACV,Rojo
+PX-VA-000016,Gastroenteritis,Rojo
+PX-VA-000169,Infección viral febril inespecífica,Verde
+PX-VA-000313,Registro inconsistente / ruido,Amarillo
+PX-VA-000019,Abdomen agudo / peritonitis,Rojo
+PX-VA-000301,Registro inconsistente / ruido,Verde
+PX-VA-000140,Infección viral febril inespecífica,Verde
+PX-VA-000239,Disminución de movimientos fetales,Rojo
+PX-VA-000257,Bronquitis aguda,Verde
+PX-VA-000052,Resfriado común,Verde
+PX-VA-000209,Resfriado común,Verde
+PX-VA-000159,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000138,Dengue,Verde
+PX-VA-000102,Bronquitis aguda,Verde
+PX-VA-000215,Cistitis / IVU baja,Verde
+PX-VA-000233,Pielonefritis,Rojo
+PX-VA-000218,Migraña / cefalea tensional,Verde
+PX-VA-000318,Registro inconsistente / ruido,Amarillo
+PX-VA-000244,Dolor torácico no cardiaco,Verde
+PX-VA-000133,Gastroenteritis,Verde
+PX-VA-000059,Migraña / cefalea tensional,Verde
+PX-VA-000136,Exacerbación asmática,Rojo
+PX-VA-000311,Registro inconsistente / ruido,Amarillo
+PX-VA-000145,Pielonefritis,Amarillo
+PX-VA-000254,Apendicitis,Amarillo
+PX-VA-000112,Síndrome coronario agudo,Rojo
+PX-VA-000121,Resfriado común,Verde
+PX-VA-000153,Resfriado común,Amarillo
+PX-VA-000154,Apendicitis,Rojo
+PX-VA-000008,Síndrome coronario agudo,Rojo
+PX-VA-000047,Resfriado común,Verde
+PX-VA-000180,Otitis media,Verde
+PX-VA-000310,Registro inconsistente / ruido,Verde
+PX-VA-000221,Cistitis / IVU baja,Rojo
+PX-VA-000263,Cólico renal,Amarillo
+PX-VA-000035,Gastroenteritis,Amarillo
+PX-VA-000124,Gastroenteritis,Amarillo
+PX-VA-000222,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-VA-000118,Cistitis / IVU baja,Verde
+PX-VA-000205,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-VA-000055,Influenza / COVID leve-moderado,Amarillo
+PX-VA-000006,Dolor torácico no cardiaco,Amarillo
+PX-VA-000150,Cólico renal,Amarillo
+PX-VA-000265,Disminución de movimientos fetales,Amarillo
+PX-VA-000174,Cólico renal,Verde
+PX-VA-000021,Migraña / cefalea tensional,Amarillo
+PX-VA-000004,Influenza / COVID leve-moderado,Verde
+PX-VA-000033,Cistitis / IVU baja,Amarillo
+PX-VA-000256,Bronquitis aguda,Amarillo
+PX-VA-000226,Sinusitis,Verde
+PX-VA-000225,Dolor torácico no cardiaco,Verde
+PX-VA-000196,Pielonefritis,Rojo
+PX-VA-000199,Hiperémesis gravídica,Amarillo
+PX-VA-000268,EVC / ACV,Rojo
+PX-VA-000303,Registro inconsistente / ruido,Verde
+PX-VA-000028,Resfriado común,Amarillo
+PX-VA-000113,Cólico biliar / colecistitis,Amarillo
+PX-VA-000098,Bronquitis aguda,Amarillo
+PX-VA-000023,Pielonefritis,Rojo
+PX-VA-000160,Abdomen agudo / peritonitis,Rojo
+PX-VA-000003,Dolor torácico no cardiaco,Verde
+PX-VA-000213,Dengue,Rojo
+PX-VA-000192,Otitis media,Amarillo
+PX-VA-000181,Cistitis / IVU baja,Verde
+PX-VA-000143,Faringoamigdalitis,Verde
+PX-VA-000043,Exacerbación asmática,Verde
+PX-VA-000171,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-VA-000328,Registro inconsistente / ruido,Rojo
+PX-VA-000317,Registro inconsistente / ruido,Amarillo
+PX-VA-000108,Gastritis / dispepsia,Verde
+PX-VA-000164,Neumonía,Amarillo
+PX-VA-000191,Síndrome coronario agudo,Amarillo
+PX-VA-000214,Faringoamigdalitis,Verde
+PX-VA-000270,Exacerbación asmática,Amarillo
+PX-VA-000172,EVC / ACV,Rojo
+PX-VA-000320,Registro inconsistente / ruido,Amarillo
+PX-VA-000186,Bronquitis aguda,Amarillo
+PX-VA-000182,Dolor torácico no cardiaco,Verde
+PX-VA-000261,Confusión metabólica / deshidratación severa,Amarillo
+PX-VA-000077,Cistitis / IVU baja,Verde
+PX-VA-000285,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-VA-000078,Gastroenteritis,Verde
+PX-VA-000060,Faringoamigdalitis,Amarillo
+PX-VA-000187,Disminución de movimientos fetales,Rojo
+PX-VA-000125,Exacerbación asmática,Rojo
+PX-VA-000190,EVC / ACV,Rojo

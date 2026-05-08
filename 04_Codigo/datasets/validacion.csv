@@ -1,0 +1,331 @@
+patient_id,edad,embarazo,motivo_consulta,tiempo_evolucion_horas,intensidad_sintoma,antecedentes_riesgo,fiebre_reportada,tos,dificultad_respiratoria,dolor_toracico,sintomas_digestivos,dolor_al_orinar,sangrado_activo,confusion,disminucion_movimientos_fetales,redflag_disnea_severa,redflag_sangrado_abundante,redflag_deficit_neurologico_subito,redflag_dolor_toracico_opresivo_con_sudoracion
+PX-VA-000163,64,No,Dolor torácico,25,3,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000291,40,No,Fiebre sin foco claro,64,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000084,20,Sí,Embarazo o síntoma relacionado con embarazo,14,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-VA-000005,15,Sí,Embarazo o síntoma relacionado con embarazo,15,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-VA-000100,64,No,Fiebre sin foco claro,30,2,Ninguno,Sí,Sí,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-VA-000208,52,No,Dolor torácico,4,9,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-VA-000280,18,Sí,Embarazo o síntoma relacionado con embarazo,150,8,Ninguno,No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-VA-000269,21,Sí,Embarazo o síntoma relacionado con embarazo,18,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-VA-000081,19,Sí,Embarazo o síntoma relacionado con embarazo,18,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-VA-000115,37,No,Dolor torácico,3,10,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-VA-000293,18,No,Problema urinario,67,8,Ninguno,Sí,No,No,No,Vómito,Sí,No,Sí,No aplica,No,No,No,No
+PX-VA-000157,46,No,Dificultad respiratoria,33,10,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-VA-000139,90,No,Dolor de cabeza,5,8,Uso de anticoagulantes,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-VA-000074,51,No,Dolor abdominal,27,6,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000179,36,No,Problema gastrointestinal,33,4,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-VA-000053,15,Sí,Embarazo o síntoma relacionado con embarazo,73,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-VA-000148,2,No,Dolor de cabeza,50,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000109,36,No,Fiebre sin foco claro,79,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000224,68,No,Tos o síntomas respiratorios,85,2,Hipertensión,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000051,38,Sí,Embarazo o síntoma relacionado con embarazo,23,7,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-VA-000120,4,No,Problema gastrointestinal,15,2,Ninguno,Sí,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000329,35,No,Dolor abdominal,44,9,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,Sí,No,Náusea,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000177,61,No,Dolor de cabeza,47,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000288,28,No,Dificultad respiratoria,68,7,Asma/EPOC,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000210,19,No,Dolor de cabeza,16,3,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000278,17,No,Dolor abdominal,45,3,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000252,43,Sí,Embarazo o síntoma relacionado con embarazo,12,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-VA-000107,23,No,Fiebre sin foco claro,23,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000024,7,No,Tos o síntomas respiratorios,79,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000246,70,No,Problema urinario,69,6,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000330,49,No,Dolor abdominal,24,9,"Diabetes, Hipertensión, Asma/EPOC",No,No,Sí,No,Náusea,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000230,55,No,Dificultad respiratoria,51,5,Asma/EPOC,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000295,15,No,Tos o síntomas respiratorios,46,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000010,70,No,Dolor abdominal,37,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000165,65,No,Dolor torácico,50,3,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000032,56,No,Fiebre sin foco claro,27,5,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000096,83,No,Fiebre sin foco claro,53,9,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000202,11,No,Dolor de cabeza,62,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000097,42,No,Dolor torácico,23,5,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000264,35,No,Fiebre sin foco claro,82,10,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000041,52,No,Tos o síntomas respiratorios,21,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000307,11,No,Fiebre sin foco claro,68,5,"Diabetes, Uso de anticoagulantes",No,Sí,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000156,35,No,Problema gastrointestinal,64,2,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000170,47,No,Dolor de cabeza,207,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000175,41,No,Dolor de cabeza,31,10,Uso de anticoagulantes,Sí,No,No,No,Ninguno,No,Sí,Sí,No aplica,No,Sí,No,No
+PX-VA-000185,40,No,Dolor de cabeza,52,7,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000204,62,No,Tos o síntomas respiratorios,18,6,Ninguno,Sí,Sí,Sí,Sí,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000079,33,No,Problema urinario,68,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000281,16,No,Fiebre sin foco claro,57,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000095,40,No,Tos o síntomas respiratorios,56,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000046,14,No,Dolor abdominal,72,9,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000305,48,No,Mareo o desmayo,49,3,"Diabetes, Cardiopatía",No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000110,30,No,Problema gastrointestinal,46,3,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000249,42,No,Tos o síntomas respiratorios,69,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000283,73,No,Tos o síntomas respiratorios,82,7,Ninguno,Sí,Sí,No,Sí,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000141,65,No,Dolor abdominal,19,7,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000287,48,No,Mareo o desmayo,19,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000279,79,No,Dolor abdominal,19,6,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000258,5,No,Problema urinario,93,5,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000173,34,No,Dificultad respiratoria,11,8,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-VA-000248,3,No,Fiebre sin foco claro,65,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000056,65,No,Problema gastrointestinal,52,6,Diabetes,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000267,39,No,Dolor torácico,67,3,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000168,12,No,Tos o síntomas respiratorios,24,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000142,91,No,Mareo o desmayo,63,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000245,47,No,Fiebre sin foco claro,55,5,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000299,49,No,Dolor torácico,1,9,Cardiopatía,No,No,Sí,Sí,Náusea,No,No,Sí,No aplica,No,No,No,Sí
+PX-VA-000189,17,Sí,Embarazo o síntoma relacionado con embarazo,3,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-VA-000050,9,No,Tos o síntomas respiratorios,74,5,Ninguno,No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000271,37,No,Dificultad respiratoria,7,8,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000231,42,No,Fiebre sin foco claro,21,2,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000088,53,No,Mareo o desmayo,15,4,Diabetes,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000131,8,No,Dolor abdominal,12,4,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000105,23,Sí,Embarazo o síntoma relacionado con embarazo,10,5,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-VA-000044,85,No,Problema urinario,27,7,Hipertensión,Sí,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000072,29,No,Dolor abdominal,25,7,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000322,60,No,Dolor torácico,2,7,Diabetes,No,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000240,19,No,Problema gastrointestinal,30,6,Diabetes,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000274,18,No,Tos o síntomas respiratorios,34,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000206,23,No,Dolor abdominal,28,6,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000137,41,Sí,Embarazo o síntoma relacionado con embarazo,13,10,Ninguno,No,No,No,No,Ninguno,No,Sí,Sí,No,No,Sí,No,No
+PX-VA-000155,3,No,Tos o síntomas respiratorios,35,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000031,36,No,Problema gastrointestinal,9,4,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000054,62,No,Dolor abdominal,6,2,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000122,80,No,Mareo o desmayo,95,8,"Diabetes, Hipertensión",Sí,No,No,No,Diarrea,No,No,Sí,No aplica,No,No,No,No
+PX-VA-000152,27,No,Dolor abdominal,13,9,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000234,51,No,Tos o síntomas respiratorios,198,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000012,53,No,Dolor abdominal,24,7,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000020,2,No,Fiebre sin foco claro,29,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000316,36,No,Embarazo o síntoma relacionado con embarazo,38,6,Ninguno,No,No,No,Sí,Vómito,No,No,No,Sí,No,No,No,No
+PX-VA-000034,56,No,Dolor torácico,6,10,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-VA-000082,50,No,Problema urinario,2,5,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000029,30,Sí,Embarazo o síntoma relacionado con embarazo,3,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-VA-000094,34,Sí,Embarazo o síntoma relacionado con embarazo,78,7,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No,No,No,No,No
+PX-VA-000228,23,No,Dificultad respiratoria,5,6,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000089,29,No,Dificultad respiratoria,14,6,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000027,62,No,Dolor abdominal,20,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000220,57,No,Dolor de cabeza,189,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000048,47,No,Dificultad respiratoria,17,9,Hipertensión,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000011,48,No,Dificultad respiratoria,96,6,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000080,87,No,Dificultad respiratoria,9,9,Ninguno,Sí,Sí,Sí,No,Vómito,No,No,Sí,No aplica,Sí,No,No,No
+PX-VA-000002,50,No,Dolor abdominal,66,10,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000247,65,No,Tos o síntomas respiratorios,81,6,"Diabetes, Hipertensión, Asma/EPOC",Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000198,7,No,Dificultad respiratoria,51,8,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000061,18,Sí,Embarazo o síntoma relacionado con embarazo,72,8,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,Sí,No,No,No,No,No
+PX-VA-000319,18,No,Dolor de cabeza,61,6,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000253,20,Sí,Embarazo o síntoma relacionado con embarazo,11,7,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-VA-000111,69,No,Mareo o desmayo,7,9,"Diabetes, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-VA-000099,37,Sí,Embarazo o síntoma relacionado con embarazo,46,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-VA-000216,80,No,Dolor abdominal,47,9,Hipertensión,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000286,27,No,Dolor de cabeza,32,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000129,14,No,Dolor de cabeza,74,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000294,4,No,Tos o síntomas respiratorios,76,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000132,47,No,Dolor torácico,144,6,Ninguno,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000037,55,No,Fiebre sin foco claro,45,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000062,69,No,Problema gastrointestinal,49,5,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000282,46,No,Tos o síntomas respiratorios,40,4,Hipertensión,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000236,16,No,Dolor de cabeza,46,2,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000229,86,No,Problema gastrointestinal,59,5,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,Sí,No aplica,No,No,No,No
+PX-VA-000194,12,No,Fiebre sin foco claro,74,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000083,24,No,Dolor abdominal,52,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000116,26,No,Dolor abdominal,47,7,Ninguno,Sí,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000238,5,No,Tos o síntomas respiratorios,57,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000176,39,No,Tos o síntomas respiratorios,18,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000134,38,No,Dolor torácico,69,3,"Diabetes, Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000114,17,No,Tos o síntomas respiratorios,105,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000212,16,Sí,Embarazo o síntoma relacionado con embarazo,17,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-VA-000178,20,No,Tos o síntomas respiratorios,76,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000219,91,No,Dificultad respiratoria,39,9,"Hipertensión, Uso de anticoagulantes",No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000193,64,No,Fiebre sin foco claro,57,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000130,83,No,Problema urinario,35,6,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000309,16,No,Problema urinario,47,2,Uso de anticoagulantes,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-VA-000195,21,No,Dolor abdominal,21,5,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000203,81,No,Dolor de cabeza,52,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000015,11,No,Fiebre sin foco claro,51,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000232,4,No,Tos o síntomas respiratorios,19,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000250,31,No,Tos o síntomas respiratorios,22,7,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000025,82,No,Problema urinario,41,4,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000241,78,No,Tos o síntomas respiratorios,12,7,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000315,72,No,Dolor torácico,13,5,"Diabetes, Asma/EPOC",Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000146,16,No,Dolor abdominal,39,4,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-VA-000276,31,No,Dolor abdominal,36,7,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000068,35,No,Problema gastrointestinal,104,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000284,73,No,Fiebre sin foco claro,30,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000211,5,No,Tos o síntomas respiratorios,29,3,Asma/EPOC,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000235,19,Sí,Embarazo o síntoma relacionado con embarazo,13,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-VA-000277,12,No,Problema gastrointestinal,20,4,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-VA-000049,39,No,Problema urinario,37,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000086,50,No,Problema urinario,30,6,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000188,40,No,Fiebre sin foco claro,32,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000093,16,No,Tos o síntomas respiratorios,70,3,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000312,48,No,Fiebre sin foco claro,71,7,"Diabetes, Hipertensión, Cardiopatía",No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000297,13,No,Tos o síntomas respiratorios,79,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000030,21,No,Fiebre sin foco claro,28,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000308,44,No,Tos o síntomas respiratorios,67,5,"Diabetes, Hipertensión, Asma/EPOC",No,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000026,31,No,Tos o síntomas respiratorios,51,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000058,27,No,Dolor torácico,16,3,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000326,19,No,Embarazo o síntoma relacionado con embarazo,18,8,Uso de anticoagulantes,No,No,No,No,Vómito,No,Sí,No,Sí,No,Sí,No,No
+PX-VA-000197,43,No,Dolor torácico,2,10,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-VA-000123,26,Sí,Embarazo o síntoma relacionado con embarazo,98,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-VA-000039,68,No,Tos o síntomas respiratorios,93,7,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000200,24,No,Fiebre sin foco claro,20,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000243,34,No,Dolor torácico,67,6,Ninguno,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000147,6,No,Fiebre sin foco claro,115,9,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000183,31,No,Dificultad respiratoria,19,7,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000227,59,No,Dolor de cabeza,98,9,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000101,53,No,Dolor abdominal,14,6,Ninguno,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000128,41,No,Dolor abdominal,36,6,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000007,75,No,Fiebre sin foco claro,24,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000321,42,No,Mareo o desmayo,88,4,"Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000117,5,No,Tos o síntomas respiratorios,63,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000306,65,No,Dolor torácico,13,3,"Diabetes, Hipertensión",Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000065,73,No,Problema urinario,10,10,Hipertensión,No,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000014,61,No,Dolor torácico,26,5,"Diabetes, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000149,16,No,Problema gastrointestinal,43,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000242,16,No,Fiebre sin foco claro,35,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000085,46,No,Tos o síntomas respiratorios,70,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000135,84,No,Dolor abdominal,35,10,Diabetes,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000119,81,No,Dolor torácico,3,9,Cardiopatía,No,No,Sí,Sí,Ninguno,No,No,Sí,No aplica,No,No,No,Sí
+PX-VA-000042,87,No,Problema urinario,112,6,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000266,36,No,Dolor torácico,31,6,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000162,25,No,Tos o síntomas respiratorios,105,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000302,79,No,Dolor torácico,25,2,Hipertensión,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000036,55,No,Dolor abdominal,11,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000298,40,No,Dolor de cabeza,170,6,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000296,2,No,Tos o síntomas respiratorios,64,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000314,44,No,Dolor torácico,14,4,Diabetes,No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000223,79,No,Dolor abdominal,13,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000259,67,No,Problema urinario,133,2,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000237,51,No,Problema gastrointestinal,39,7,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000290,17,No,Dolor de cabeza,120,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000009,11,No,Fiebre sin foco claro,79,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000001,11,No,Tos o síntomas respiratorios,22,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000126,62,No,Mareo o desmayo,15,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000144,68,No,Dolor abdominal,81,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000300,65,No,Dolor torácico,4,9,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-VA-000166,10,No,Tos o síntomas respiratorios,134,7,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000040,16,No,Problema urinario,15,4,Ninguno,No,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000090,43,No,Dolor abdominal,19,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000067,4,No,Tos o síntomas respiratorios,24,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000087,51,No,Dificultad respiratoria,87,5,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000106,83,No,Dolor de cabeza,7,10,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-VA-000273,10,No,Tos o síntomas respiratorios,60,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000251,38,No,Problema gastrointestinal,5,9,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000323,71,No,Problema gastrointestinal,12,10,Cardiopatía,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000018,21,Sí,Embarazo o síntoma relacionado con embarazo,22,6,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-VA-000092,28,No,Dolor abdominal,12,9,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000304,39,No,Dolor torácico,69,4,"Hipertensión, Uso de anticoagulantes",No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000167,51,No,Dolor abdominal,25,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000151,3,No,Tos o síntomas respiratorios,25,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000184,31,No,Problema gastrointestinal,37,3,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000076,18,No,Tos o síntomas respiratorios,91,6,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000070,15,No,Tos o síntomas respiratorios,25,3,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000217,63,No,Tos o síntomas respiratorios,38,5,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000038,71,No,Dolor torácico,11,7,"Diabetes, Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000069,44,Sí,Embarazo o síntoma relacionado con embarazo,13,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-VA-000158,26,Sí,Embarazo o síntoma relacionado con embarazo,14,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-VA-000075,23,No,Problema urinario,45,7,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000103,10,No,Problema urinario,82,6,Diabetes,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-VA-000013,85,No,Tos o síntomas respiratorios,48,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000292,75,No,Problema urinario,114,8,Ninguno,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-VA-000073,34,No,Mareo o desmayo,62,10,Ninguno,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-VA-000255,57,No,Problema gastrointestinal,36,10,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000104,57,No,Dificultad respiratoria,33,8,"Hipertensión, Cardiopatía",No,No,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000201,75,No,Fiebre sin foco claro,34,7,Ninguno,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-VA-000064,42,No,Dolor de cabeza,40,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000066,23,No,Dolor abdominal,140,2,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000063,2,No,Fiebre sin foco claro,27,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000262,73,No,Dolor abdominal,44,8,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000327,28,No,Dolor torácico,61,8,"Diabetes, Cardiopatía",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,Sí,No
+PX-VA-000057,87,No,Mareo o desmayo,5,6,Diabetes,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-VA-000022,43,No,Dolor abdominal,65,6,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000091,3,No,Dolor de cabeza,83,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000260,82,No,Problema urinario,31,6,Ninguno,No,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000275,30,No,Problema gastrointestinal,39,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000324,58,No,Fiebre sin foco claro,94,9,Uso de anticoagulantes,No,No,No,No,Náusea,No,No,Sí,Sí,No,No,Sí,No
+PX-VA-000207,44,No,Dificultad respiratoria,46,10,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000272,15,No,Tos o síntomas respiratorios,102,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000017,66,No,Tos o síntomas respiratorios,50,8,Hipertensión,Sí,Sí,Sí,Sí,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-VA-000289,86,No,Tos o síntomas respiratorios,54,9,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000127,52,No,Dolor torácico,1,9,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-VA-000325,47,No,Fiebre sin foco claro,86,9,Diabetes,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-VA-000071,55,No,Dificultad respiratoria,36,7,"Diabetes, Cardiopatía",No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000161,34,Sí,Embarazo o síntoma relacionado con embarazo,17,7,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-VA-000045,58,No,Dolor de cabeza,3,8,Cardiopatía,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-VA-000016,87,No,Problema gastrointestinal,82,9,Ninguno,Sí,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000169,65,No,Fiebre sin foco claro,19,5,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000313,23,No,Embarazo o síntoma relacionado con embarazo,34,7,"Hipertensión, Uso de anticoagulantes",No,No,No,Sí,Náusea,No,Sí,No,Sí,No,No,No,No
+PX-VA-000019,45,No,Dolor abdominal,44,9,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000301,33,No,Mareo o desmayo,64,3,Hipertensión,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000140,5,No,Fiebre sin foco claro,52,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000239,25,Sí,Embarazo o síntoma relacionado con embarazo,29,9,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-VA-000257,22,No,Dolor torácico,117,5,Ninguno,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000052,6,No,Tos o síntomas respiratorios,72,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000209,16,No,Fiebre sin foco claro,33,2,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000159,46,No,Tos o síntomas respiratorios,39,5,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000138,23,No,Fiebre sin foco claro,42,2,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000102,46,No,Tos o síntomas respiratorios,75,5,Ninguno,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000215,33,No,Problema urinario,32,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000233,31,No,Problema urinario,12,9,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",Sí,No,No,No aplica,No,No,No,No
+PX-VA-000218,71,No,Dolor de cabeza,16,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000318,56,No,Fiebre sin foco claro,25,7,"Diabetes, Hipertensión, Asma/EPOC",No,No,No,No,Náusea,Sí,No,Sí,No aplica,No,No,No,No
+PX-VA-000244,16,No,Dolor torácico,30,4,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000133,84,No,Problema gastrointestinal,11,4,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000059,29,No,Dolor de cabeza,43,4,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000136,7,No,Dificultad respiratoria,7,8,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000311,12,No,Dolor de cabeza,5,7,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,Sí,No,Sí,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-VA-000145,57,No,Problema urinario,49,6,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000254,22,No,Dolor abdominal,26,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000112,49,No,Dolor torácico,1,9,"Diabetes, Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-VA-000121,53,No,Tos o síntomas respiratorios,49,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000153,41,No,Tos o síntomas respiratorios,54,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000154,21,No,Dolor abdominal,28,10,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000008,35,No,Dolor torácico,4,9,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-VA-000047,22,No,Tos o síntomas respiratorios,93,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000180,3,No,Fiebre sin foco claro,49,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000310,35,No,Fiebre sin foco claro,89,1,Asma/EPOC,No,Sí,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000221,21,No,Problema urinario,50,9,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000263,31,No,Problema urinario,24,5,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000035,77,No,Problema gastrointestinal,31,7,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000124,10,No,Problema gastrointestinal,37,7,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000222,29,Sí,Embarazo o síntoma relacionado con embarazo,5,5,Ninguno,Sí,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-VA-000118,15,No,Problema urinario,68,4,Diabetes,Sí,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000205,36,Sí,Embarazo o síntoma relacionado con embarazo,8,10,Ninguno,No,No,No,No,Ninguno,No,Sí,Sí,No,No,Sí,No,No
+PX-VA-000055,4,No,Tos o síntomas respiratorios,61,7,Asma/EPOC,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000006,50,No,Dolor torácico,35,5,"Diabetes, Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000150,46,No,Problema urinario,18,5,Ninguno,No,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-VA-000265,38,Sí,Embarazo o síntoma relacionado con embarazo,14,7,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-VA-000174,56,No,Problema urinario,5,2,Ninguno,No,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000021,27,No,Dolor de cabeza,70,6,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000004,70,No,Fiebre sin foco claro,50,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000033,31,No,Problema urinario,100,7,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000256,63,No,Dolor torácico,78,4,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000226,22,No,Tos o síntomas respiratorios,54,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000225,43,No,Dolor torácico,20,3,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000196,65,No,Problema urinario,91,10,"Diabetes, Hipertensión",Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-VA-000199,16,Sí,Embarazo o síntoma relacionado con embarazo,101,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-VA-000268,70,No,Mareo o desmayo,11,10,"Diabetes, Hipertensión",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-VA-000303,22,No,Fiebre sin foco claro,41,2,Cardiopatía,No,Sí,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000028,13,No,Tos o síntomas respiratorios,150,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000113,52,No,Dolor abdominal,20,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000098,37,No,Dolor torácico,113,7,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000023,17,No,Fiebre sin foco claro,56,9,Diabetes,Sí,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000160,20,No,Dolor abdominal,39,10,Ninguno,Sí,No,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-VA-000003,40,No,Dolor torácico,65,2,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000213,58,No,Fiebre sin foco claro,114,8,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000192,24,No,Tos o síntomas respiratorios,26,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000181,50,No,Problema urinario,25,4,Diabetes,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000143,11,No,Fiebre sin foco claro,45,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000043,50,No,Dificultad respiratoria,9,4,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000171,54,No,Dolor torácico,37,10,Diabetes,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000328,63,No,Problema gastrointestinal,89,9,"Diabetes, Hipertensión",No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000317,50,No,Dolor abdominal,54,5,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000108,15,No,Problema gastrointestinal,65,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-VA-000164,79,No,Tos o síntomas respiratorios,83,7,Diabetes,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000191,44,No,Dolor torácico,4,6,Cardiopatía,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000214,8,No,Tos o síntomas respiratorios,18,3,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-VA-000270,35,No,Tos o síntomas respiratorios,15,8,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000172,36,No,Dolor de cabeza,1,10,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-VA-000320,66,No,Dolor torácico,48,5,"Hipertensión, Cardiopatía",No,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-VA-000186,17,No,Dolor torácico,28,7,Ninguno,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000182,22,No,Dolor torácico,35,4,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000261,82,No,Mareo o desmayo,35,5,Diabetes,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000077,60,No,Problema urinario,35,3,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-VA-000285,84,No,Dolor torácico,8,7,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-VA-000078,6,No,Problema gastrointestinal,38,3,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-VA-000060,3,No,Tos o síntomas respiratorios,66,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-VA-000187,23,Sí,Embarazo o síntoma relacionado con embarazo,39,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,Sí,No,No
+PX-VA-000125,26,No,Dificultad respiratoria,12,10,Asma/EPOC,No,No,Sí,Sí,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-VA-000190,87,No,Dolor de cabeza,7,9,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No

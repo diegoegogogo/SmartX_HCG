@@ -298,21 +298,6 @@
                 </div>
             </div>
 
-            <!-- DESCRIPCIÓN LIBRE -->
-            <div class="bg-blue-900/30 border-2 border-blue-500 p-6 rounded-lg mb-8">
-                <h3 class="text-xl font-bold text-blue-400 mb-4 flex items-center">
-                    <i class="fas fa-stethoscope mr-3 text-2xl"></i>
-                    DESCRIPCIÓN LIBRE DE SÍNTOMAS
-                    <span class="ml-2 text-sm bg-blue-600 px-2 py-1 rounded">MOTOR IA</span>
-                </h3>
-                <textarea id="sintomas_texto" rows="4"
-                    class="w-full bg-slate-600 border-2 border-slate-500 rounded-lg px-4 py-3 text-white text-lg focus:ring-2 focus:ring-blue-500"
-                    placeholder="Describa los síntomas con al menos 10 caracteres. Ejemplo: 'Dolor fuerte en el pecho desde hace 2 horas, presión que irradia al brazo izquierdo con falta de aire…'"></textarea>
-                <p class="mt-3 text-blue-300 text-sm">
-                    <i class="fas fa-info-circle mr-2"></i>Este campo alimenta el análisis del motor SmartX (mínimo 10 caracteres).
-                </p>
-            </div>
-
             <!-- BOTONES -->
             <div class="flex space-x-4">
                 <button type="button" onclick="closeNewPatientModal()"
@@ -360,11 +345,29 @@
 
 <script>
 // ──────────────────────────────────────────────────────────
+//  CONFIGURACIÓN
+// ──────────────────────────────────────────────────────────
+const API            = "http://localhost:8000";
+const SUPABASE_URL   = "https://nwnkrbaeczejfjzbvplc.supabase.co";
+const SUPABASE_KEY   = "sb_publishable_qn8VwT6T8XufXW50RYMlNg_XIHnylhD";
+const SUPABASE_REST  = `${SUPABASE_URL}/rest/v1`;
+
+async function supabaseGet(tabla, params = "") {
+    const res = await fetch(`${SUPABASE_REST}/${tabla}?${params}`, {
+        headers: {
+            "apikey"       : SUPABASE_KEY,
+            "Authorization": `Bearer ${SUPABASE_KEY}`,
+        },
+    });
+    if (!res.ok) throw new Error(`Supabase ${res.status}`);
+    return res.json();
+}
+
+// ──────────────────────────────────────────────────────────
 //  ESTADO GLOBAL
 // ──────────────────────────────────────────────────────────
 let patients = [];
 let patientCounter = 1;
-const API = "http://localhost:8000";
 
 // ──────────────────────────────────────────────────────────
 //  UTILIDADES DE TIEMPO
@@ -403,45 +406,87 @@ async function checkApiStatus() {
 // ──────────────────────────────────────────────────────────
 //  MAPEADOR: campos del formulario → SintomasInput (Pydantic)
 // ──────────────────────────────────────────────────────────
-function buildPayload(f) {
-    const disnea =
-        document.getElementById("redflag_disnea_severa").checked ||
-        document.getElementById("dificultad_respiratoria").checked;
-
-    const perdida =
-        document.getElementById("redflag_deficit_neurologico_subito").checked ||
-        document.getElementById("confusion").checked;
-
-    const sangrado =
-        document.getElementById("redflag_sangrado_abundante").checked ||
-        document.getElementById("sangrado_activo").checked;
-
-    const intensidad = parseInt(document.getElementById("intensidad_sintoma").value);
-
-    const texto = document.getElementById("sintomas_texto").value.trim();
-
-    const sexo = document.getElementById("sexo_biologico").value;
-    const embarazoSi = document.getElementById("embarazo").value === "Sí";
-    const embarazoPosible = (sexo === "F" && embarazoSi) ? true : null;
+function buildPayload() {
+    const sexo      = document.getElementById("sexo_biologico").value;
+    const embarazo  = sexo === "F" && document.getElementById("embarazo").value === "Sí";
+    const nausea    = document.getElementById("nausea").checked;
 
     return {
-        edad: parseInt(document.getElementById("edad").value),
-        sexo_biologico: sexo,
-        disnea_presente: disnea,
-        perdida_conciencia: perdida,
-        sangrado_activo: sangrado,
-        fiebre_presente: document.getElementById("fiebre_reportada").checked,
-        temperatura_celsius: null,
-        intensidad_dolor_eva: intensidad,
-        duracion_sintoma_horas: null,
-        sintomas_texto: texto.length >= 10 ? texto : null,
-        diabetes_mellitus: false,
-        hipertension: false,
-        cardiopatia_isquemica: document.getElementById("redflag_dolor_toracico_opresivo_con_sudoracion").checked,
-        epoc_asma: false,
-        embarazo_posible: embarazoPosible,
-        semanas_gestacion: null,
+        // Features requeridas
+        edad              : parseInt(document.getElementById("edad").value),
+        sexo_biologico    : sexo,
+        embarazo          : embarazo,
+        motivo_consulta   : "Fiebre sin foco claro",   // default — sin selector en el form
+        intensidad_sintoma: parseInt(document.getElementById("intensidad_sintoma").value),
+        tiempo_evolucion_horas: 0,
+
+        // Síntomas
+        fiebre_reportada        : document.getElementById("fiebre_reportada").checked,
+        tos                     : document.getElementById("tos").checked,
+        dificultad_respiratoria : document.getElementById("dificultad_respiratoria").checked,
+        dolor_toracico          : document.getElementById("dolor_toracico").checked,
+        dolor_al_orinar         : document.getElementById("dolor_al_orinar").checked,
+        sangrado_activo         : document.getElementById("sangrado_activo").checked,
+        confusion               : document.getElementById("confusion").checked,
+        disminucion_movimientos_fetales: false,
+
+        // Banderas rojas
+        redflag_disnea_severa                         : document.getElementById("redflag_disnea_severa").checked,
+        redflag_sangrado_abundante                    : document.getElementById("redflag_sangrado_abundante").checked,
+        redflag_deficit_neurologico_subito            : document.getElementById("redflag_deficit_neurologico_subito").checked,
+        redflag_dolor_toracico_opresivo_con_sudoracion: document.getElementById("redflag_dolor_toracico_opresivo_con_sudoracion").checked,
+
+        // Trazabilidad
+        sintomas_digestivos: nausea ? "Náusea" : "Ninguno",
+        antecedentes_riesgo: "Ninguno",
     };
+}
+
+// ──────────────────────────────────────────────────────────
+//  CARGA INICIAL DESDE SUPABASE
+// ──────────────────────────────────────────────────────────
+async function loadFromSupabase() {
+    try {
+        const rows = await supabaseGet(
+            "inferencias",
+            "select=id_consulta,id_paciente,edad,nivel_ia,motivo_consulta,intensidad_sintoma,alerta_critica,created_at" +
+            "&order=created_at.desc&limit=50"
+        );
+        if (!rows.length) return;
+
+        const labelMap = {
+            rojo:     { justificacion: "Alerta Crítica Detectada", accion: "PASAR A CHOQUE" },
+            amarillo: { justificacion: "Síntomas Moderados",       accion: "MONITOREO 30MIN" },
+            verde:    { justificacion: "Sintomatología Leve",       accion: "SALA DE ESPERA" },
+        };
+
+        rows.forEach((r, i) => {
+            const label = labelMap[r.nivel_ia] || labelMap.verde;
+            const hora  = new Date(r.created_at).toLocaleTimeString("es-ES", { hour: "2-digit", minute: "2-digit" });
+            patients.push({
+                id             : `PX-${String(rows.length - i).padStart(3, "0")}`,
+                edad           : r.edad,
+                hora_ingreso   : hora,
+                nivel          : r.nivel_ia,
+                justificacion  : label.justificacion,
+                accion         : label.accion,
+                tiempo_espera  : 0,
+                banderas_rojas : r.alerta_critica ? ["Alerta crítica registrada"] : [],
+                patron_referencia: r.motivo_consulta || "—",
+                escenarios     : [],
+                shap           : "",
+                analisis_llm   : null,
+                modo           : "supabase",
+            });
+            patientCounter = patients.length + 1;
+        });
+
+        updateStats();
+        renderPatients();
+        addNotification("success", "DATOS CARGADOS", `${rows.length} triajes recuperados de Supabase`);
+    } catch (err) {
+        console.warn("No se pudo cargar desde Supabase:", err.message);
+    }
 }
 
 // ──────────────────────────────────────────────────────────
@@ -492,28 +537,29 @@ function simulateTriage(payload) {
 // ──────────────────────────────────────────────────────────
 //  MAPEAR RESPUESTA API → displayResult
 // ──────────────────────────────────────────────────────────
-function apiResponseToDisplayResult(apiResp, payload) {
+function apiResponseToDisplayResult(apiResp) {
     const nivel = apiResp.nivel_ia || "verde";
     const labelMap = {
-        rojo:     { justificacion: "Alerta Crítica Detectada", accion: "PASAR A CHOQUE", banderasRojas: ["Nivel crítico — motor IA"] },
+        rojo:     { justificacion: "Alerta Crítica Detectada", accion: "PASAR A CHOQUE",  banderasRojas: apiResp.alertas_detalle || ["Nivel crítico — motor IA"] },
         amarillo: { justificacion: "Síntomas Moderados",       accion: "MONITOREO 30MIN", banderasRojas: [] },
         verde:    { justificacion: "Sintomatología Leve",       accion: "SALA DE ESPERA",  banderasRojas: [] },
     };
     const label = labelMap[nivel] || labelMap.verde;
 
-    const escenarioTop = (apiResp.escenarios || [])[0] || {};
+    const escenarios = apiResp.escenarios || [];
+    const top = escenarios[0] || {};
     return {
         nivel,
-        justificacion:    label.justificacion,
-        accion:           label.accion,
-        banderas_rojas:   label.banderasRojas,
-        patron_referencia: escenarioTop.nombre
-            ? `${escenarioTop.nombre} (${Math.round((escenarioTop.probabilidad || 0) * 100)}%)`
+        justificacion    : label.justificacion,
+        accion           : label.accion,
+        banderas_rojas   : label.banderasRojas,
+        patron_referencia: top.descripcion
+            ? `${top.descripcion} (${top.cie10 || ""})`
             : "Patrón clínico identificado",
-        escenarios:     apiResp.escenarios || [],
-        shap:           apiResp.explicacion_shap || "",
-        analisis_llm:   apiResp.analisis_llm || null,
-        modo:           apiResp._modo || "api",
+        escenarios       : escenarios,
+        shap             : apiResp.explicacion_shap || "",
+        analisis_llm     : null,
+        modo             : "api",
     };
 }
 
@@ -537,7 +583,7 @@ async function processPatient(event) {
 
     await loading;
 
-    const result = apiResponseToDisplayResult(apiResp, payload);
+    const result = apiResponseToDisplayResult(apiResp);
 
     const newPatient = {
         id:                `PX-${String(patientCounter).padStart(3, "0")}`,
@@ -818,6 +864,7 @@ document.addEventListener("DOMContentLoaded", () => {
     updateStats();
     renderPatients();
     checkApiStatus();
+    loadFromSupabase();
 
     setInterval(updateTime, 1000);
     setInterval(updateWaitTimes, 60000);

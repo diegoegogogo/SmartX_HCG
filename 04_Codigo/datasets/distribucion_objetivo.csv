@@ -1,0 +1,41 @@
+familia_clinica,enfermedad_o_grupo,train_verde,train_amarillo,train_rojo,train_total,val_verde,val_amarillo,val_rojo,val_total,test_verde,test_amarillo,test_rojo,test_total
+Respiratorias y ORL,Resfriado común,84,21,0.0,105.0,18.0,5.0,0.0,23.0,18.0,5.0,0.0,23.0
+Respiratorias y ORL,Faringoamigdalitis,42,28,0.0,70.0,10.0,6.0,0.0,16.0,10.0,6.0,0.0,16.0
+Respiratorias y ORL,Otitis media,35,14,0.0,49.0,7.0,4.0,0.0,11.0,7.0,4.0,0.0,11.0
+Respiratorias y ORL,Sinusitis,21,14,0.0,35.0,5.0,2.0,0.0,7.0,5.0,2.0,0.0,7.0
+Respiratorias y ORL,Influenza / COVID leve-moderado,35,42,0.0,77.0,7.0,10.0,0.0,17.0,7.0,10.0,0.0,17.0
+Respiratorias y ORL,Bronquitis aguda,14,28,0.0,42.0,4.0,6.0,0.0,10.0,4.0,6.0,0.0,10.0
+Respiratorias y ORL,Exacerbación asmática,7,28,14.0,49.0,1.0,6.0,4.0,11.0,1.0,6.0,4.0,11.0
+Respiratorias y ORL,Neumonía,0,35,28.0,63.0,0.0,7.0,6.0,13.0,0.0,7.0,6.0,13.0
+Gastrointestinales / abdominales,Gastroenteritis,49,42,7.0,98.0,11.0,10.0,1.0,22.0,11.0,10.0,1.0,22.0
+Gastrointestinales / abdominales,Gastritis / dispepsia,28,7,0.0,35.0,6.0,1.0,0.0,7.0,6.0,1.0,0.0,7.0
+Gastrointestinales / abdominales,Apendicitis,0,28,21.0,49.0,0.0,6.0,5.0,11.0,0.0,6.0,5.0,11.0
+Gastrointestinales / abdominales,Cólico biliar / colecistitis,7,21,7.0,35.0,1.0,5.0,1.0,7.0,1.0,5.0,1.0,7.0
+Gastrointestinales / abdominales,Abdomen agudo / peritonitis,0,7,35.0,42.0,0.0,1.0,8.0,9.0,0.0,1.0,8.0,9.0
+Urinarias / renales,Cistitis / IVU baja,42,28,7.0,77.0,10.0,6.0,1.0,17.0,10.0,6.0,1.0,17.0
+Urinarias / renales,Pielonefritis,0,28,21.0,49.0,0.0,6.0,5.0,11.0,0.0,6.0,5.0,11.0
+Urinarias / renales,Cólico renal,7,21,7.0,35.0,1.0,5.0,1.0,7.0,1.0,5.0,1.0,7.0
+Cardíacas / dolor torácico,Dolor torácico no cardiaco,42,14,0.0,56.0,10.0,2.0,0.0,12.0,10.0,2.0,0.0,12.0
+Cardíacas / dolor torácico,Síndrome coronario agudo,0,14,42.0,56.0,0.0,2.0,10.0,12.0,0.0,2.0,10.0,12.0
+Cardíacas / dolor torácico,Insuficiencia cardiaca / descompensación cardiopulmonar,0,14,21.0,35.0,0.0,2.0,5.0,7.0,0.0,2.0,5.0,7.0
+Neurológicas,Migraña / cefalea tensional,28,14,0.0,42.0,6.0,4.0,0.0,10.0,6.0,4.0,0.0,10.0
+Neurológicas,EVC / ACV,0,7,35.0,42.0,0.0,1.0,7.0,8.0,0.0,1.0,7.0,8.0
+Neurológicas,Confusión metabólica / deshidratación severa,7,21,14.0,42.0,1.0,5.0,2.0,8.0,1.0,5.0,2.0,8.0
+Obstétricas,Hiperémesis gravídica,7,28,7.0,42.0,1.0,6.0,1.0,8.0,1.0,6.0,1.0,8.0
+Obstétricas,Amenaza de aborto / aborto espontáneo,0,21,21.0,42.0,0.0,5.0,4.0,9.0,0.0,5.0,4.0,9.0
+Obstétricas,Embarazo ectópico / hemorragia obstétrica,0,0,28.0,28.0,0.0,0.0,6.0,6.0,0.0,0.0,6.0,6.0
+Obstétricas,Disminución de movimientos fetales,0,14,14.0,28.0,0.0,4.0,2.0,6.0,0.0,4.0,2.0,6.0
+Febriles / virales sistémicas,Dengue,7,14,21.0,42.0,1.0,2.0,5.0,8.0,1.0,2.0,5.0,8.0
+Febriles / virales sistémicas,Infección viral febril inespecífica,28,7,0.0,35.0,6.0,1.0,0.0,7.0,6.0,1.0,0.0,7.0
+Registros inconsistentes / ruido,Registro inconsistente / ruido,49,56,35.0,140.0,10.0,12.0,8.0,30.0,10.0,12.0,8.0,30.0
+,,,,,,,,,,,,,
+Resumen por familia clínica,,,,,,,,,,,,,
+familia_clinica,train_total,val_total,test_total,,,,,,,,,,
+Cardíacas / dolor torácico,147,31,31,,,,,,,,,,
+Febriles / virales sistémicas,77,15,15,,,,,,,,,,
+Gastrointestinales / abdominales,259,56,56,,,,,,,,,,
+Neurológicas,126,26,26,,,,,,,,,,
+Obstétricas,140,29,29,,,,,,,,,,
+Respiratorias y ORL,490,108,108,,,,,,,,,,
+Urinarias / renales,161,35,35,,,,,,,,,,
+Registros inconsistentes / ruido,140,30,30,,,,,,,,,,

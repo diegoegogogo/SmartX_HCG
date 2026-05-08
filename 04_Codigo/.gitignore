@@ -1,0 +1,37 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# SmartX HCG — .gitignore
+# ══════════════════════════════════════════════════════════════════════════════
+
+# Secretos y configuración local — NUNCA versionar
+.env
+
+# Entorno virtual Python
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Cache joblib (generado en runtime)
+cachedir/joblib/
+
+# Modelos entrenados (grandes binarios — usar Git LFS o almacén externo)
+# Descomenta si no quieres versionar los .pkl:
+# assets/models/*.pkl
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log

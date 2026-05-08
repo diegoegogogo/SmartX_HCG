@@ -1,0 +1,1541 @@
+patient_id,enfermedad_simulada,gravedad_esperada_IA
+PX-TR-001273,Influenza / COVID leve-moderado,Verde
+PX-TR-001284,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000192,Pielonefritis,Amarillo
+PX-TR-001357,Resfriado común,Verde
+PX-TR-000638,Dengue,Rojo
+PX-TR-000359,EVC / ACV,Rojo
+PX-TR-001538,Registro inconsistente / ruido,Rojo
+PX-TR-000685,Exacerbación asmática,Rojo
+PX-TR-000934,Migraña / cefalea tensional,Verde
+PX-TR-001197,Gastritis / dispepsia,Verde
+PX-TR-001049,Bronquitis aguda,Verde
+PX-TR-000246,Gastroenteritis,Verde
+PX-TR-000624,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-001268,Influenza / COVID leve-moderado,Verde
+PX-TR-000347,Pielonefritis,Amarillo
+PX-TR-001366,Resfriado común,Verde
+PX-TR-001304,Neumonía,Amarillo
+PX-TR-000809,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000081,Apendicitis,Rojo
+PX-TR-001098,Cólico renal,Amarillo
+PX-TR-000701,Dengue,Verde
+PX-TR-000690,Otitis media,Amarillo
+PX-TR-000870,Sinusitis,Verde
+PX-TR-000979,Cistitis / IVU baja,Verde
+PX-TR-000179,Síndrome coronario agudo,Rojo
+PX-TR-000555,Gastritis / dispepsia,Verde
+PX-TR-000650,Pielonefritis,Amarillo
+PX-TR-000490,Disminución de movimientos fetales,Rojo
+PX-TR-000302,Resfriado común,Verde
+PX-TR-000190,Dolor torácico no cardiaco,Verde
+PX-TR-000382,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000256,Disminución de movimientos fetales,Amarillo
+PX-TR-000839,Otitis media,Verde
+PX-TR-000038,Dolor torácico no cardiaco,Verde
+PX-TR-001227,Gastroenteritis,Verde
+PX-TR-000910,Sinusitis,Verde
+PX-TR-000550,Faringoamigdalitis,Verde
+PX-TR-000151,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000193,Confusión metabólica / deshidratación severa,Verde
+PX-TR-000079,Gastroenteritis,Amarillo
+PX-TR-001215,Gastroenteritis,Amarillo
+PX-TR-000644,Bronquitis aguda,Amarillo
+PX-TR-000403,Cistitis / IVU baja,Verde
+PX-TR-000147,Resfriado común,Verde
+PX-TR-001508,Registro inconsistente / ruido,Rojo
+PX-TR-000181,Gastroenteritis,Verde
+PX-TR-000076,Faringoamigdalitis,Verde
+PX-TR-001387,Síndrome coronario agudo,Amarillo
+PX-TR-001111,Dengue,Rojo
+PX-TR-000596,Pielonefritis,Rojo
+PX-TR-000792,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-001010,Abdomen agudo / peritonitis,Rojo
+PX-TR-000673,Faringoamigdalitis,Amarillo
+PX-TR-001275,Influenza / COVID leve-moderado,Verde
+PX-TR-000543,Otitis media,Amarillo
+PX-TR-000783,Exacerbación asmática,Amarillo
+PX-TR-000049,Hiperémesis gravídica,Amarillo
+PX-TR-000334,Pielonefritis,Amarillo
+PX-TR-000175,Apendicitis,Amarillo
+PX-TR-001414,Registro inconsistente / ruido,Verde
+PX-TR-000642,Sinusitis,Verde
+PX-TR-000838,EVC / ACV,Rojo
+PX-TR-000790,Apendicitis,Rojo
+PX-TR-000444,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-001139,Dolor torácico no cardiaco,Verde
+PX-TR-000422,Exacerbación asmática,Amarillo
+PX-TR-000652,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-001286,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000621,Dengue,Rojo
+PX-TR-001240,Hiperémesis gravídica,Amarillo
+PX-TR-000158,Abdomen agudo / peritonitis,Rojo
+PX-TR-000924,Otitis media,Verde
+PX-TR-001343,Pielonefritis,Rojo
+PX-TR-001164,Exacerbación asmática,Amarillo
+PX-TR-001207,Gastroenteritis,Amarillo
+PX-TR-001114,Dengue,Rojo
+PX-TR-000017,Gastritis / dispepsia,Verde
+PX-TR-000333,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000782,Gastritis / dispepsia,Verde
+PX-TR-001140,Dolor torácico no cardiaco,Verde
+PX-TR-000572,Infección viral febril inespecífica,Verde
+PX-TR-000798,Gastroenteritis,Verde
+PX-TR-000821,Cólico biliar / colecistitis,Amarillo
+PX-TR-000198,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-001483,Registro inconsistente / ruido,Amarillo
+PX-TR-001267,Influenza / COVID leve-moderado,Verde
+PX-TR-000593,Apendicitis,Amarillo
+PX-TR-000135,Cólico biliar / colecistitis,Amarillo
+PX-TR-001070,Cistitis / IVU baja,Verde
+PX-TR-000252,Influenza / COVID leve-moderado,Verde
+PX-TR-000981,Dolor torácico no cardiaco,Verde
+PX-TR-000785,Cistitis / IVU baja,Amarillo
+PX-TR-001426,Registro inconsistente / ruido,Verde
+PX-TR-001356,Resfriado común,Verde
+PX-TR-001151,EVC / ACV,Rojo
+PX-TR-001513,Registro inconsistente / ruido,Rojo
+PX-TR-001503,Registro inconsistente / ruido,Amarillo
+PX-TR-001378,Sinusitis,Amarillo
+PX-TR-001375,Sinusitis,Amarillo
+PX-TR-000739,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-001137,Dolor torácico no cardiaco,Verde
+PX-TR-001322,Otitis media,Verde
+PX-TR-000306,Neumonía,Rojo
+PX-TR-000083,Cólico renal,Amarillo
+PX-TR-000180,Exacerbación asmática,Amarillo
+PX-TR-000897,Infección viral febril inespecífica,Verde
+PX-TR-000893,Resfriado común,Verde
+PX-TR-000248,Cólico biliar / colecistitis,Verde
+PX-TR-000568,Gastroenteritis,Verde
+PX-TR-000119,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000137,Gastroenteritis,Amarillo
+PX-TR-000210,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-001040,Bronquitis aguda,Amarillo
+PX-TR-001300,Neumonía,Amarillo
+PX-TR-000978,Faringoamigdalitis,Verde
+PX-TR-000963,Dengue,Rojo
+PX-TR-001416,Registro inconsistente / ruido,Verde
+PX-TR-000450,EVC / ACV,Rojo
+PX-TR-000993,Otitis media,Verde
+PX-TR-000036,Resfriado común,Amarillo
+PX-TR-001026,Apendicitis,Amarillo
+PX-TR-000187,Disminución de movimientos fetales,Rojo
+PX-TR-000886,Dolor torácico no cardiaco,Verde
+PX-TR-000341,Cistitis / IVU baja,Verde
+PX-TR-000401,Pielonefritis,Rojo
+PX-TR-000819,Sinusitis,Verde
+PX-TR-000994,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-001454,Registro inconsistente / ruido,Amarillo
+PX-TR-000730,EVC / ACV,Rojo
+PX-TR-001475,Registro inconsistente / ruido,Amarillo
+PX-TR-000884,Dengue,Rojo
+PX-TR-000772,Dolor torácico no cardiaco,Verde
+PX-TR-000668,Gastritis / dispepsia,Verde
+PX-TR-000129,Resfriado común,Verde
+PX-TR-000905,EVC / ACV,Rojo
+PX-TR-001512,Registro inconsistente / ruido,Rojo
+PX-TR-000130,Gastroenteritis,Verde
+PX-TR-000032,Pielonefritis,Rojo
+PX-TR-000510,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000404,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000812,Neumonía,Amarillo
+PX-TR-000064,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000801,Cistitis / IVU baja,Amarillo
+PX-TR-000768,Dengue,Amarillo
+PX-TR-000202,Disminución de movimientos fetales,Rojo
+PX-TR-001064,Cistitis / IVU baja,Verde
+PX-TR-000888,Hiperémesis gravídica,Verde
+PX-TR-000508,Infección viral febril inespecífica,Amarillo
+PX-TR-000057,Faringoamigdalitis,Amarillo
+PX-TR-001225,Gastroenteritis,Verde
+PX-TR-001417,Registro inconsistente / ruido,Verde
+PX-TR-001223,Gastroenteritis,Verde
+PX-TR-000170,Gastroenteritis,Verde
+PX-TR-000725,Gastroenteritis,Verde
+PX-TR-000670,Resfriado común,Amarillo
+PX-TR-000784,Cólico biliar / colecistitis,Amarillo
+PX-TR-000983,Resfriado común,Verde
+PX-TR-000305,Síndrome coronario agudo,Rojo
+PX-TR-000136,Neumonía,Amarillo
+PX-TR-000960,Migraña / cefalea tensional,Verde
+PX-TR-000745,Infección viral febril inespecífica,Amarillo
+PX-TR-000815,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-000760,Dolor torácico no cardiaco,Verde
+PX-TR-000688,Gastroenteritis,Verde
+PX-TR-000477,Dolor torácico no cardiaco,Amarillo
+PX-TR-001440,Registro inconsistente / ruido,Verde
+PX-TR-001232,Gastroenteritis,Verde
+PX-TR-000442,Confusión metabólica / deshidratación severa,Verde
+PX-TR-000817,Gastritis / dispepsia,Amarillo
+PX-TR-000449,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000414,Gastroenteritis,Amarillo
+PX-TR-001031,Apendicitis,Amarillo
+PX-TR-000708,Cólico renal,Verde
+PX-TR-000574,Síndrome coronario agudo,Rojo
+PX-TR-000909,Abdomen agudo / peritonitis,Rojo
+PX-TR-000736,Exacerbación asmática,Amarillo
+PX-TR-000101,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000617,Cistitis / IVU baja,Verde
+PX-TR-000864,Migraña / cefalea tensional,Verde
+PX-TR-001231,Gastroenteritis,Verde
+PX-TR-000052,Resfriado común,Verde
+PX-TR-000268,Apendicitis,Rojo
+PX-TR-000191,Faringoamigdalitis,Amarillo
+PX-TR-000911,Pielonefritis,Amarillo
+PX-TR-000353,Apendicitis,Amarillo
+PX-TR-001302,Neumonía,Amarillo
+PX-TR-000124,Resfriado común,Verde
+PX-TR-000560,Bronquitis aguda,Amarillo
+PX-TR-000523,Cistitis / IVU baja,Rojo
+PX-TR-001421,Registro inconsistente / ruido,Verde
+PX-TR-000623,Resfriado común,Verde
+PX-TR-000547,Disminución de movimientos fetales,Rojo
+PX-TR-000787,Resfriado común,Verde
+PX-TR-000841,Faringoamigdalitis,Amarillo
+PX-TR-000935,Exacerbación asmática,Amarillo
+PX-TR-001122,Disminución de movimientos fetales,Rojo
+PX-TR-000803,Exacerbación asmática,Amarillo
+PX-TR-001292,Migraña / cefalea tensional,Verde
+PX-TR-000516,Exacerbación asmática,Verde
+PX-TR-001127,Dolor torácico no cardiaco,Amarillo
+PX-TR-000148,Cólico renal,Amarillo
+PX-TR-001125,Dolor torácico no cardiaco,Amarillo
+PX-TR-000992,Cólico biliar / colecistitis,Amarillo
+PX-TR-000727,Cistitis / IVU baja,Amarillo
+PX-TR-000215,Apendicitis,Amarillo
+PX-TR-000968,Sinusitis,Verde
+PX-TR-000219,Disminución de movimientos fetales,Rojo
+PX-TR-000602,Migraña / cefalea tensional,Amarillo
+PX-TR-001219,Gastroenteritis,Verde
+PX-TR-001496,Registro inconsistente / ruido,Amarillo
+PX-TR-000296,Hiperémesis gravídica,Verde
+PX-TR-000216,Pielonefritis,Amarillo
+PX-TR-000999,Faringoamigdalitis,Amarillo
+PX-TR-000938,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000301,Gastritis / dispepsia,Verde
+PX-TR-000043,Dolor torácico no cardiaco,Amarillo
+PX-TR-001310,Neumonía,Rojo
+PX-TR-000376,Neumonía,Amarillo
+PX-TR-000985,Dengue,Rojo
+PX-TR-001355,Resfriado común,Verde
+PX-TR-000281,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000279,Síndrome coronario agudo,Rojo
+PX-TR-000290,Faringoamigdalitis,Verde
+PX-TR-001506,Registro inconsistente / ruido,Rojo
+PX-TR-001005,Abdomen agudo / peritonitis,Rojo
+PX-TR-000116,Otitis media,Verde
+PX-TR-000464,Bronquitis aguda,Amarillo
+PX-TR-001346,Resfriado común,Amarillo
+PX-TR-000317,Otitis media,Verde
+PX-TR-001457,Registro inconsistente / ruido,Amarillo
+PX-TR-000115,Dolor torácico no cardiaco,Verde
+PX-TR-000556,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000606,Gastroenteritis,Amarillo
+PX-TR-001327,Otitis media,Verde
+PX-TR-001334,Pielonefritis,Amarillo
+PX-TR-001006,Abdomen agudo / peritonitis,Rojo
+PX-TR-001525,Registro inconsistente / ruido,Rojo
+PX-TR-001352,Resfriado común,Verde
+PX-TR-000307,Cólico biliar / colecistitis,Rojo
+PX-TR-000126,Faringoamigdalitis,Amarillo
+PX-TR-001194,Faringoamigdalitis,Verde
+PX-TR-000682,Sinusitis,Amarillo
+PX-TR-000618,EVC / ACV,Rojo
+PX-TR-001100,Cólico renal,Amarillo
+PX-TR-000253,Apendicitis,Rojo
+PX-TR-000270,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000073,Gastroenteritis,Verde
+PX-TR-000507,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000998,Dengue,Rojo
+PX-TR-000843,Faringoamigdalitis,Verde
+PX-TR-000123,Apendicitis,Amarillo
+PX-TR-001209,Gastroenteritis,Amarillo
+PX-TR-001220,Gastroenteritis,Verde
+PX-TR-000022,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000804,Dengue,Amarillo
+PX-TR-000536,Neumonía,Rojo
+PX-TR-001383,Sinusitis,Verde
+PX-TR-000612,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000793,Faringoamigdalitis,Verde
+PX-TR-000424,Resfriado común,Amarillo
+PX-TR-001129,Dolor torácico no cardiaco,Verde
+PX-TR-001118,Disminución de movimientos fetales,Amarillo
+PX-TR-001276,Influenza / COVID leve-moderado,Verde
+PX-TR-001008,Abdomen agudo / peritonitis,Rojo
+PX-TR-000348,Influenza / COVID leve-moderado,Verde
+PX-TR-000501,Faringoamigdalitis,Verde
+PX-TR-000066,Faringoamigdalitis,Amarillo
+PX-TR-001121,Disminución de movimientos fetales,Rojo
+PX-TR-001405,Registro inconsistente / ruido,Verde
+PX-TR-000098,Influenza / COVID leve-moderado,Verde
+PX-TR-000731,Cólico renal,Amarillo
+PX-TR-000145,Apendicitis,Amarillo
+PX-TR-000678,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001466,Registro inconsistente / ruido,Amarillo
+PX-TR-000466,Cólico renal,Rojo
+PX-TR-000569,Faringoamigdalitis,Verde
+PX-TR-000411,Hiperémesis gravídica,Amarillo
+PX-TR-000584,Gastroenteritis,Amarillo
+PX-TR-000842,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-001471,Registro inconsistente / ruido,Amarillo
+PX-TR-000160,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000482,Gastroenteritis,Amarillo
+PX-TR-000171,Dolor torácico no cardiaco,Verde
+PX-TR-001360,Resfriado común,Verde
+PX-TR-000030,Apendicitis,Amarillo
+PX-TR-000558,Gastroenteritis,Amarillo
+PX-TR-001245,Infección viral febril inespecífica,Amarillo
+PX-TR-001427,Registro inconsistente / ruido,Verde
+PX-TR-000666,Cólico biliar / colecistitis,Verde
+PX-TR-000715,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-000858,Neumonía,Rojo
+PX-TR-000592,Cistitis / IVU baja,Amarillo
+PX-TR-001294,Migraña / cefalea tensional,Verde
+PX-TR-001532,Registro inconsistente / ruido,Rojo
+PX-TR-001247,Infección viral febril inespecífica,Verde
+PX-TR-000405,Abdomen agudo / peritonitis,Amarillo
+PX-TR-000003,Faringoamigdalitis,Amarillo
+PX-TR-001189,Faringoamigdalitis,Verde
+PX-TR-000811,Pielonefritis,Amarillo
+PX-TR-000824,Dengue,Rojo
+PX-TR-001492,Registro inconsistente / ruido,Amarillo
+PX-TR-000750,Cólico biliar / colecistitis,Rojo
+PX-TR-000816,Sinusitis,Verde
+PX-TR-001145,EVC / ACV,Rojo
+PX-TR-001517,Registro inconsistente / ruido,Rojo
+PX-TR-000314,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000567,Neumonía,Rojo
+PX-TR-000127,Dolor torácico no cardiaco,Verde
+PX-TR-000320,Síndrome coronario agudo,Rojo
+PX-TR-000921,Dengue,Verde
+PX-TR-001058,Cistitis / IVU baja,Amarillo
+PX-TR-000766,Gastritis / dispepsia,Verde
+PX-TR-001053,Cistitis / IVU baja,Amarillo
+PX-TR-000853,Exacerbación asmática,Rojo
+PX-TR-000264,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-001178,Faringoamigdalitis,Amarillo
+PX-TR-000386,Apendicitis,Amarillo
+PX-TR-001394,Síndrome coronario agudo,Rojo
+PX-TR-000028,Síndrome coronario agudo,Rojo
+PX-TR-000765,Disminución de movimientos fetales,Amarillo
+PX-TR-000717,Resfriado común,Verde
+PX-TR-000878,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000010,Neumonía,Rojo
+PX-TR-000344,Síndrome coronario agudo,Rojo
+PX-TR-000818,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000217,Gastritis / dispepsia,Amarillo
+PX-TR-000603,Faringoamigdalitis,Verde
+PX-TR-000071,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000628,Neumonía,Rojo
+PX-TR-000235,Resfriado común,Amarillo
+PX-TR-000161,Migraña / cefalea tensional,Verde
+PX-TR-000006,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000663,Gastroenteritis,Verde
+PX-TR-000595,EVC / ACV,Rojo
+PX-TR-000211,Influenza / COVID leve-moderado,Verde
+PX-TR-000018,Resfriado común,Verde
+PX-TR-000757,Cólico renal,Verde
+PX-TR-000375,Apendicitis,Rojo
+PX-TR-000393,Cistitis / IVU baja,Verde
+PX-TR-000848,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000643,Migraña / cefalea tensional,Verde
+PX-TR-000425,Abdomen agudo / peritonitis,Amarillo
+PX-TR-000742,Cistitis / IVU baja,Verde
+PX-TR-000433,Cólico biliar / colecistitis,Verde
+PX-TR-001332,Pielonefritis,Amarillo
+PX-TR-001361,Resfriado común,Verde
+PX-TR-000922,Apendicitis,Amarillo
+PX-TR-001474,Registro inconsistente / ruido,Amarillo
+PX-TR-000871,Cólico renal,Amarillo
+PX-TR-000582,Sinusitis,Verde
+PX-TR-001259,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000447,Exacerbación asmática,Rojo
+PX-TR-000204,Resfriado común,Verde
+PX-TR-000478,Neumonía,Rojo
+PX-TR-000875,Gastroenteritis,Amarillo
+PX-TR-001341,Pielonefritis,Rojo
+PX-TR-000504,Gastroenteritis,Amarillo
+PX-TR-001056,Cistitis / IVU baja,Amarillo
+PX-TR-000453,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000564,Cólico renal,Amarillo
+PX-TR-000774,Abdomen agudo / peritonitis,Rojo
+PX-TR-001174,Exacerbación asmática,Verde
+PX-TR-000514,Abdomen agudo / peritonitis,Rojo
+PX-TR-001372,Resfriado común,Verde
+PX-TR-000548,Cólico biliar / colecistitis,Amarillo
+PX-TR-000608,Gastroenteritis,Amarillo
+PX-TR-000086,Cistitis / IVU baja,Amarillo
+PX-TR-000898,Bronquitis aguda,Amarillo
+PX-TR-000274,Resfriado común,Verde
+PX-TR-000741,Sinusitis,Amarillo
+PX-TR-000977,Gastroenteritis,Amarillo
+PX-TR-001491,Registro inconsistente / ruido,Amarillo
+PX-TR-000415,Faringoamigdalitis,Verde
+PX-TR-000980,Faringoamigdalitis,Verde
+PX-TR-000218,Dolor torácico no cardiaco,Verde
+PX-TR-001320,Otitis media,Amarillo
+PX-TR-001377,Sinusitis,Amarillo
+PX-TR-000195,EVC / ACV,Rojo
+PX-TR-000168,Faringoamigdalitis,Verde
+PX-TR-000112,Resfriado común,Verde
+PX-TR-000630,Gastroenteritis,Verde
+PX-TR-000223,Síndrome coronario agudo,Amarillo
+PX-TR-000406,Pielonefritis,Amarillo
+PX-TR-000890,Hiperémesis gravídica,Rojo
+PX-TR-001074,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000226,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-001028,Apendicitis,Amarillo
+PX-TR-000072,Faringoamigdalitis,Verde
+PX-TR-000937,Resfriado común,Verde
+PX-TR-000261,Gastroenteritis,Verde
+PX-TR-000753,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-000687,Cólico renal,Amarillo
+PX-TR-000788,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000931,Bronquitis aguda,Verde
+PX-TR-000959,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000232,Pielonefritis,Rojo
+PX-TR-001214,Gastroenteritis,Amarillo
+PX-TR-000011,Gastroenteritis,Verde
+PX-TR-000060,Apendicitis,Rojo
+PX-TR-000659,Cólico renal,Amarillo
+PX-TR-000613,Exacerbación asmática,Amarillo
+PX-TR-001484,Registro inconsistente / ruido,Amarillo
+PX-TR-001135,Dolor torácico no cardiaco,Verde
+PX-TR-001213,Gastroenteritis,Amarillo
+PX-TR-000887,Sinusitis,Amarillo
+PX-TR-000557,Confusión metabólica / deshidratación severa,Verde
+PX-TR-001420,Registro inconsistente / ruido,Verde
+PX-TR-001425,Registro inconsistente / ruido,Verde
+PX-TR-000900,Resfriado común,Verde
+PX-TR-001126,Dolor torácico no cardiaco,Amarillo
+PX-TR-000480,Bronquitis aguda,Amarillo
+PX-TR-000358,Síndrome coronario agudo,Rojo
+PX-TR-000367,Síndrome coronario agudo,Amarillo
+PX-TR-001382,Sinusitis,Verde
+PX-TR-000970,Resfriado común,Verde
+PX-TR-001180,Faringoamigdalitis,Amarillo
+PX-TR-000778,Otitis media,Verde
+PX-TR-000327,Influenza / COVID leve-moderado,Verde
+PX-TR-000455,Gastroenteritis,Verde
+PX-TR-000493,Exacerbación asmática,Verde
+PX-TR-000121,Resfriado común,Verde
+PX-TR-000840,Apendicitis,Rojo
+PX-TR-001531,Registro inconsistente / ruido,Rojo
+PX-TR-001211,Gastroenteritis,Amarillo
+PX-TR-000163,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000225,Cistitis / IVU baja,Verde
+PX-TR-000703,EVC / ACV,Amarillo
+PX-TR-000102,Pielonefritis,Amarillo
+PX-TR-001447,Registro inconsistente / ruido,Verde
+PX-TR-000154,Faringoamigdalitis,Verde
+PX-TR-000600,Infección viral febril inespecífica,Verde
+PX-TR-000291,Síndrome coronario agudo,Rojo
+PX-TR-001399,Síndrome coronario agudo,Rojo
+PX-TR-000099,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-001444,Registro inconsistente / ruido,Verde
+PX-TR-001001,Abdomen agudo / peritonitis,Amarillo
+PX-TR-001317,Otitis media,Amarillo
+PX-TR-000562,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-001285,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-001500,Registro inconsistente / ruido,Amarillo
+PX-TR-000749,Resfriado común,Amarillo
+PX-TR-001110,Dengue,Rojo
+PX-TR-001482,Registro inconsistente / ruido,Amarillo
+PX-TR-000457,Influenza / COVID leve-moderado,Verde
+PX-TR-001290,Migraña / cefalea tensional,Amarillo
+PX-TR-000238,Cistitis / IVU baja,Amarillo
+PX-TR-001234,Hiperémesis gravídica,Amarillo
+PX-TR-000056,Pielonefritis,Rojo
+PX-TR-000292,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000443,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000138,Faringoamigdalitis,Amarillo
+PX-TR-000828,Cólico renal,Amarillo
+PX-TR-001089,Cólico biliar / colecistitis,Amarillo
+PX-TR-000626,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-001498,Registro inconsistente / ruido,Amarillo
+PX-TR-001007,Abdomen agudo / peritonitis,Rojo
+PX-TR-001520,Registro inconsistente / ruido,Rojo
+PX-TR-000973,Neumonía,Rojo
+PX-TR-000679,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000732,Bronquitis aguda,Amarillo
+PX-TR-001351,Resfriado común,Verde
+PX-TR-000394,Exacerbación asmática,Amarillo
+PX-TR-000150,Gastritis / dispepsia,Verde
+PX-TR-001460,Registro inconsistente / ruido,Amarillo
+PX-TR-001172,Exacerbación asmática,Rojo
+PX-TR-000492,Hiperémesis gravídica,Amarillo
+PX-TR-000310,Pielonefritis,Amarillo
+PX-TR-001124,Disminución de movimientos fetales,Rojo
+PX-TR-000561,Gastroenteritis,Rojo
+PX-TR-001423,Registro inconsistente / ruido,Verde
+PX-TR-001412,Registro inconsistente / ruido,Verde
+PX-TR-000672,EVC / ACV,Rojo
+PX-TR-001097,Cólico renal,Amarillo
+PX-TR-001002,Abdomen agudo / peritonitis,Amarillo
+PX-TR-001450,Registro inconsistente / ruido,Amarillo
+PX-TR-000329,Resfriado común,Verde
+PX-TR-000800,Dolor torácico no cardiaco,Verde
+PX-TR-001354,Resfriado común,Verde
+PX-TR-000337,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-001376,Sinusitis,Amarillo
+PX-TR-000495,EVC / ACV,Rojo
+PX-TR-001495,Registro inconsistente / ruido,Amarillo
+PX-TR-001025,Apendicitis,Amarillo
+PX-TR-001468,Registro inconsistente / ruido,Amarillo
+PX-TR-000379,Apendicitis,Amarillo
+PX-TR-000566,Infección viral febril inespecífica,Verde
+PX-TR-000748,Gastroenteritis,Verde
+PX-TR-001243,Hiperémesis gravídica,Verde
+PX-TR-001364,Resfriado común,Verde
+PX-TR-001113,Dengue,Rojo
+PX-TR-000986,Exacerbación asmática,Amarillo
+PX-TR-001062,Cistitis / IVU baja,Verde
+PX-TR-000267,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000696,Abdomen agudo / peritonitis,Rojo
+PX-TR-000203,Pielonefritis,Rojo
+PX-TR-001119,Disminución de movimientos fetales,Amarillo
+PX-TR-000220,Resfriado común,Verde
+PX-TR-001266,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000955,Dengue,Rojo
+PX-TR-000487,Migraña / cefalea tensional,Verde
+PX-TR-000473,Gastroenteritis,Verde
+PX-TR-001371,Resfriado común,Verde
+PX-TR-000206,Influenza / COVID leve-moderado,Verde
+PX-TR-000488,Gastritis / dispepsia,Amarillo
+PX-TR-000796,EVC / ACV,Rojo
+PX-TR-000762,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000471,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000892,Dolor torácico no cardiaco,Verde
+PX-TR-001392,Síndrome coronario agudo,Rojo
+PX-TR-001204,Gastritis / dispepsia,Verde
+PX-TR-001358,Resfriado común,Verde
+PX-TR-001295,Migraña / cefalea tensional,Verde
+PX-TR-000383,Abdomen agudo / peritonitis,Amarillo
+PX-TR-000427,Faringoamigdalitis,Amarillo
+PX-TR-001374,Resfriado común,Verde
+PX-TR-000186,Faringoamigdalitis,Verde
+PX-TR-000033,Disminución de movimientos fetales,Amarillo
+PX-TR-001108,Dengue,Amarillo
+PX-TR-001182,Faringoamigdalitis,Amarillo
+PX-TR-001459,Registro inconsistente / ruido,Amarillo
+PX-TR-000451,Apendicitis,Amarillo
+PX-TR-001396,Síndrome coronario agudo,Rojo
+PX-TR-001397,Síndrome coronario agudo,Rojo
+PX-TR-001463,Registro inconsistente / ruido,Amarillo
+PX-TR-000400,Exacerbación asmática,Amarillo
+PX-TR-001187,Faringoamigdalitis,Verde
+PX-TR-001308,Neumonía,Amarillo
+PX-TR-000854,Abdomen agudo / peritonitis,Rojo
+PX-TR-000876,Exacerbación asmática,Verde
+PX-TR-001173,Exacerbación asmática,Verde
+PX-TR-000512,Hiperémesis gravídica,Amarillo
+PX-TR-000120,Gastroenteritis,Verde
+PX-TR-000632,EVC / ACV,Amarillo
+PX-TR-001067,Cistitis / IVU baja,Verde
+PX-TR-001160,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000360,Hiperémesis gravídica,Amarillo
+PX-TR-000700,Gastritis / dispepsia,Verde
+PX-TR-000039,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000078,Resfriado común,Verde
+PX-TR-000946,Otitis media,Verde
+PX-TR-000034,Resfriado común,Verde
+PX-TR-000726,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-001059,Cistitis / IVU baja,Rojo
+PX-TR-000705,Dolor torácico no cardiaco,Verde
+PX-TR-000091,Cistitis / IVU baja,Verde
+PX-TR-001202,Gastritis / dispepsia,Verde
+PX-TR-000831,Influenza / COVID leve-moderado,Verde
+PX-TR-000929,Neumonía,Amarillo
+PX-TR-001523,Registro inconsistente / ruido,Rojo
+PX-TR-000009,Cistitis / IVU baja,Verde
+PX-TR-001076,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-001020,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000866,Otitis media,Amarillo
+PX-TR-000164,Gastroenteritis,Amarillo
+PX-TR-000794,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-001159,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000577,Abdomen agudo / peritonitis,Rojo
+PX-TR-000901,Cólico biliar / colecistitis,Amarillo
+PX-TR-000499,Otitis media,Verde
+PX-TR-001472,Registro inconsistente / ruido,Amarillo
+PX-TR-000820,Dengue,Rojo
+PX-TR-000461,Dengue,Amarillo
+PX-TR-000391,Hiperémesis gravídica,Amarillo
+PX-TR-000459,Neumonía,Amarillo
+PX-TR-001452,Registro inconsistente / ruido,Amarillo
+PX-TR-001079,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-000664,Neumonía,Amarillo
+PX-TR-000674,Cistitis / IVU baja,Verde
+PX-TR-000908,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000080,Neumonía,Amarillo
+PX-TR-000082,Resfriado común,Verde
+PX-TR-000758,Exacerbación asmática,Verde
+PX-TR-000879,Infección viral febril inespecífica,Verde
+PX-TR-000144,Síndrome coronario agudo,Amarillo
+PX-TR-000665,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000930,Síndrome coronario agudo,Rojo
+PX-TR-000134,Exacerbación asmática,Amarillo
+PX-TR-001439,Registro inconsistente / ruido,Verde
+PX-TR-000614,Infección viral febril inespecífica,Verde
+PX-TR-000242,Gastroenteritis,Verde
+PX-TR-000088,Gastroenteritis,Verde
+PX-TR-000610,Abdomen agudo / peritonitis,Rojo
+PX-TR-000805,Faringoamigdalitis,Amarillo
+PX-TR-001326,Otitis media,Verde
+PX-TR-000599,Neumonía,Amarillo
+PX-TR-001038,Apendicitis,Rojo
+PX-TR-000152,Resfriado común,Verde
+PX-TR-000023,Resfriado común,Amarillo
+PX-TR-001130,Dolor torácico no cardiaco,Verde
+PX-TR-000125,Abdomen agudo / peritonitis,Rojo
+PX-TR-001497,Registro inconsistente / ruido,Amarillo
+PX-TR-000813,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-001534,Registro inconsistente / ruido,Rojo
+PX-TR-001077,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-001264,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000309,Gastroenteritis,Verde
+PX-TR-001338,Pielonefritis,Amarillo
+PX-TR-000228,Apendicitis,Rojo
+PX-TR-001335,Pielonefritis,Amarillo
+PX-TR-001307,Neumonía,Amarillo
+PX-TR-000230,Dolor torácico no cardiaco,Amarillo
+PX-TR-001069,Cistitis / IVU baja,Verde
+PX-TR-000139,Gastroenteritis,Amarillo
+PX-TR-001530,Registro inconsistente / ruido,Rojo
+PX-TR-000520,Disminución de movimientos fetales,Rojo
+PX-TR-000197,Influenza / COVID leve-moderado,Verde
+PX-TR-000702,Apendicitis,Amarillo
+PX-TR-000275,Migraña / cefalea tensional,Amarillo
+PX-TR-000472,Faringoamigdalitis,Verde
+PX-TR-001057,Cistitis / IVU baja,Amarillo
+PX-TR-001336,Pielonefritis,Amarillo
+PX-TR-000114,Faringoamigdalitis,Verde
+PX-TR-000300,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001279,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000434,Síndrome coronario agudo,Amarillo
+PX-TR-001042,Bronquitis aguda,Amarillo
+PX-TR-000896,Faringoamigdalitis,Amarillo
+PX-TR-000068,Neumonía,Amarillo
+PX-TR-001254,Infección viral febril inespecífica,Verde
+PX-TR-000537,Apendicitis,Rojo
+PX-TR-001000,Sinusitis,Verde
+PX-TR-000410,Migraña / cefalea tensional,Verde
+PX-TR-000417,Síndrome coronario agudo,Rojo
+PX-TR-000649,Faringoamigdalitis,Amarillo
+PX-TR-000014,Apendicitis,Amarillo
+PX-TR-001242,Hiperémesis gravídica,Rojo
+PX-TR-000865,Hiperémesis gravídica,Amarillo
+PX-TR-001073,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000026,Síndrome coronario agudo,Rojo
+PX-TR-001489,Registro inconsistente / ruido,Amarillo
+PX-TR-000553,Neumonía,Amarillo
+PX-TR-000771,Faringoamigdalitis,Verde
+PX-TR-000835,EVC / ACV,Rojo
+PX-TR-000142,Resfriado común,Amarillo
+PX-TR-001133,Dolor torácico no cardiaco,Verde
+PX-TR-001029,Apendicitis,Amarillo
+PX-TR-001502,Registro inconsistente / ruido,Amarillo
+PX-TR-001060,Cistitis / IVU baja,Rojo
+PX-TR-000128,Cistitis / IVU baja,Verde
+PX-TR-000209,Otitis media,Amarillo
+PX-TR-000926,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-001389,Síndrome coronario agudo,Rojo
+PX-TR-000385,Faringoamigdalitis,Verde
+PX-TR-001433,Registro inconsistente / ruido,Verde
+PX-TR-001092,Cólico biliar / colecistitis,Rojo
+PX-TR-000641,Pielonefritis,Rojo
+PX-TR-001018,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000339,Abdomen agudo / peritonitis,Rojo
+PX-TR-000571,Cistitis / IVU baja,Amarillo
+PX-TR-000214,EVC / ACV,Rojo
+PX-TR-001337,Pielonefritis,Amarillo
+PX-TR-001342,Pielonefritis,Rojo
+PX-TR-000474,Otitis media,Verde
+PX-TR-000162,Cistitis / IVU baja,Verde
+PX-TR-001509,Registro inconsistente / ruido,Rojo
+PX-TR-000167,Hiperémesis gravídica,Amarillo
+PX-TR-000277,Resfriado común,Verde
+PX-TR-001318,Otitis media,Amarillo
+PX-TR-001429,Registro inconsistente / ruido,Verde
+PX-TR-000286,Otitis media,Verde
+PX-TR-000021,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000282,Gastroenteritis,Verde
+PX-TR-001323,Otitis media,Verde
+PX-TR-000542,Infección viral febril inespecífica,Verde
+PX-TR-001045,Bronquitis aguda,Amarillo
+PX-TR-001507,Registro inconsistente / ruido,Rojo
+PX-TR-000423,Cólico biliar / colecistitis,Rojo
+PX-TR-001331,Pielonefritis,Amarillo
+PX-TR-001147,EVC / ACV,Rojo
+PX-TR-001379,Sinusitis,Verde
+PX-TR-000229,Resfriado común,Verde
+PX-TR-001359,Resfriado común,Verde
+PX-TR-000436,Apendicitis,Amarillo
+PX-TR-000855,Síndrome coronario agudo,Rojo
+PX-TR-001238,Hiperémesis gravídica,Amarillo
+PX-TR-001186,Faringoamigdalitis,Verde
+PX-TR-001418,Registro inconsistente / ruido,Verde
+PX-TR-000243,Migraña / cefalea tensional,Verde
+PX-TR-001170,Exacerbación asmática,Rojo
+PX-TR-000917,Cistitis / IVU baja,Verde
+PX-TR-000249,Faringoamigdalitis,Amarillo
+PX-TR-001086,Cólico biliar / colecistitis,Amarillo
+PX-TR-000777,Infección viral febril inespecífica,Verde
+PX-TR-001348,Resfriado común,Amarillo
+PX-TR-000505,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000585,Hiperémesis gravídica,Amarillo
+PX-TR-001533,Registro inconsistente / ruido,Rojo
+PX-TR-000936,Dolor torácico no cardiaco,Verde
+PX-TR-001169,Exacerbación asmática,Rojo
+PX-TR-000972,Infección viral febril inespecífica,Verde
+PX-TR-001102,Cólico renal,Rojo
+PX-TR-000915,EVC / ACV,Rojo
+PX-TR-000535,Pielonefritis,Amarillo
+PX-TR-000902,Exacerbación asmática,Rojo
+PX-TR-000767,Resfriado común,Verde
+PX-TR-001107,Dengue,Amarillo
+PX-TR-000949,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000627,Hiperémesis gravídica,Amarillo
+PX-TR-000231,Resfriado común,Verde
+PX-TR-000227,Exacerbación asmática,Rojo
+PX-TR-001253,Infección viral febril inespecífica,Verde
+PX-TR-000448,Cistitis / IVU baja,Amarillo
+PX-TR-000916,Bronquitis aguda,Verde
+PX-TR-000463,EVC / ACV,Amarillo
+PX-TR-000541,Gastroenteritis,Amarillo
+PX-TR-000775,Migraña / cefalea tensional,Amarillo
+PX-TR-001149,EVC / ACV,Rojo
+PX-TR-000062,Disminución de movimientos fetales,Rojo
+PX-TR-000944,Cistitis / IVU baja,Verde
+PX-TR-000625,Faringoamigdalitis,Verde
+PX-TR-000105,Abdomen agudo / peritonitis,Rojo
+PX-TR-001012,Abdomen agudo / peritonitis,Rojo
+PX-TR-000108,Faringoamigdalitis,Verde
+PX-TR-000899,Gastritis / dispepsia,Amarillo
+PX-TR-000096,Dolor torácico no cardiaco,Verde
+PX-TR-001261,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000234,Gastroenteritis,Amarillo
+PX-TR-000251,Gastroenteritis,Amarillo
+PX-TR-000904,Faringoamigdalitis,Verde
+PX-TR-000752,Influenza / COVID leve-moderado,Verde
+PX-TR-000956,Bronquitis aguda,Amarillo
+PX-TR-001365,Resfriado común,Verde
+PX-TR-001467,Registro inconsistente / ruido,Amarillo
+PX-TR-001388,Síndrome coronario agudo,Amarillo
+PX-TR-000352,Otitis media,Amarillo
+PX-TR-001037,Apendicitis,Rojo
+PX-TR-001090,Cólico biliar / colecistitis,Amarillo
+PX-TR-001333,Pielonefritis,Amarillo
+PX-TR-000657,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000460,Abdomen agudo / peritonitis,Rojo
+PX-TR-000467,Exacerbación asmática,Amarillo
+PX-TR-000407,Exacerbación asmática,Rojo
+PX-TR-000719,Otitis media,Verde
+PX-TR-000284,Cólico renal,Amarillo
+PX-TR-001166,Exacerbación asmática,Amarillo
+PX-TR-001022,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-001226,Gastroenteritis,Verde
+PX-TR-000565,Resfriado común,Amarillo
+PX-TR-000576,EVC / ACV,Rojo
+PX-TR-001510,Registro inconsistente / ruido,Rojo
+PX-TR-000173,EVC / ACV,Rojo
+PX-TR-000465,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000691,Gastroenteritis,Verde
+PX-TR-001453,Registro inconsistente / ruido,Amarillo
+PX-TR-001535,Registro inconsistente / ruido,Rojo
+PX-TR-000439,Bronquitis aguda,Amarillo
+PX-TR-001015,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-001034,Apendicitis,Rojo
+PX-TR-001251,Infección viral febril inespecífica,Verde
+PX-TR-000485,Neumonía,Amarillo
+PX-TR-001437,Registro inconsistente / ruido,Verde
+PX-TR-001381,Sinusitis,Verde
+PX-TR-000025,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001315,Neumonía,Rojo
+PX-TR-000743,Influenza / COVID leve-moderado,Verde
+PX-TR-000313,Exacerbación asmática,Amarillo
+PX-TR-001228,Gastroenteritis,Verde
+PX-TR-000578,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000526,Gastroenteritis,Rojo
+PX-TR-000591,Infección viral febril inespecífica,Amarillo
+PX-TR-000402,Otitis media,Verde
+PX-TR-000335,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-000346,Resfriado común,Amarillo
+PX-TR-001236,Hiperémesis gravídica,Amarillo
+PX-TR-000074,Resfriado común,Verde
+PX-TR-001461,Registro inconsistente / ruido,Amarillo
+PX-TR-000084,Migraña / cefalea tensional,Verde
+PX-TR-000176,Resfriado común,Verde
+PX-TR-000419,Bronquitis aguda,Amarillo
+PX-TR-000681,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000923,Dengue,Rojo
+PX-TR-001066,Cistitis / IVU baja,Verde
+PX-TR-000283,Exacerbación asmática,Amarillo
+PX-TR-000953,Exacerbación asmática,Amarillo
+PX-TR-001442,Registro inconsistente / ruido,Verde
+PX-TR-000590,Migraña / cefalea tensional,Verde
+PX-TR-001430,Registro inconsistente / ruido,Verde
+PX-TR-000085,Influenza / COVID leve-moderado,Verde
+PX-TR-000035,Cistitis / IVU baja,Verde
+PX-TR-000895,Abdomen agudo / peritonitis,Rojo
+PX-TR-001428,Registro inconsistente / ruido,Verde
+PX-TR-000594,Exacerbación asmática,Rojo
+PX-TR-001529,Registro inconsistente / ruido,Rojo
+PX-TR-001455,Registro inconsistente / ruido,Amarillo
+PX-TR-000987,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000205,Síndrome coronario agudo,Rojo
+PX-TR-000372,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001218,Gastroenteritis,Rojo
+PX-TR-001435,Registro inconsistente / ruido,Verde
+PX-TR-000106,Faringoamigdalitis,Amarillo
+PX-TR-000889,EVC / ACV,Amarillo
+PX-TR-001505,Registro inconsistente / ruido,Amarillo
+PX-TR-000350,Neumonía,Amarillo
+PX-TR-000797,Cólico renal,Rojo
+PX-TR-000183,Disminución de movimientos fetales,Amarillo
+PX-TR-000298,Resfriado común,Verde
+PX-TR-000532,Faringoamigdalitis,Verde
+PX-TR-000655,Gastroenteritis,Amarillo
+PX-TR-000363,Neumonía,Amarillo
+PX-TR-000491,Resfriado común,Verde
+PX-TR-000859,Síndrome coronario agudo,Rojo
+PX-TR-000637,Exacerbación asmática,Amarillo
+PX-TR-000475,Pielonefritis,Rojo
+PX-TR-000699,Resfriado común,Verde
+PX-TR-000196,Hiperémesis gravídica,Amarillo
+PX-TR-000744,Hiperémesis gravídica,Amarillo
+PX-TR-001224,Gastroenteritis,Verde
+PX-TR-000844,Infección viral febril inespecífica,Amarillo
+PX-TR-000046,Neumonía,Rojo
+PX-TR-000847,Neumonía,Amarillo
+PX-TR-000426,Síndrome coronario agudo,Rojo
+PX-TR-000065,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000954,Apendicitis,Amarillo
+PX-TR-001434,Registro inconsistente / ruido,Verde
+PX-TR-000020,Resfriado común,Verde
+PX-TR-001349,Resfriado común,Amarillo
+PX-TR-000961,Neumonía,Amarillo
+PX-TR-000754,Infección viral febril inespecífica,Verde
+PX-TR-001196,Gastritis / dispepsia,Amarillo
+PX-TR-001047,Bronquitis aguda,Verde
+PX-TR-000697,Neumonía,Rojo
+PX-TR-001386,Síndrome coronario agudo,Amarillo
+PX-TR-001391,Síndrome coronario agudo,Rojo
+PX-TR-000097,Gastritis / dispepsia,Verde
+PX-TR-000481,Cistitis / IVU baja,Amarillo
+PX-TR-001393,Síndrome coronario agudo,Rojo
+PX-TR-001422,Registro inconsistente / ruido,Verde
+PX-TR-001248,Infección viral febril inespecífica,Verde
+PX-TR-001340,Pielonefritis,Rojo
+PX-TR-001411,Registro inconsistente / ruido,Verde
+PX-TR-001314,Neumonía,Rojo
+PX-TR-000166,Influenza / COVID leve-moderado,Verde
+PX-TR-000834,Infección viral febril inespecífica,Verde
+PX-TR-000500,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000849,Bronquitis aguda,Amarillo
+PX-TR-000755,Bronquitis aguda,Verde
+PX-TR-000069,Cólico biliar / colecistitis,Amarillo
+PX-TR-001469,Registro inconsistente / ruido,Amarillo
+PX-TR-001249,Infección viral febril inespecífica,Verde
+PX-TR-000356,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-001521,Registro inconsistente / ruido,Rojo
+PX-TR-001035,Apendicitis,Rojo
+PX-TR-000384,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000918,Faringoamigdalitis,Amarillo
+PX-TR-000669,EVC / ACV,Rojo
+PX-TR-000354,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000321,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000050,Neumonía,Amarillo
+PX-TR-000729,Cólico biliar / colecistitis,Amarillo
+PX-TR-000342,Faringoamigdalitis,Verde
+PX-TR-000874,Neumonía,Rojo
+PX-TR-000711,Pielonefritis,Amarillo
+PX-TR-000942,Apendicitis,Rojo
+PX-TR-000948,Síndrome coronario agudo,Amarillo
+PX-TR-000133,Gastroenteritis,Verde
+PX-TR-000609,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001481,Registro inconsistente / ruido,Amarillo
+PX-TR-000509,Sinusitis,Verde
+PX-TR-001205,Gastroenteritis,Amarillo
+PX-TR-001401,Registro inconsistente / ruido,Verde
+PX-TR-000110,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-001480,Registro inconsistente / ruido,Amarillo
+PX-TR-001063,Cistitis / IVU baja,Verde
+PX-TR-001138,Dolor torácico no cardiaco,Verde
+PX-TR-000185,Gastroenteritis,Amarillo
+PX-TR-000002,Pielonefritis,Amarillo
+PX-TR-001116,Dengue,Verde
+PX-TR-000377,Cólico biliar / colecistitis,Amarillo
+PX-TR-001024,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000299,Gastroenteritis,Amarillo
+PX-TR-000276,Dolor torácico no cardiaco,Verde
+PX-TR-001272,Influenza / COVID leve-moderado,Verde
+PX-TR-001036,Apendicitis,Rojo
+PX-TR-000689,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-001132,Dolor torácico no cardiaco,Verde
+PX-TR-000883,Resfriado común,Verde
+PX-TR-000515,Infección viral febril inespecífica,Verde
+PX-TR-000077,Cistitis / IVU baja,Amarillo
+PX-TR-000540,Exacerbación asmática,Rojo
+PX-TR-001311,Neumonía,Rojo
+PX-TR-001233,Hiperémesis gravídica,Amarillo
+PX-TR-000063,Cólico renal,Amarillo
+PX-TR-000639,Sinusitis,Verde
+PX-TR-001021,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000387,Dolor torácico no cardiaco,Verde
+PX-TR-001163,Exacerbación asmática,Amarillo
+PX-TR-001476,Registro inconsistente / ruido,Amarillo
+PX-TR-000867,Confusión metabólica / deshidratación severa,Verde
+PX-TR-001395,Síndrome coronario agudo,Rojo
+PX-TR-001441,Registro inconsistente / ruido,Verde
+PX-TR-000832,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000640,Síndrome coronario agudo,Rojo
+PX-TR-001501,Registro inconsistente / ruido,Amarillo
+PX-TR-001013,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000662,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001142,EVC / ACV,Amarillo
+PX-TR-000094,Abdomen agudo / peritonitis,Rojo
+PX-TR-001158,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-001250,Infección viral febril inespecífica,Verde
+PX-TR-000629,Cistitis / IVU baja,Amarillo
+PX-TR-000728,Dengue,Rojo
+PX-TR-000019,Pielonefritis,Rojo
+PX-TR-000939,Neumonía,Amarillo
+PX-TR-001041,Bronquitis aguda,Amarillo
+PX-TR-001183,Faringoamigdalitis,Verde
+PX-TR-000454,Otitis media,Verde
+PX-TR-000189,Influenza / COVID leve-moderado,Verde
+PX-TR-000369,Hiperémesis gravídica,Rojo
+PX-TR-000182,Resfriado común,Verde
+PX-TR-000546,Migraña / cefalea tensional,Amarillo
+PX-TR-000693,Dengue,Amarillo
+PX-TR-001150,EVC / ACV,Rojo
+PX-TR-000925,Pielonefritis,Amarillo
+PX-TR-001244,Hiperémesis gravídica,Verde
+PX-TR-000092,Resfriado común,Verde
+PX-TR-000549,Migraña / cefalea tensional,Verde
+PX-TR-000837,Resfriado común,Verde
+PX-TR-000042,Faringoamigdalitis,Amarillo
+PX-TR-001363,Resfriado común,Verde
+PX-TR-001023,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-001051,Cistitis / IVU baja,Amarillo
+PX-TR-000272,Gastroenteritis,Amarillo
+PX-TR-000580,Otitis media,Verde
+PX-TR-000531,Gastroenteritis,Amarillo
+PX-TR-000645,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000933,Infección viral febril inespecífica,Verde
+PX-TR-000808,Dengue,Rojo
+PX-TR-000188,Gastroenteritis,Amarillo
+PX-TR-000122,Cistitis / IVU baja,Amarillo
+PX-TR-000517,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000431,Gastritis / dispepsia,Verde
+PX-TR-000829,Apendicitis,Amarillo
+PX-TR-000680,Síndrome coronario agudo,Rojo
+PX-TR-001141,EVC / ACV,Amarillo
+PX-TR-000247,Otitis media,Amarillo
+PX-TR-000952,Infección viral febril inespecífica,Verde
+PX-TR-001032,Apendicitis,Amarillo
+PX-TR-000024,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000265,Neumonía,Amarillo
+PX-TR-000958,Sinusitis,Amarillo
+PX-TR-000551,Gastroenteritis,Verde
+PX-TR-000872,Bronquitis aguda,Amarillo
+PX-TR-000437,Otitis media,Verde
+PX-TR-001094,Cólico biliar / colecistitis,Verde
+PX-TR-001281,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000416,Cólico biliar / colecistitis,Rojo
+PX-TR-000779,Síndrome coronario agudo,Rojo
+PX-TR-000989,Disminución de movimientos fetales,Rojo
+PX-TR-000345,Migraña / cefalea tensional,Verde
+PX-TR-000240,Cólico renal,Verde
+PX-TR-001321,Otitis media,Verde
+PX-TR-001449,Registro inconsistente / ruido,Verde
+PX-TR-000513,Dolor torácico no cardiaco,Verde
+PX-TR-000713,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001260,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001400,Síndrome coronario agudo,Rojo
+PX-TR-000257,Influenza / COVID leve-moderado,Verde
+PX-TR-000489,Resfriado común,Verde
+PX-TR-000704,Sinusitis,Amarillo
+PX-TR-000349,EVC / ACV,Rojo
+PX-TR-001404,Registro inconsistente / ruido,Verde
+PX-TR-001239,Hiperémesis gravídica,Amarillo
+PX-TR-000575,Cólico biliar / colecistitis,Verde
+PX-TR-001229,Gastroenteritis,Verde
+PX-TR-001464,Registro inconsistente / ruido,Amarillo
+PX-TR-000776,Gastroenteritis,Verde
+PX-TR-001252,Infección viral febril inespecífica,Verde
+PX-TR-000894,Cistitis / IVU baja,Rojo
+PX-TR-001083,Confusión metabólica / deshidratación severa,Verde
+PX-TR-001221,Gastroenteritis,Verde
+PX-TR-000169,Cistitis / IVU baja,Verde
+PX-TR-001055,Cistitis / IVU baja,Amarillo
+PX-TR-000634,Dengue,Amarillo
+PX-TR-000984,Abdomen agudo / peritonitis,Amarillo
+PX-TR-000651,Resfriado común,Verde
+PX-TR-000723,Bronquitis aguda,Verde
+PX-TR-001256,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001175,Faringoamigdalitis,Amarillo
+PX-TR-000165,Síndrome coronario agudo,Rojo
+PX-TR-000004,Cistitis / IVU baja,Rojo
+PX-TR-000598,Hiperémesis gravídica,Amarillo
+PX-TR-000997,Exacerbación asmática,Amarillo
+PX-TR-000529,Gastritis / dispepsia,Verde
+PX-TR-001200,Gastritis / dispepsia,Verde
+PX-TR-001241,Hiperémesis gravídica,Rojo
+PX-TR-001298,Migraña / cefalea tensional,Verde
+PX-TR-001309,Neumonía,Rojo
+PX-TR-001339,Pielonefritis,Rojo
+PX-TR-001518,Registro inconsistente / ruido,Rojo
+PX-TR-000863,Dengue,Verde
+PX-TR-001099,Cólico renal,Amarillo
+PX-TR-000373,Migraña / cefalea tensional,Verde
+PX-TR-001091,Cólico biliar / colecistitis,Rojo
+PX-TR-000470,Dolor torácico no cardiaco,Amarillo
+PX-TR-000503,Resfriado común,Verde
+PX-TR-000802,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-001190,Faringoamigdalitis,Verde
+PX-TR-000058,Apendicitis,Rojo
+PX-TR-001167,Exacerbación asmática,Amarillo
+PX-TR-000140,Resfriado común,Verde
+PX-TR-001524,Registro inconsistente / ruido,Rojo
+PX-TR-000048,Cistitis / IVU baja,Amarillo
+PX-TR-000001,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001277,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000421,Gastroenteritis,Amarillo
+PX-TR-001192,Faringoamigdalitis,Verde
+PX-TR-000941,Resfriado común,Amarillo
+PX-TR-000497,Dolor torácico no cardiaco,Verde
+PX-TR-001493,Registro inconsistente / ruido,Amarillo
+PX-TR-000392,Neumonía,Amarillo
+PX-TR-000836,Dolor torácico no cardiaco,Verde
+PX-TR-000722,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000692,Faringoamigdalitis,Verde
+PX-TR-001201,Gastritis / dispepsia,Verde
+PX-TR-001212,Gastroenteritis,Amarillo
+PX-TR-000111,Dolor torácico no cardiaco,Verde
+PX-TR-001345,Resfriado común,Amarillo
+PX-TR-000374,Bronquitis aguda,Amarillo
+PX-TR-001117,Disminución de movimientos fetales,Amarillo
+PX-TR-000720,Abdomen agudo / peritonitis,Amarillo
+PX-TR-001293,Migraña / cefalea tensional,Verde
+PX-TR-000974,Cólico renal,Amarillo
+PX-TR-001177,Faringoamigdalitis,Amarillo
+PX-TR-000845,Cistitis / IVU baja,Amarillo
+PX-TR-001410,Registro inconsistente / ruido,Verde
+PX-TR-000646,Otitis media,Amarillo
+PX-TR-001368,Resfriado común,Verde
+PX-TR-001050,Bronquitis aguda,Verde
+PX-TR-001208,Gastroenteritis,Amarillo
+PX-TR-001128,Dolor torácico no cardiaco,Amarillo
+PX-TR-000990,Bronquitis aguda,Verde
+PX-TR-000452,Neumonía,Rojo
+PX-TR-000635,Neumonía,Rojo
+PX-TR-000262,Resfriado común,Verde
+PX-TR-000428,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-001519,Registro inconsistente / ruido,Rojo
+PX-TR-000857,Migraña / cefalea tensional,Verde
+PX-TR-000260,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-001115,Dengue,Verde
+PX-TR-000271,Cistitis / IVU baja,Verde
+PX-TR-001235,Hiperémesis gravídica,Amarillo
+PX-TR-001446,Registro inconsistente / ruido,Verde
+PX-TR-001088,Cólico biliar / colecistitis,Amarillo
+PX-TR-000396,Exacerbación asmática,Amarillo
+PX-TR-000364,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-001287,Migraña / cefalea tensional,Amarillo
+PX-TR-000814,Resfriado común,Verde
+PX-TR-000295,Gastroenteritis,Verde
+PX-TR-000756,Gastroenteritis,Verde
+PX-TR-000303,Síndrome coronario agudo,Rojo
+PX-TR-000636,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000409,Cólico biliar / colecistitis,Verde
+PX-TR-000891,Cistitis / IVU baja,Verde
+PX-TR-001191,Faringoamigdalitis,Verde
+PX-TR-000440,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000059,Hiperémesis gravídica,Verde
+PX-TR-001477,Registro inconsistente / ruido,Amarillo
+PX-TR-000759,Migraña / cefalea tensional,Verde
+PX-TR-000368,Otitis media,Verde
+PX-TR-000966,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000763,Cólico renal,Amarillo
+PX-TR-001104,Cólico renal,Verde
+PX-TR-001299,Neumonía,Amarillo
+PX-TR-000172,Faringoamigdalitis,Verde
+PX-TR-001384,Sinusitis,Verde
+PX-TR-001246,Infección viral febril inespecífica,Amarillo
+PX-TR-000996,Hiperémesis gravídica,Rojo
+PX-TR-000031,Neumonía,Rojo
+PX-TR-001301,Neumonía,Amarillo
+PX-TR-000445,Faringoamigdalitis,Verde
+PX-TR-000051,Apendicitis,Rojo
+PX-TR-001206,Gastroenteritis,Amarillo
+PX-TR-001528,Registro inconsistente / ruido,Rojo
+PX-TR-000856,Sinusitis,Verde
+PX-TR-001456,Registro inconsistente / ruido,Amarillo
+PX-TR-000483,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000304,Resfriado común,Verde
+PX-TR-000502,Dolor torácico no cardiaco,Verde
+PX-TR-000648,Abdomen agudo / peritonitis,Rojo
+PX-TR-001278,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000833,Sinusitis,Amarillo
+PX-TR-001448,Registro inconsistente / ruido,Verde
+PX-TR-001402,Registro inconsistente / ruido,Verde
+PX-TR-001109,Dengue,Rojo
+PX-TR-001297,Migraña / cefalea tensional,Verde
+PX-TR-000263,Abdomen agudo / peritonitis,Rojo
+PX-TR-000586,Cólico biliar / colecistitis,Amarillo
+PX-TR-000656,Infección viral febril inespecífica,Amarillo
+PX-TR-001217,Gastroenteritis,Rojo
+PX-TR-001288,Migraña / cefalea tensional,Amarillo
+PX-TR-000519,Influenza / COVID leve-moderado,Verde
+PX-TR-000067,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-001347,Resfriado común,Amarillo
+PX-TR-001488,Registro inconsistente / ruido,Amarillo
+PX-TR-000338,Dolor torácico no cardiaco,Amarillo
+PX-TR-001155,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000862,Sinusitis,Amarillo
+PX-TR-000712,Gastritis / dispepsia,Verde
+PX-TR-000149,Resfriado común,Verde
+PX-TR-000029,Neumonía,Rojo
+PX-TR-001014,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000988,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001486,Registro inconsistente / ruido,Amarillo
+PX-TR-000233,Influenza / COVID leve-moderado,Verde
+PX-TR-001413,Registro inconsistente / ruido,Verde
+PX-TR-001494,Registro inconsistente / ruido,Amarillo
+PX-TR-000882,EVC / ACV,Rojo
+PX-TR-000224,Neumonía,Rojo
+PX-TR-000357,Faringoamigdalitis,Verde
+PX-TR-000773,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000707,Hiperémesis gravídica,Amarillo
+PX-TR-000530,Bronquitis aguda,Amarillo
+PX-TR-000951,Influenza / COVID leve-moderado,Verde
+PX-TR-001095,Cólico renal,Amarillo
+PX-TR-000761,Otitis media,Amarillo
+PX-TR-001526,Registro inconsistente / ruido,Rojo
+PX-TR-000331,Síndrome coronario agudo,Rojo
+PX-TR-000607,Hiperémesis gravídica,Verde
+PX-TR-000107,Síndrome coronario agudo,Rojo
+PX-TR-000239,Resfriado común,Verde
+PX-TR-000109,Dolor torácico no cardiaco,Verde
+PX-TR-001181,Faringoamigdalitis,Amarillo
+PX-TR-000721,Neumonía,Amarillo
+PX-TR-000237,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000873,Síndrome coronario agudo,Amarillo
+PX-TR-000005,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-001148,EVC / ACV,Rojo
+PX-TR-000336,Resfriado común,Amarillo
+PX-TR-001390,Síndrome coronario agudo,Rojo
+PX-TR-000881,Dolor torácico no cardiaco,Amarillo
+PX-TR-000093,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000533,Gastritis / dispepsia,Verde
+PX-TR-000408,Dolor torácico no cardiaco,Amarillo
+PX-TR-000683,Dolor torácico no cardiaco,Verde
+PX-TR-001046,Bronquitis aguda,Amarillo
+PX-TR-001306,Neumonía,Amarillo
+PX-TR-000622,Cólico renal,Verde
+PX-TR-001262,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001516,Registro inconsistente / ruido,Rojo
+PX-TR-000522,Apendicitis,Rojo
+PX-TR-000143,Disminución de movimientos fetales,Amarillo
+PX-TR-000545,Resfriado común,Amarillo
+PX-TR-000293,Migraña / cefalea tensional,Amarillo
+PX-TR-001093,Cólico biliar / colecistitis,Verde
+PX-TR-000770,Gastroenteritis,Amarillo
+PX-TR-000100,Neumonía,Rojo
+PX-TR-000288,Cólico biliar / colecistitis,Amarillo
+PX-TR-001004,Abdomen agudo / peritonitis,Rojo
+PX-TR-000269,Cistitis / IVU baja,Amarillo
+PX-TR-000201,Faringoamigdalitis,Amarillo
+PX-TR-000868,Faringoamigdalitis,Amarillo
+PX-TR-000932,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000885,Pielonefritis,Rojo
+PX-TR-000971,Síndrome coronario agudo,Rojo
+PX-TR-001081,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-000710,Dengue,Amarillo
+PX-TR-000366,Faringoamigdalitis,Verde
+PX-TR-000159,Cistitis / IVU baja,Verde
+PX-TR-001263,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001350,Resfriado común,Amarillo
+PX-TR-000435,Sinusitis,Verde
+PX-TR-000287,Pielonefritis,Amarillo
+PX-TR-000324,Bronquitis aguda,Amarillo
+PX-TR-000686,Síndrome coronario agudo,Rojo
+PX-TR-001258,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000962,Gastritis / dispepsia,Verde
+PX-TR-000250,Cólico renal,Rojo
+PX-TR-001112,Dengue,Rojo
+PX-TR-001184,Faringoamigdalitis,Verde
+PX-TR-000539,Pielonefritis,Amarillo
+PX-TR-001222,Gastroenteritis,Verde
+PX-TR-001282,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-001016,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000012,Resfriado común,Verde
+PX-TR-000432,Cistitis / IVU baja,Amarillo
+PX-TR-001369,Resfriado común,Verde
+PX-TR-000940,Cólico renal,Rojo
+PX-TR-001328,Otitis media,Verde
+PX-TR-000714,Hiperémesis gravídica,Rojo
+PX-TR-000355,Bronquitis aguda,Verde
+PX-TR-000587,Exacerbación asmática,Rojo
+PX-TR-001373,Resfriado común,Verde
+PX-TR-000319,EVC / ACV,Rojo
+PX-TR-000579,EVC / ACV,Rojo
+PX-TR-000675,Bronquitis aguda,Amarillo
+PX-TR-001257,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000851,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000605,Otitis media,Verde
+PX-TR-001131,Dolor torácico no cardiaco,Verde
+PX-TR-000633,Otitis media,Verde
+PX-TR-000458,Cólico biliar / colecistitis,Amarillo
+PX-TR-000015,Resfriado común,Amarillo
+PX-TR-001156,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-001478,Registro inconsistente / ruido,Amarillo
+PX-TR-001003,Abdomen agudo / peritonitis,Rojo
+PX-TR-001075,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-001134,Dolor torácico no cardiaco,Verde
+PX-TR-001011,Abdomen agudo / peritonitis,Rojo
+PX-TR-001168,Exacerbación asmática,Amarillo
+PX-TR-001043,Bronquitis aguda,Amarillo
+PX-TR-001030,Apendicitis,Amarillo
+PX-TR-001230,Gastroenteritis,Verde
+PX-TR-000850,Cólico renal,Amarillo
+PX-TR-001052,Cistitis / IVU baja,Amarillo
+PX-TR-000496,Gastroenteritis,Verde
+PX-TR-000456,Disminución de movimientos fetales,Rojo
+PX-TR-000117,Gastroenteritis,Verde
+PX-TR-000177,Cistitis / IVU baja,Verde
+PX-TR-000559,Hiperémesis gravídica,Amarillo
+PX-TR-001136,Dolor torácico no cardiaco,Verde
+PX-TR-000053,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-001154,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000573,Gastroenteritis,Verde
+PX-TR-000799,Bronquitis aguda,Amarillo
+PX-TR-000588,Cólico renal,Amarillo
+PX-TR-000075,Hiperémesis gravídica,Amarillo
+PX-TR-001438,Registro inconsistente / ruido,Verde
+PX-TR-000521,Resfriado común,Amarillo
+PX-TR-000089,Resfriado común,Verde
+PX-TR-000527,Influenza / COVID leve-moderado,Verde
+PX-TR-000967,Migraña / cefalea tensional,Amarillo
+PX-TR-000534,Sinusitis,Amarillo
+PX-TR-000429,Gastritis / dispepsia,Verde
+PX-TR-000055,Influenza / COVID leve-moderado,Verde
+PX-TR-001152,EVC / ACV,Rojo
+PX-TR-001120,Disminución de movimientos fetales,Amarillo
+PX-TR-001193,Faringoamigdalitis,Verde
+PX-TR-000040,Cistitis / IVU baja,Verde
+PX-TR-001087,Cólico biliar / colecistitis,Amarillo
+PX-TR-001316,Neumonía,Rojo
+PX-TR-001296,Migraña / cefalea tensional,Verde
+PX-TR-000479,Dengue,Amarillo
+PX-TR-001431,Registro inconsistente / ruido,Verde
+PX-TR-000597,Apendicitis,Amarillo
+PX-TR-000212,Dolor torácico no cardiaco,Verde
+PX-TR-000087,Resfriado común,Verde
+PX-TR-000007,Apendicitis,Amarillo
+PX-TR-001033,Apendicitis,Rojo
+PX-TR-001344,Pielonefritis,Rojo
+PX-TR-000880,Otitis media,Verde
+PX-TR-000155,Apendicitis,Rojo
+PX-TR-000919,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-001185,Faringoamigdalitis,Verde
+PX-TR-000013,Cistitis / IVU baja,Amarillo
+PX-TR-001540,Registro inconsistente / ruido,Rojo
+PX-TR-000468,Gastroenteritis,Amarillo
+PX-TR-001105,Dengue,Amarillo
+PX-TR-000660,Sinusitis,Verde
+PX-TR-000318,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-001291,Migraña / cefalea tensional,Verde
+PX-TR-001319,Otitis media,Amarillo
+PX-TR-001445,Registro inconsistente / ruido,Verde
+PX-TR-000446,Infección viral febril inespecífica,Verde
+PX-TR-000525,Otitis media,Amarillo
+PX-TR-000380,Influenza / COVID leve-moderado,Verde
+PX-TR-001408,Registro inconsistente / ruido,Verde
+PX-TR-001103,Cólico renal,Verde
+PX-TR-001473,Registro inconsistente / ruido,Amarillo
+PX-TR-000388,Otitis media,Verde
+PX-TR-000528,Cistitis / IVU baja,Verde
+PX-TR-001303,Neumonía,Amarillo
+PX-TR-000684,Cistitis / IVU baja,Verde
+PX-TR-000484,Síndrome coronario agudo,Rojo
+PX-TR-000222,Influenza / COVID leve-moderado,Verde
+PX-TR-000738,Neumonía,Amarillo
+PX-TR-001370,Resfriado común,Verde
+PX-TR-001537,Registro inconsistente / ruido,Rojo
+PX-TR-000746,Abdomen agudo / peritonitis,Rojo
+PX-TR-000297,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000389,Gastroenteritis,Verde
+PX-TR-000381,Pielonefritis,Amarillo
+PX-TR-000378,Resfriado común,Verde
+PX-TR-000791,Influenza / COVID leve-moderado,Verde
+PX-TR-001237,Hiperémesis gravídica,Amarillo
+PX-TR-000351,EVC / ACV,Rojo
+PX-TR-001527,Registro inconsistente / ruido,Rojo
+PX-TR-000780,Bronquitis aguda,Amarillo
+PX-TR-000476,Sinusitis,Verde
+PX-TR-000070,Pielonefritis,Rojo
+PX-TR-000581,Dengue,Rojo
+PX-TR-000538,Sinusitis,Amarillo
+PX-TR-001199,Gastritis / dispepsia,Verde
+PX-TR-000361,Cistitis / IVU baja,Verde
+PX-TR-000289,Disminución de movimientos fetales,Amarillo
+PX-TR-001048,Bronquitis aguda,Verde
+PX-TR-001283,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-001171,Exacerbación asmática,Rojo
+PX-TR-000326,Abdomen agudo / peritonitis,Rojo
+PX-TR-000259,Gastritis / dispepsia,Verde
+PX-TR-000676,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000827,Exacerbación asmática,Amarillo
+PX-TR-000957,Dolor torácico no cardiaco,Amarillo
+PX-TR-001216,Gastroenteritis,Amarillo
+PX-TR-001398,Síndrome coronario agudo,Rojo
+PX-TR-000789,Otitis media,Amarillo
+PX-TR-001271,Influenza / COVID leve-moderado,Verde
+PX-TR-000213,Resfriado común,Verde
+PX-TR-000340,Resfriado común,Verde
+PX-TR-000807,Neumonía,Rojo
+PX-TR-001409,Registro inconsistente / ruido,Verde
+PX-TR-000413,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001123,Disminución de movimientos fetales,Rojo
+PX-TR-000469,Dengue,Verde
+PX-TR-000945,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000830,Cólico renal,Verde
+PX-TR-000258,Disminución de movimientos fetales,Amarillo
+PX-TR-001146,EVC / ACV,Rojo
+PX-TR-001161,Exacerbación asmática,Amarillo
+PX-TR-000200,Gastroenteritis,Amarillo
+PX-TR-001451,Registro inconsistente / ruido,Amarillo
+PX-TR-000737,Síndrome coronario agudo,Rojo
+PX-TR-000698,Gastritis / dispepsia,Verde
+PX-TR-000786,Dengue,Verde
+PX-TR-000860,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-000810,Faringoamigdalitis,Amarillo
+PX-TR-000822,Otitis media,Verde
+PX-TR-000103,Gastroenteritis,Verde
+PX-TR-001153,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000199,Cistitis / IVU baja,Verde
+PX-TR-000506,Dengue,Amarillo
+PX-TR-001179,Faringoamigdalitis,Amarillo
+PX-TR-000308,Resfriado común,Verde
+PX-TR-001027,Apendicitis,Amarillo
+PX-TR-000221,Gastroenteritis,Amarillo
+PX-TR-000323,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-001325,Otitis media,Verde
+PX-TR-000518,Gastroenteritis,Verde
+PX-TR-001329,Otitis media,Verde
+PX-TR-000236,Cistitis / IVU baja,Verde
+PX-TR-000328,Gastroenteritis,Amarillo
+PX-TR-001522,Registro inconsistente / ruido,Rojo
+PX-TR-001458,Registro inconsistente / ruido,Amarillo
+PX-TR-000912,Síndrome coronario agudo,Rojo
+PX-TR-000695,Otitis media,Verde
+PX-TR-001203,Gastritis / dispepsia,Verde
+PX-TR-000769,EVC / ACV,Rojo
+PX-TR-000312,Cólico biliar / colecistitis,Amarillo
+PX-TR-000294,Pielonefritis,Rojo
+PX-TR-000498,EVC / ACV,Rojo
+PX-TR-000589,Disminución de movimientos fetales,Amarillo
+PX-TR-001305,Neumonía,Amarillo
+PX-TR-001068,Cistitis / IVU baja,Verde
+PX-TR-001071,Cistitis / IVU baja,Verde
+PX-TR-000266,Abdomen agudo / peritonitis,Rojo
+PX-TR-000332,Gastritis / dispepsia,Verde
+PX-TR-000781,Migraña / cefalea tensional,Amarillo
+PX-TR-000156,Influenza / COVID leve-moderado,Verde
+PX-TR-000118,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001019,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-001485,Registro inconsistente / ruido,Amarillo
+PX-TR-000362,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-001470,Registro inconsistente / ruido,Amarillo
+PX-TR-000965,Hiperémesis gravídica,Amarillo
+PX-TR-000315,Cistitis / IVU baja,Verde
+PX-TR-000178,Otitis media,Verde
+PX-TR-001313,Neumonía,Rojo
+PX-TR-000153,Cólico renal,Rojo
+PX-TR-001490,Registro inconsistente / ruido,Amarillo
+PX-TR-000552,Dengue,Rojo
+PX-TR-001504,Registro inconsistente / ruido,Amarillo
+PX-TR-001443,Registro inconsistente / ruido,Verde
+PX-TR-001536,Registro inconsistente / ruido,Rojo
+PX-TR-000914,Otitis media,Verde
+PX-TR-000194,Abdomen agudo / peritonitis,Rojo
+PX-TR-000511,Bronquitis aguda,Verde
+PX-TR-000016,Dolor torácico no cardiaco,Amarillo
+PX-TR-000852,Dengue,Amarillo
+PX-TR-000398,Resfriado común,Verde
+PX-TR-000343,Gastroenteritis,Rojo
+PX-TR-000045,Apendicitis,Amarillo
+PX-TR-000706,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000995,Neumonía,Rojo
+PX-TR-000616,Resfriado común,Verde
+PX-TR-000735,Dengue,Rojo
+PX-TR-000907,Hiperémesis gravídica,Amarillo
+PX-TR-000677,Infección viral febril inespecífica,Verde
+PX-TR-000095,Resfriado común,Verde
+PX-TR-000399,Migraña / cefalea tensional,Verde
+PX-TR-000653,Exacerbación asmática,Rojo
+PX-TR-000570,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000615,Síndrome coronario agudo,Amarillo
+PX-TR-000826,Pielonefritis,Rojo
+PX-TR-000462,Gastritis / dispepsia,Amarillo
+PX-TR-000273,Amenaza de aborto / aborto espontáneo,Rojo
+PX-TR-001096,Cólico renal,Amarillo
+PX-TR-000245,Resfriado común,Verde
+PX-TR-001385,Síndrome coronario agudo,Amarillo
+PX-TR-000280,Abdomen agudo / peritonitis,Rojo
+PX-TR-000906,Influenza / COVID leve-moderado,Verde
+PX-TR-001065,Cistitis / IVU baja,Verde
+PX-TR-001353,Resfriado común,Verde
+PX-TR-000619,Bronquitis aguda,Amarillo
+PX-TR-000671,Dolor torácico no cardiaco,Verde
+PX-TR-001274,Influenza / COVID leve-moderado,Verde
+PX-TR-001362,Resfriado común,Verde
+PX-TR-000563,Gastritis / dispepsia,Verde
+PX-TR-000795,Síndrome coronario agudo,Amarillo
+PX-TR-000430,Bronquitis aguda,Verde
+PX-TR-001330,Otitis media,Verde
+PX-TR-000694,Apendicitis,Amarillo
+PX-TR-000486,Infección viral febril inespecífica,Verde
+PX-TR-000494,Pielonefritis,Rojo
+PX-TR-001289,Migraña / cefalea tensional,Amarillo
+PX-TR-000982,Cistitis / IVU baja,Amarillo
+PX-TR-001380,Sinusitis,Verde
+PX-TR-000869,Cistitis / IVU baja,Rojo
+PX-TR-000964,Otitis media,Verde
+PX-TR-001403,Registro inconsistente / ruido,Verde
+PX-TR-000061,Faringoamigdalitis,Verde
+PX-TR-000667,Infección viral febril inespecífica,Verde
+PX-TR-001084,Confusión metabólica / deshidratación severa,Verde
+PX-TR-001078,Confusión metabólica / deshidratación severa,Amarillo
+PX-TR-000631,Influenza / COVID leve-moderado,Amarillo
+PX-TR-001432,Registro inconsistente / ruido,Verde
+PX-TR-001188,Faringoamigdalitis,Verde
+PX-TR-000254,Pielonefritis,Amarillo
+PX-TR-001085,Cólico biliar / colecistitis,Amarillo
+PX-TR-000975,Bronquitis aguda,Amarillo
+PX-TR-000724,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000733,Disminución de movimientos fetales,Amarillo
+PX-TR-000877,Hiperémesis gravídica,Rojo
+PX-TR-000601,Bronquitis aguda,Amarillo
+PX-TR-001198,Gastritis / dispepsia,Verde
+PX-TR-000441,Pielonefritis,Amarillo
+PX-TR-000241,Resfriado común,Amarillo
+PX-TR-000823,Disminución de movimientos fetales,Amarillo
+PX-TR-001054,Cistitis / IVU baja,Amarillo
+PX-TR-001415,Registro inconsistente / ruido,Verde
+PX-TR-001515,Registro inconsistente / ruido,Rojo
+PX-TR-000920,Exacerbación asmática,Verde
+PX-TR-000976,EVC / ACV,Amarillo
+PX-TR-001044,Bronquitis aguda,Amarillo
+PX-TR-001017,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000658,Sinusitis,Verde
+PX-TR-001144,EVC / ACV,Rojo
+PX-TR-000950,Migraña / cefalea tensional,Amarillo
+PX-TR-001479,Registro inconsistente / ruido,Amarillo
+PX-TR-000371,Abdomen agudo / peritonitis,Rojo
+PX-TR-000047,Hiperémesis gravídica,Verde
+PX-TR-000037,Abdomen agudo / peritonitis,Rojo
+PX-TR-000244,Gastritis / dispepsia,Verde
+PX-TR-001539,Registro inconsistente / ruido,Rojo
+PX-TR-000709,Exacerbación asmática,Amarillo
+PX-TR-000330,Cólico renal,Amarillo
+PX-TR-000365,Dolor torácico no cardiaco,Verde
+PX-TR-000747,Dolor torácico no cardiaco,Verde
+PX-TR-000311,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000370,Resfriado común,Verde
+PX-TR-001255,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000928,Dolor torácico no cardiaco,Amarillo
+PX-TR-001061,Cistitis / IVU baja,Verde
+PX-TR-000943,Sinusitis,Amarillo
+PX-TR-000583,Síndrome coronario agudo,Amarillo
+PX-TR-000927,Neumonía,Amarillo
+PX-TR-001419,Registro inconsistente / ruido,Verde
+PX-TR-001265,Influenza / COVID leve-moderado,Amarillo
+PX-TR-000322,Cistitis / IVU baja,Verde
+PX-TR-000740,Cólico biliar / colecistitis,Amarillo
+PX-TR-000554,Síndrome coronario agudo,Rojo
+PX-TR-000418,Apendicitis,Rojo
+PX-TR-001106,Dengue,Amarillo
+PX-TR-001143,EVC / ACV,Rojo
+PX-TR-001280,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000846,Gastroenteritis,Verde
+PX-TR-000412,Gastroenteritis,Amarillo
+PX-TR-001210,Gastroenteritis,Amarillo
+PX-TR-000718,Infección viral febril inespecífica,Verde
+PX-TR-001406,Registro inconsistente / ruido,Verde
+PX-TR-000207,Migraña / cefalea tensional,Verde
+PX-TR-000027,Neumonía,Amarillo
+PX-TR-000113,Abdomen agudo / peritonitis,Rojo
+PX-TR-000104,Neumonía,Amarillo
+PX-TR-001462,Registro inconsistente / ruido,Amarillo
+PX-TR-001162,Exacerbación asmática,Amarillo
+PX-TR-001270,Influenza / COVID leve-moderado,Verde
+PX-TR-001101,Cólico renal,Rojo
+PX-TR-001165,Exacerbación asmática,Amarillo
+PX-TR-000420,Migraña / cefalea tensional,Amarillo
+PX-TR-000325,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000903,Infección viral febril inespecífica,Verde
+PX-TR-000090,Dolor torácico no cardiaco,Verde
+PX-TR-000806,Migraña / cefalea tensional,Amarillo
+PX-TR-000544,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000654,Dengue,Amarillo
+PX-TR-001009,Abdomen agudo / peritonitis,Rojo
+PX-TR-001195,Gastritis / dispepsia,Amarillo
+PX-TR-000132,Migraña / cefalea tensional,Verde
+PX-TR-001080,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-000395,Migraña / cefalea tensional,Verde
+PX-TR-000044,Pielonefritis,Amarillo
+PX-TR-000716,Cólico biliar / colecistitis,Amarillo
+PX-TR-001436,Registro inconsistente / ruido,Verde
+PX-TR-001511,Registro inconsistente / ruido,Rojo
+PX-TR-000947,Gastroenteritis,Rojo
+PX-TR-000157,Confusión metabólica / deshidratación severa,Verde
+PX-TR-000146,Cistitis / IVU baja,Verde
+PX-TR-001039,Bronquitis aguda,Amarillo
+PX-TR-000620,Disminución de movimientos fetales,Rojo
+PX-TR-000390,Insuficiencia cardiaca / descompensación cardiopulmonar,Rojo
+PX-TR-000397,Síndrome coronario agudo,Rojo
+PX-TR-000647,Hiperémesis gravídica,Amarillo
+PX-TR-000131,Cistitis / IVU baja,Verde
+PX-TR-001367,Resfriado común,Verde
+PX-TR-000054,Cistitis / IVU baja,Amarillo
+PX-TR-000278,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-001465,Registro inconsistente / ruido,Amarillo
+PX-TR-000611,Cistitis / IVU baja,Amarillo
+PX-TR-000524,Abdomen agudo / peritonitis,Rojo
+PX-TR-000764,Neumonía,Rojo
+PX-TR-001082,Confusión metabólica / deshidratación severa,Rojo
+PX-TR-001072,Cistitis / IVU baja,Verde
+PX-TR-001424,Registro inconsistente / ruido,Verde
+PX-TR-000255,Dolor torácico no cardiaco,Verde
+PX-TR-000041,Gastroenteritis,Amarillo
+PX-TR-000316,Gastroenteritis,Verde
+PX-TR-001157,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000184,Neumonía,Amarillo
+PX-TR-001514,Registro inconsistente / ruido,Rojo
+PX-TR-001269,Influenza / COVID leve-moderado,Verde
+PX-TR-000991,Pielonefritis,Rojo
+PX-TR-001487,Registro inconsistente / ruido,Amarillo
+PX-TR-001176,Faringoamigdalitis,Amarillo
+PX-TR-000438,Cistitis / IVU baja,Rojo
+PX-TR-001499,Registro inconsistente / ruido,Amarillo
+PX-TR-000969,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-000825,Bronquitis aguda,Verde
+PX-TR-000861,EVC / ACV,Rojo
+PX-TR-001324,Otitis media,Verde
+PX-TR-000751,Hiperémesis gravídica,Amarillo
+PX-TR-000604,Síndrome coronario agudo,Amarillo
+PX-TR-000661,Migraña / cefalea tensional,Verde
+PX-TR-000285,Amenaza de aborto / aborto espontáneo,Amarillo
+PX-TR-001312,Neumonía,Rojo
+PX-TR-000008,Insuficiencia cardiaca / descompensación cardiopulmonar,Amarillo
+PX-TR-000913,Embarazo ectópico / hemorragia obstétrica,Rojo
+PX-TR-000174,Resfriado común,Verde
+PX-TR-000734,Bronquitis aguda,Verde
+PX-TR-001407,Registro inconsistente / ruido,Verde
+PX-TR-000208,Cólico biliar / colecistitis,Rojo
+PX-TR-000141,Gastroenteritis,Rojo

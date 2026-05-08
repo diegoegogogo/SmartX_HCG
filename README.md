@@ -1,82 +1,72 @@
 # SmartX HCG — Sistema de Triaje Médico Inteligente
 
-Sistema de triaje automatizado basado en IA para el Hospital Civil de Guadalajara (HCG). Clasifica en tiempo real la urgencia de cada paciente en tres niveles (ROJO / AMARILLO / VERDE) utilizando un pipeline de inferencia de 8 pasos con XGBoost, explicabilidad SHAP y catálogo CIE-10.
+Sistema de triaje automatizado basado en IA para el **Hospital Civil de Guadalajara (HCG)**. Clasifica en tiempo real la urgencia de cada paciente en tres niveles (**ROJO / AMARILLO / VERDE**) usando un pipeline de inferencia de 8 pasos con XGBoost, explicabilidad SHAP y catálogo CIE-10. Los resultados se persisten en **Supabase** (PostgreSQL en la nube).
+
+**Versión:** v1.0-piloto — Mayo 2026  
+**Unidades de atención:** `HCG_URGENCIAS` · `HCG_MED_INTERNA`  
+**Normativas:** NOM-004-SSA3-2012 · NOM-024-SSA3-2012 · LFPDPPP
 
 ---
 
 ## Tabla de contenidos
 
-1. [Descripción del sistema](#descripción-del-sistema)
-2. [Arquitectura y stack tecnológico](#arquitectura-y-stack-tecnológico)
-3. [Estructura del proyecto](#estructura-del-proyecto)
-4. [Instalación](#instalación)
-5. [Configuración](#configuración)
+1. [Arquitectura y stack tecnológico](#arquitectura-y-stack-tecnológico)
+2. [Estructura del proyecto](#estructura-del-proyecto)
+3. [Instalación](#instalación)
+4. [Configuración](#configuración)
+5. [Base de datos — Supabase](#base-de-datos--supabase)
 6. [Uso](#uso)
 7. [API — Endpoints y contratos](#api--endpoints-y-contratos)
 8. [Pipeline de inferencia](#pipeline-de-inferencia)
 9. [Dataset y modelos ML](#dataset-y-modelos-ml)
 10. [Frontend](#frontend)
-11. [Variables clínicas](#variables-clínicas)
-12. [Catálogo de escenarios CIE-10](#catálogo-de-escenarios-cie-10)
+11. [Seguridad](#seguridad)
+12. [Variables clínicas](#variables-clínicas)
 13. [Normativas implementadas](#normativas-implementadas)
-14. [Documentación adicional](#documentación-adicional)
-
----
-
-## Descripción del sistema
-
-SmartX HCG recibe un JSON con los síntomas y datos clínicos de un paciente, ejecuta un motor de inferencia determinístico y devuelve:
-
-- **Nivel de urgencia:** `rojo` (crítico) · `amarillo` (prioritario) · `verde` (estable)
-- **Probabilidades:** puntuación continua por cada nivel
-- **Diagnósticos diferenciales:** 3 escenarios CIE-10 con especialidad sugerida
-- **Explicabilidad SHAP:** top-3 variables que influyeron en la decisión
-- **Metadatos de trazabilidad:** versión del modelo, latencia, hash de integridad (NOM-024)
-
-**Versión piloto:** v1.0 — Febrero 2026  
-**Unidades de atención:** `HCG_URGENCIAS` · `HCG_MED_INTERNA`
+14. [Registro de cambios](#registro-de-cambios)
 
 ---
 
 ## Arquitectura y stack tecnológico
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                        FRONTEND                         │
-│   Streamlit (desarrollo)  │  HTML + Tailwind (standalone)│
-│   React JSX (componentes) │  Font Awesome (iconografía)  │
-└───────────────────┬─────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────┐
+│                      FRONTEND                            │
+│   Dashboard HTML + Tailwind (standalone, producción)     │
+│   Streamlit (desarrollo)                                 │
+└───────────────────┬──────────────────────────────────────┘
                     │ HTTP / REST
-┌───────────────────▼─────────────────────────────────────┐
-│                   BACKEND — FastAPI                     │
-│   Uvicorn ASGI  │  Pydantic v2 (validación)             │
-│   CORS habilitado (desarrollo: localhost)               │
-└───────────────────┬─────────────────────────────────────┘
+┌───────────────────▼──────────────────────────────────────┐
+│                  BACKEND — FastAPI                        │
+│   Uvicorn ASGI  │  Pydantic v2 (validación estricta)     │
+│   CORS: lista blanca de orígenes permitidos              │
+└───────────────────┬──────────────────────────────────────┘
                     │
-┌───────────────────▼─────────────────────────────────────┐
-│             MOTOR DE INFERENCIA (8 pasos)               │
-│   XGBoost  │  Random Forest  │  SHAP  │  Catálogo CIE-10│
-│   joblib (serialización .pkl)                           │
-└─────────────────────────────────────────────────────────┘
+        ┌───────────┴───────────┐
+        ▼                       ▼
+┌───────────────┐     ┌─────────────────────┐
+│ MOTOR XGBoost │     │  SUPABASE (nube)     │
+│ 8-step pipeline│     │  · tabla inferencias │
+│ SHAP · CIE-10  │     │  · tabla auditoria   │
+└───────────────┘     └─────────────────────┘
 ```
 
 | Capa | Tecnología | Versión |
 |------|-----------|---------|
 | Lenguaje | Python | 3.14 |
-| API REST | FastAPI | ≥ 0.115.0 (instalada 0.136.1) |
-| Servidor ASGI | Uvicorn | ≥ 0.30.0 (instalada 0.46.0) |
-| Validación | Pydantic | ≥ 2.10.0 (instalada 2.12.5) |
+| API REST | FastAPI | ≥ 0.115.0 |
+| Servidor ASGI | Uvicorn | ≥ 0.30.0 |
+| Validación | Pydantic | ≥ 2.10.0 |
 | Clasificación ML | XGBoost | 3.2.0 |
 | Modelos ensemble | scikit-learn | 1.4.1 |
 | Explicabilidad | SHAP | 0.44.1 |
 | Datos tabulares | pandas | 2.1.4 |
 | Álgebra lineal | NumPy | 1.26.4 |
 | Serialización | joblib | 1.3.2 |
+| Base de datos | Supabase (PostgreSQL) | ≥ 2.9.0 SDK |
 | Dashboard web | Streamlit | 1.31.1 |
-| ORM SQL | SQLAlchemy | 2.0.25 |
 | Lectura Excel | openpyxl | 3.1.0 |
 | Variables entorno | python-dotenv | 1.0.0 |
-| Cliente HTTP | requests | 2.31.0 |
 
 ---
 
@@ -85,54 +75,38 @@ SmartX HCG recibe un JSON con los síntomas y datos clínicos de un paciente, ej
 ```
 SmartX_HCG/
 │
-├── README.md
+├── README.md                          ← Este archivo
 ├── AGENTS.md
 │
-├── 01_Arquitectura_Sistema/
-│   ├── SmartX_Arquitectura_IA.docx
-│   ├── SmartX_Flujo_Logico (1).drawio
-│   └── SmartX_Flujo_Logico_Diagrama.docx
+├── 01_Arquitectura_Sistema/           ← Diagramas y documentos de arquitectura
+├── 02_Base_de_Datos/                  ← Esquema BD, diagrama ER, variables
+└── 03_Prototipo__MVP/                 ← Documentos del prototipo MVP
 │
-├── 02_Base_de_Datos/
-│   ├── SmartX_1_Flujo_Variables.docx
-│   ├── SmartX_1b_Diccionario_Abreviaturas.docx
-│   ├── SmartX_2_Esquema_BD.docx
-│   ├── SmartX_3_ER_Diagrama.html
-│   └── SmartX_4_Almacenamiento_Historial_Clinico.docx
-│
-├── 03_Prototipo__MVP/
-│   ├── SmartX_P1_Prototipo_IA.docx
-│   ├── SmartX_P2_Diagrama_Flujo.docx
-│   ├── SmartX_P3_Dataset_Modelo.docx
-│   └── SmartX_P4_Funcionamiento.docx
-│
-└── 04_Codigo/
+└── 04_Codigo/                         ← Todo el código fuente
     │
-    ├── smartx_api.py                  # API FastAPI principal — punto de entrada
-    ├── smartx_motor_inferencia.py     # Motor de inferencia activo (pipeline 8 pasos)
-    ├── smartx_dashboard.html          # Dashboard HTML standalone (raíz)
-    ├── smartx_dashboard.jsx           # Componentes React raíz
-    ├── requirements.txt               # Dependencias Python
-    ├── README.md                      # Documentación técnica del código
-    ├── .env.example                   # Plantilla de variables de entorno
+    ├── smartx_api.py                  ← API FastAPI — PUNTO DE ENTRADA
+    ├── smartx_motor_inferencia.py     ← Motor de inferencia (pipeline 8 pasos)
+    ├── smartx_excel_a_csv.py          ← Utilidad de exportación Excel → CSV
+    ├── requirements.txt               ← Dependencias Python
+    ├── supabase_schema.sql            ← Schema SQL — ejecutar en Supabase
+    ├── .env.example                   ← Plantilla de variables (sin secretos)
+    ├── .gitignore                     ← Protege .env de ser versionado
     │
     ├── assets/
     │   └── models/
-    │       ├── smartx_model_v2.pkl    # Modelo XGBoost entrenado
-    │       └── encoder_motivo.pkl     # Encoder de motivo de consulta
+    │       ├── smartx_model_v2.pkl    ← Modelo XGBoost entrenado (408 KB)
+    │       └── encoder_motivo.pkl     ← LabelEncoder motivo_consulta (722 B)
     │
-    ├── backend/
-    │   ├── app/
-    │   │   └── routers/
-    │   │       └── triaje.py          # Endpoints de triaje (módulo alternativo)
-    │   └── motor_inferencia/
-    │       └── smartx_motor.py        # Motor de inferencia modular
+    ├── datasets/                      ← Dataset CANÓNICO de entrenamiento
+    │   ├── dataset_SmartX_2200_casos_con_ruido.xlsx  ← Fuente del modelo actual
+    │   ├── entrenamiento.csv          (1,540 filas × 20 cols)
+    │   ├── validacion.csv             (330 filas)
+    │   ├── prueba.csv                 (330 filas)
+    │   ├── etiquetas_*.csv            ← Labels por split
+    │   └── *.csv                      ← Metadatos y catálogos
     │
-    ├── data/
-    │   └── dataset_SmartX_2200_casos_con_ruido.xlsx
-    │
-    ├── datasets/
-    │   └── dataset_SmartX_2200_casos_con_ruido.xlsx  # Copia de trabajo del dataset
+    ├── models/
+    │   └── clasificacion.py           ← Script de entrenamiento XGBoost
     │
     ├── docs/
     │   ├── SmartX_Dataset_Integration_Resumen.md
@@ -140,382 +114,391 @@ SmartX_HCG/
     │   └── SmartX_Mermaid_Diagramas.md
     │
     ├── frontend/
-    │   ├── streamlit_app.py           # Interfaz Streamlit (http://localhost:8501)
-    │   ├── smartx_dashboard.html      # Dashboard HTML (copia frontend)
-    │   ├── smartx_dashboard.jsx       # Componentes React
-    │   ├── api/
-    │   │   └── smartx.js              # Cliente API JavaScript
-    │   └── components/
-    │       ├── Dashboard.jsx          # Vista principal del dashboard
-    │       ├── PatientCard.jsx        # Tarjeta por paciente
-    │       └── TriageForm.jsx         # Formulario de triaje (20 campos)
+    │   ├── smartx_dashboard.html      ← Dashboard de producción (standalone)
+    │   └── streamlit_app.py           ← UI de desarrollo (http://localhost:8501)
     │
-    ├── models/
-    │   ├── clasificacion.py           # Entrenamiento XGBoost → smartx_model_v2.pkl
-    │   └── smartx_entrenamiento_rf.py # Entrenamiento Random Forest
+    ├── scripts/                       ← Versiones históricas (vacía — limpiada en auditoría)
     │
-    └── scripts/
-        ├── smartx_motor_inferencia.py    # Motor de inferencia v1 (referencia)
-        └── smartx_motor_inferencia_v2.py # Motor de inferencia v2 (referencia)
+    └── _archivo/                      ← Código archivado — no usar en producción
+        └── backend/
+            ├── app/routers/triaje.py  ← Router modular (referencia futura)
+            └── motor_inferencia/smartx_motor.py
 ```
+
+> **Dataset canónico:** `datasets/dataset_SmartX_2200_casos_con_ruido.xlsx` (MD5: `0a70639125e3a512d4474507b8eeee2b`).
+> Es el archivo usado para entrenar `smartx_model_v2.pkl`. Verificado en auditoría Mayo 2026.
+> La copia alternativa en `data/` fue eliminada tras confirmación de divergencia (7 KB diferente).
 
 ---
 
 ## Instalación
 
-```bash
-# 1. Crear virtual environment
+```powershell
+# 1. Crear y activar entorno virtual
 python -m venv .venv
+.venv\Scripts\Activate.ps1      # PowerShell (Windows)
+# source .venv/bin/activate     # macOS/Linux
 
-# 2. Activar
-# Windows CMD:
-.venv\Scripts\activate.bat
-# Windows PowerShell:
-.venv\Scripts\Activate.ps1
-# macOS/Linux:
-source .venv/bin/activate
-
-# 3. Instalar dependencias
+# 2. Instalar dependencias (desde 04_Codigo/)
 cd 04_Codigo
 pip install -r requirements.txt
 ```
-
-> **Nota:** Las versiones de FastAPI, Uvicorn y Pydantic en `requirements.txt` usan restricciones mínimas (`>=`) para garantizar compatibilidad con Python 3.14, que no dispone de wheels precompilados para versiones antiguas de pydantic-core.
 
 ---
 
 ## Configuración
 
-Copia `.env.example` a `.env` y ajusta los valores según el entorno:
+```powershell
+# Copiar plantilla y rellenar con valores reales
+cp .env.example .env
+```
+
+Variables requeridas en `.env`:
 
 ```env
+# Backend
 SMARTX_API_URL=http://127.0.0.1:8000
 FASTAPI_PORT=8000
 FASTAPI_ENV=development
-STREAMLIT_PORT=8501
-LOG_LEVEL=INFO
-CACHE_DIR=./cachedir
+
+# Supabase (obtener en: Supabase → Settings → API)
+SUPABASE_URL=https://TU_PROJECT_ID.supabase.co
+SUPABASE_PUBLISHABLE_KEY=sb_publishable_XXXX   # Para el dashboard (browser)
+SUPABASE_SECRET_KEY=sb_secret_XXXX             # Para FastAPI (servidor — nunca exponer)
 ```
 
-> En producción, restringir los orígenes permitidos en la configuración CORS de `smartx_api.py`.
+> ⚠️ **Seguridad:** El archivo `.env` está en `.gitignore` y **nunca debe subirse a git**.
+> La `SUPABASE_SECRET_KEY` tiene acceso completo a la base de datos.
+
+---
+
+## Base de datos — Supabase
+
+### Setup inicial (una sola vez)
+
+1. Abre tu proyecto en [supabase.com](https://supabase.com)
+2. Ve a **SQL Editor**
+3. Pega el contenido de `04_Codigo/supabase_schema.sql` y ejecuta con **Run**
+
+Esto crea:
+- **`inferencias`** — almacena cada clasificación (inputs + resultado IA)
+- **`auditoria_api`** — registro de todas las peticiones HTTP (NOM-024)
+
+### Tablas principales
+
+```sql
+-- inferencias: una fila por cada triaje procesado
+id_consulta       UUID  -- identificador único de la consulta
+id_paciente       TEXT  -- UUID seudonimizado del paciente
+nivel_ia          TEXT  -- 'rojo' | 'amarillo' | 'verde'
+fuente_nivel      TEXT  -- origen de la clasificación
+probabilidad_rojo FLOAT
+probabilidad_amarillo FLOAT
+probabilidad_verde FLOAT
+alerta_critica    BOOL
+created_at        TIMESTAMPTZ
+-- ... + 20 features clínicas
+```
 
 ---
 
 ## Uso
 
-### 1. Entrenar modelos
+### 1. Ejecutar la API
 
-**XGBoost (recomendado):**
-```bash
-cd models
-python clasificacion.py
-```
-Genera:
-- `../assets/models/smartx_model_v2.pkl`
-- `../assets/models/encoder_motivo.pkl`
-
-**Random Forest (alternativo):**
-```bash
-cd models
-python smartx_entrenamiento_rf.py
-```
-Genera: `smartx_rf_modelo.pkl`
-
-Ambos leen el dataset desde `../data/dataset_SmartX_2200_casos_con_ruido.xlsx`.
-
-### 2. Ejecutar la API
-
-```bash
+```powershell
 cd 04_Codigo
 uvicorn smartx_api:app --reload --port 8000
 ```
 
-La API queda disponible en `http://localhost:8000`.  
-Documentación interactiva: `http://localhost:8000/docs`
+Disponible en `http://localhost:8000`  
+Documentación Swagger: `http://localhost:8000/docs`
 
-### 3. Ejecutar el frontend Streamlit
+### 2. Dashboard HTML (producción)
 
-```bash
+Abrir en el navegador:
+```
+04_Codigo/frontend/smartx_dashboard.html
+```
+
+Al abrirse, carga automáticamente los últimos 50 triajes desde Supabase. Requiere que la API esté corriendo en `localhost:8000`.
+
+### 3. Interfaz Streamlit (desarrollo)
+
+```powershell
 cd 04_Codigo/frontend
 streamlit run streamlit_app.py
 ```
 
-Interfaz web disponible en `http://localhost:8501`.
+Disponible en `http://localhost:8501`.
 
-### 4. Dashboard HTML standalone
+### 4. Reentrenar el modelo XGBoost
 
-Abrir directamente en el navegador:
+```powershell
+cd 04_Codigo/models
+python clasificacion.py
 ```
-04_Codigo/smartx_dashboard.html
-```
-o la copia en:
-```
-04_Codigo/frontend/smartx_dashboard.html
-```
-No requiere servidor adicional; consume la API en `http://localhost:8000`.
+
+Genera `../assets/models/smartx_model_v2.pkl` y `../assets/models/encoder_motivo.pkl`.  
+Dataset de entrada: `../datasets/dataset_SmartX_2200_casos_con_ruido.xlsx`
 
 ---
 
 ## API — Endpoints y contratos
 
-### Health
+### Sistema
 
 | Método | Ruta | Descripción |
 |--------|------|-------------|
-| `GET` | `/` | Health check básico |
+| `GET` | `/` | Health check — incluye estado de Supabase |
 | `GET` | `/health` | Estado del motor de inferencia |
 
 ### Triaje
 
 | Método | Ruta | Descripción |
 |--------|------|-------------|
-| `POST` | `/api/v1/inferencia` | **Endpoint principal de triaje** |
-| `GET` | `/api/v1/paciente/{id_paciente}/historial` | Historial de visitas del paciente |
-| `GET` | `/api/v1/catalogo/escenarios` | Catálogo completo de escenarios CIE-10 |
+| `POST` | `/api/v1/inferencia` | **Endpoint principal** — clasificar urgencia |
+| `GET` | `/api/v1/inferencias/recientes?limite=50` | Últimas N inferencias (para el dashboard) |
+| `GET` | `/api/v1/paciente/{id}/historial` | Historial de visitas del paciente |
+
+### Catálogos
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| `GET` | `/api/v1/catalogo/escenarios` | Catálogo CIE-10 por nivel |
+| `GET` | `/api/v1/catalogo/motivos` | Lista de motivos de consulta válidos |
+
+---
 
 ### Modelo de entrada — `SintomasInput`
 
+Solo `edad` es requerido. Todos los demás tienen valores por defecto seguros.
+
 ```json
 {
-  "id_paciente": "uuid-seudonimizado",
-  "unidad_atencion": "HCG_URGENCIAS",
   "edad": 45,
   "sexo_biologico": "M",
-  "disnea_presente": false,
-  "perdida_conciencia": false,
+  "embarazo": false,
+  "motivo_consulta": "Fiebre sin foco claro",
+  "tiempo_evolucion_horas": 12,
+  "intensidad_sintoma": 6,
+
+  "fiebre_reportada": true,
+  "tos": false,
+  "dificultad_respiratoria": false,
+  "dolor_toracico": false,
+  "dolor_al_orinar": false,
   "sangrado_activo": false,
-  "fiebre_presente": true,
-  "temperatura_celsius": 38.5,
-  "intensidad_dolor_eva": 6,
-  "duracion_sintoma_horas": 12,
+  "confusion": false,
+  "disminucion_movimientos_fetales": false,
+
+  "redflag_disnea_severa": false,
+  "redflag_sangrado_abundante": false,
+  "redflag_deficit_neurologico_subito": false,
+  "redflag_dolor_toracico_opresivo_con_sudoracion": false,
+
   "peso_kg": 75.0,
   "talla_cm": 170.0,
-  "diabetes_mellitus": false,
-  "hipertension": true,
-  "cardiopatia_isquemica": false,
-  "epoc_asma": false,
-  "embarazo_posible": false,
-  "semanas_gestacion": 0,
-  "sintomas_texto": "Dolor de cabeza intenso con fiebre desde ayer"
+  "antecedentes_riesgo": "Hipertensión",
+  "sintomas_digestivos": "Ninguno",
+  "sintomas_texto": "Fiebre de 38.5 °C desde hace 12 horas con malestar general"
 }
 ```
 
-Validaciones Pydantic aplicadas automáticamente:
-- `edad`: 0 – 120 años
-- `temperatura_celsius`: 35.0 – 42.5 °C (solo válida si `fiebre_presente = true`)
-- `intensidad_dolor_eva`: 0 – 10
-- `peso_kg`: 1.0 – 300.0 kg
-- `talla_cm`: 30.0 – 250.0 cm
-- `semanas_gestacion`: 0 – 42 (solo válida si `embarazo_posible = true`)
-- `sintomas_texto`: mínimo 10 caracteres
+**Validaciones:**
+- `edad`: 0–120
+- `sexo_biologico`: `"M"` | `"F"`
+- `motivo_consulta`: uno de los 10 valores del catálogo
+- `intensidad_sintoma`: 0–10 (escala EVA)
+- `peso_kg`: 1.0–300.0 (opcional)
+- `talla_cm`: 30.0–250.0 (opcional)
+- `sintomas_texto`: mínimo 10 caracteres si se envía (opcional)
 
-### Modelo de salida — `SemaforoOutput`
+**Catálogo de motivos válidos:**
+`Dificultad respiratoria` · `Dolor abdominal` · `Dolor de cabeza` · `Dolor torácico` ·
+`Embarazo o síntoma relacionado con embarazo` · `Fiebre sin foco claro` · `Mareo o desmayo` ·
+`Problema gastrointestinal` · `Problema urinario` · `Tos o síntomas respiratorios`
+
+---
+
+### Modelo de salida
 
 ```json
 {
   "nivel_ia": "amarillo",
-  "fuente_nivel": "modelo_xgboost",
+  "fuente_nivel": "XGBoost",
   "probabilidades": {
-    "p_rojo": 0.12,
-    "p_amarillo": 0.71,
-    "p_verde": 0.17
+    "rojo": 0.12,
+    "amarillo": 0.71,
+    "verde": 0.17
   },
-  "escenarios_diferenciales": [
+  "escenarios": [
     {
-      "cie10": "I10",
-      "descripcion": "Hipertensión descompensada",
-      "especialidad": "Medicina Interna",
-      "probabilidad": 0.58
+      "cie10": "R07",
+      "descripcion": "Dolor torácico no especificado",
+      "probabilidad_relativa": "alta"
     }
   ],
-  "especialidad_sugerida": "Medicina Interna",
-  "shap_explicacion": "La presión arterial elevada con cefalea intensa incrementó significativamente el nivel de urgencia.",
-  "shap_variables_top3": ["hipertension", "intensidad_dolor_eva", "temperatura_celsius"],
-  "imc_calculado": 25.95,
+  "explicacion_shap": "La intensidad del síntoma (EVA 6) y la fiebre reportada...",
   "alerta_critica": false,
   "alertas_detalle": [],
-  "modelo_version": "xgb_v1.0.0-piloto-hcg",
-  "tiempo_procesamiento_ms": 43,
-  "hash_resultado": "sha256:..."
+  "imc_calculado": 25.95,
+  "modelo_version": "xgboost-v2.0-hcg-piloto",
+  "tiempo_procesamiento_ms": 43
 }
 ```
 
-Valores posibles de `fuente_nivel`:
-- `alerta_critica_inmediata` — bypass por bandera roja (disnea, pérdida de consciencia, sangrado)
-- `modelo_xgboost` — clasificación por modelo ML
-- `conservadurismo_medico` — regla de seguridad aplicada tras el modelo
+**Valores de `fuente_nivel`:**
+- `regla_critica` — bypass por redflag (sin ML)
+- `XGBoost` — clasificación por modelo ML
+- `XGBoost+conservadurismo` — regla de seguridad aplicada tras el modelo
 
 ---
 
 ## Pipeline de inferencia
 
-El motor ejecuta 8 pasos en orden estricto:
-
 ```
-Entrada JSON (SintomasInput)
+Entrada (SintomasInput)
         │
         ▼
-1. VALIDACIÓN CLÍNICA ──── Rangos NOM-004 (edad, temperatura, EVA, IMC)
+1. ALERTAS CRÍTICAS ─── Revisa 4 redflags → ROJO inmediato si cualquiera = true
+        │                (redflag_disnea_severa, redflag_sangrado_abundante,
+        │                 redflag_deficit_neurologico_subito,
+        │                 redflag_dolor_toracico_opresivo_con_sudoracion)
+        ▼
+2. VECTOR DE FEATURES ── Codifica 17 variables al formato XGBoost
+        │                (incluye LabelEncoding de motivo_consulta)
+        ▼
+3. INFERENCIA XGBoost ── Produce p(rojo), p(amarillo), p(verde)
         │
         ▼
-2. ALERTAS CRÍTICAS ─────── Bypass inmediato a ROJO si:
-        │                   disnea_presente | perdida_conciencia | sangrado_activo
+4. CONSERVADURISMO ────── Si p(rojo) ≥ 30% con nivel amarillo → escala a rojo
+        │                Si p(amarillo) ≥ 30% con nivel verde → escala a amarillo
         ▼
-3. CÁLCULO IMC ──────────── peso_kg / (talla_cm / 100)²
+5. SHAP (mock) ─────────── Top-3 variables por importancia del modelo
         │
         ▼
-4. MODELO XGBoost ───────── Probabilidades (p_rojo, p_amarillo, p_verde)
+6. ESCENARIOS CIE-10 ───── 3 diagnósticos diferenciales por nivel
         │
         ▼
-5. CONSERVADURISMO ──────── Eleva nivel si p_rojo > umbral de seguridad
+7. EXPLICACIÓN NL ──────── Texto en español explicando la decisión
         │
         ▼
-6. ESCENARIOS CIE-10 ────── 3 diagnósticos diferenciales + especialidad
-        │
-        ▼
-7. EXPLICABILIDAD SHAP ──── Top-3 variables + texto en lenguaje natural
-        │
-        ▼
-8. OUTPUT JSON ──────────── Conforme HL7-FHIR DiagnosticReport + hash NOM-024
+8. OUTPUT + HASH ───────── JSON + SHA-256 de trazabilidad (NOM-024)
+                            → INSERT en tabla Supabase `inferencias`
 ```
 
-El motor es **determinístico**: las mismas entradas producen siempre la misma salida.
+El motor es **determinístico**: mismas entradas → misma salida siempre.
 
 ---
 
 ## Dataset y modelos ML
 
-### Dataset
-
 | Atributo | Valor |
 |----------|-------|
-| Archivo | `data/dataset_SmartX_2200_casos_con_ruido.xlsx` |
-| Total de casos | 2,200 pacientes sintéticos |
+| Archivo canónico | `datasets/dataset_SmartX_2200_casos_con_ruido.xlsx` |
+| Total de casos | 2,200 pacientes sintéticos con ruido controlado |
 | Verde (estable) | 655 casos — 35% |
 | Amarillo (prioritario) | 748 casos — 40% |
 | Rojo (crítico) | 467 casos — 25% |
-| Variables de entrada | 20 clínicas + 4 red flags |
+| Features del modelo | 17 (datos demográficos + síntomas binarios) |
 | Accuracy reportada | 87.6% |
+| Modelo en producción | `assets/models/smartx_model_v2.pkl` (XGBoost) |
 
-### Modelos
-
-**XGBoost v2** (`models/clasificacion.py`):
-- Variables: `motivo_consulta` (LabelEncoded), síntomas binarios, datos demográficos
-- Salida: `assets/models/smartx_model_v2.pkl` + `assets/models/encoder_motivo.pkl`
-- Accuracy objetivo: > 87%
-
-**Random Forest** (`models/smartx_entrenamiento_rf.py`):
-- 200 árboles, `max_depth=10`
-- Balanceo de clases: los casos ROJO tienen mayor peso
-- Salida: `smartx_rf_modelo.pkl`
-
-> Los archivos `.pkl` se generan localmente con `python models/clasificacion.py` y **no** se versiona en el repositorio.
+> **Nota:** El dataset en `datasets/` es la versión canónica usada para el entrenamiento actual.
+> La carpeta `data/` contiene una copia alternativa — **no usar para reentrenamiento**
+> sin verificar que coincide byte a byte con el canónico.
 
 ---
 
 ## Frontend
 
-### Dashboard HTML standalone (`frontend/smartx_dashboard.html`)
+### Dashboard HTML (`frontend/smartx_dashboard.html`) — Producción
 
-Interfaz de producción ligera, sin dependencias de servidor Node:
-
-- Grid de pacientes en tiempo real con color dominante por nivel de urgencia
-- Estadísticas en tiempo real: CRÍTICOS · URGENTES · ESTABLES · TOTAL
-- Formulario de nuevo triaje con 20 campos + 4 banderas rojas con bypass automático
-- Animaciones de alerta pulsante para nivel ROJO
+- Carga los últimos 50 triajes desde Supabase al iniciar
+- Grid de pacientes en tiempo real ordenado por severidad
+- Estadísticas: CRÍTICOS · URGENTES · ESTABLES · TOTAL
+- Formulario de nuevo triaje con 4 banderas rojas (bypass automático)
+- Animación pulsante para nivel ROJO
 - Panel de detalle con escenarios CIE-10 y explicación SHAP
-- Notificaciones emergentes
+- Notificaciones emergentes con sonido de alerta
 
-Tecnologías: HTML5 · Tailwind CSS · Font Awesome · JavaScript vanilla
+**Tecnología:** HTML5 · Tailwind CSS · Font Awesome · JavaScript vanilla
 
-### Interfaz Streamlit (`frontend/streamlit_app.py`)
+**Conexión:** `http://localhost:8000` (API local) + Supabase REST (clave publishable)
 
-Interfaz de desarrollo rápido:
-- URL: `http://localhost:8501`
-- Formulario de triaje completo conectado al backend en `http://localhost:8000`
-- Manejo de errores y validación visual
+### Streamlit (`frontend/streamlit_app.py`) — Desarrollo
 
-### Componentes React (`frontend/components/`)
+Interfaz rápida de desarrollo. Requiere la API corriendo en `localhost:8000`.
 
-| Archivo | Descripción |
-|---------|-------------|
-| `Dashboard.jsx` | Vista principal y estado global |
-| `PatientCard.jsx` | Tarjeta individual de paciente |
-| `TriageForm.jsx` | Formulario de triaje (20 campos) |
-| `api/smartx.js` | Cliente HTTP hacia FastAPI |
+---
+
+## Seguridad
+
+### Medidas implementadas
+
+| Área | Medida |
+|------|--------|
+| **Secretos** | `.env` en `.gitignore`; `.env.example` sin valores reales |
+| **CORS** | Lista blanca: `localhost:8000`, `localhost:8501` (no `*`) |
+| **Validación** | Pydantic v2 con rangos clínicos en todos los campos |
+| **Auditoría** | Middleware registra cada petición en `auditoria_api` (Supabase) |
+| **Trazabilidad** | SHA-256 por resultado + UUID seudonimizado por paciente |
+| **RLS** | Row Level Security habilitado en tablas Supabase |
+
+### Pendiente de atención
+
+| Severidad | Issue |
+|-----------|-------|
+| 🔴 CRÍTICO | Rotar `SUPABASE_SECRET_KEY` — estuvo expuesta en historial git |
+| 🟡 MEDIO | Verificar integridad de `.pkl` con hash SHA-256 al cargar |
+| 🟡 MEDIO | Agregar autenticación JWT en endpoints de escritura |
+| 🟡 BAJO | El fallback de `motivo_consulta` no se registra en auditoría |
+
+### Rotar la clave de Supabase (acción requerida)
+
+```
+Supabase → Settings → API → Secret keys → Revoke → New secret key
+```
+
+Luego actualiza `.env` con la nueva clave.
 
 ---
 
 ## Variables clínicas
 
-### Banderas rojas — bypass inmediato a ROJO
+### Las 4 banderas rojas — bypass inmediato a ROJO
 
-| Variable | Condición |
-|----------|-----------|
-| `perdida_conciencia` | `true` |
-| `sangrado_activo` | `true` |
-| `disnea_presente` | `true` |
+| Campo | Condición clínica |
+|-------|------------------|
+| `redflag_disnea_severa` | Disnea severa con SpO₂ < 90% |
+| `redflag_sangrado_abundante` | Sangrado activo abundante |
+| `redflag_deficit_neurologico_subito` | Déficit neurológico súbito (AVC probable) |
+| `redflag_dolor_toracico_opresivo_con_sudoracion` | IAM probable |
 
-Cuando cualquiera es `true`, el modelo ML no se ejecuta y el nivel queda fijo en `rojo` con `fuente_nivel = alerta_critica_inmediata`.
+Cuando cualquiera es `true`, el modelo ML **no se ejecuta** y el nivel queda en `rojo` con `fuente_nivel = regla_critica`.
 
-### Variables demográficas y clínicas
+### Variables demográficas y clínicas (17 features del modelo)
 
 | Variable | Tipo | Rango / Valores |
 |----------|------|----------------|
-| `id_paciente` | UUID | Seudonimizado (LFPDPPP) |
-| `unidad_atencion` | enum | `HCG_URGENCIAS` · `HCG_MED_INTERNA` |
-| `edad` | int | 0 – 120 años |
-| `sexo_biologico` | enum | `M` · `F` |
-| `fiebre_presente` | bool | — |
-| `temperatura_celsius` | float | 35.0 – 42.5 °C |
-| `intensidad_dolor_eva` | int | 0 – 10 |
-| `duracion_sintoma_horas` | int | ≥ 0 |
-| `peso_kg` | float | 1.0 – 300.0 kg |
-| `talla_cm` | float | 30.0 – 250.0 cm |
-| `imc_calculado` | float | Derivada (motor) |
-| `diabetes_mellitus` | bool | — |
-| `hipertension` | bool | — |
-| `cardiopatia_isquemica` | bool | — |
-| `epoc_asma` | bool | — |
-| `embarazo_posible` | bool | — |
-| `semanas_gestacion` | int | 0 – 42 |
-| `sintomas_texto` | str | Mín. 10 caracteres |
-
----
-
-## Catálogo de escenarios CIE-10
-
-### Nivel ROJO — Crítico
-
-| CIE-10 | Descripción | Especialidad |
-|--------|-------------|-------------|
-| I21.0 | IAM con elevación del segmento ST | Cardiología |
-| J96.0 | Insuficiencia respiratoria aguda | Urgencias |
-| I64 | EVC aguda | Neurología |
-| R57.0 | Choque cardiogénico | Cuidados Intensivos |
-| K25.0 | Úlcera gástrica con hemorragia | Cirugía |
-| O15.9 | Eclampsia | Ginecología |
-
-### Nivel AMARILLO — Prioritario
-
-| CIE-10 | Descripción | Especialidad |
-|--------|-------------|-------------|
-| J18.9 | Neumonía | Medicina Interna |
-| N10 | Pielonefritis aguda | Urología |
-| K35.9 | Apendicitis aguda | Cirugía General |
-| I10 | Hipertensión descompensada | Medicina Interna |
-| E11.65 | Diabetes tipo 2 con hiperglucemia | Endocrinología |
-| R51 | Cefalea intensa | Neurología |
-
-### Nivel VERDE — Estable
-
-| CIE-10 | Descripción | Especialidad |
-|--------|-------------|-------------|
-| Z00.00 | Examen médico general | Medicina Familiar |
-| J00 | Rinofaringitis aguda (resfriado común) | Medicina Familiar |
-| M54.5 | Lumbalgia crónica | Rehabilitación |
-| K21.0 | Enfermedad por reflujo gastroesofágico | Gastroenterología |
-| F41.1 | Trastorno de ansiedad generalizado | Psiquiatría |
+| `edad` | int | 0 – 120 |
+| `embarazo` | bool | — |
+| `motivo_consulta` | enum | 10 valores del catálogo |
+| `tiempo_evolucion_horas` | int | ≥ 0 |
+| `intensidad_sintoma` | int | 0 – 10 (EVA) |
+| `fiebre_reportada` | bool | — |
+| `tos` | bool | — |
+| `dificultad_respiratoria` | bool | — |
+| `dolor_toracico` | bool | — |
+| `dolor_al_orinar` | bool | — |
+| `sangrado_activo` | bool | — |
+| `confusion` | bool | Alteración de consciencia |
+| `disminucion_movimientos_fetales` | bool | — |
+| `redflag_disnea_severa` | bool | Bandera roja |
+| `redflag_sangrado_abundante` | bool | Bandera roja |
+| `redflag_deficit_neurologico_subito` | bool | Bandera roja |
+| `redflag_dolor_toracico_opresivo_con_sudoracion` | bool | Bandera roja |
 
 ---
 
@@ -523,9 +506,37 @@ Cuando cualquiera es `true`, el modelo ML no se ejecuta y el nivel queda fijo en
 
 | Norma | Aplicación en SmartX |
 |-------|---------------------|
-| **NOM-004-SSA3-2012** (Expediente Clínico) | Integridad del dato clínico; identificación seudonimizada mediante UUID |
-| **NOM-024-SSA3-2012** (Registro Electrónico) | Hash SHA-256 por resultado; trazabilidad de cada inferencia; middleware de auditoría |
-| **LFPDPPP** | Sin nombre ni NSS en los objetos JSON; datos seudonimizados en todo el pipeline |
+| **NOM-004-SSA3-2012** | Integridad del dato clínico; UUID seudonimizado; validación de rangos clínicos |
+| **NOM-024-SSA3-2012** | Hash SHA-256 por resultado; middleware de auditoría en `auditoria_api`; trazabilidad completa |
+| **LFPDPPP** | Sin nombre, NSS ni datos identificadores en el pipeline; seudonimización completa |
+
+---
+
+## Registro de cambios
+
+### v1.0-piloto — Mayo 2026
+
+**Integración Supabase:**
+- Persistencia de triajes en tabla `inferencias`
+- Auditoría de peticiones en tabla `auditoria_api`
+- Dashboard carga historial desde Supabase al iniciar
+- Nuevo endpoint `GET /api/v1/inferencias/recientes`
+
+**Seguridad (hardening):**
+- CORS cambiado de `["*"]` a lista blanca de orígenes (`localhost:8000`, `localhost:8501`)
+- Excepción silenciada en middleware de auditoría reemplazada por `logger.warning`
+- Validación de `sintomas_texto`: mínimo 10 caracteres, máximo 2000
+- Validación de `antecedentes_riesgo` y `sintomas_digestivos`: máximo 500 caracteres
+- Creado `.gitignore` — `.env` ya no se versiona
+- Creado `.env.example` sin secretos para uso seguro en equipos
+
+**Corrección de bug (dashboard):**
+- `buildPayload()` enviaba campos incorrectos (`disnea_presente`, `fiebre_presente`, etc.)
+  que no coincidían con el contrato de `SintomasInput`. Corregido a nombres exactos del dataset.
+
+**API (expansión de respuesta):**
+- `POST /api/v1/inferencia` ahora devuelve `escenarios`, `explicacion_shap`,
+  `alerta_critica`, `alertas_detalle`, `imc_calculado` además del nivel y probabilidades
 
 ---
 
@@ -533,11 +544,10 @@ Cuando cualquiera es `true`, el modelo ML no se ejecuta y el nivel queda fijo en
 
 | Documento | Ubicación | Contenido |
 |-----------|-----------|-----------|
-| Resumen de integración del dataset | `docs/SmartX_Dataset_Integration_Resumen.md` | Performance 87.6%, distribución de clases |
-| Guía de integración frontend | `docs/SmartX_Frontend_Integration_Guide.md` | Instrucciones para conectar el dashboard a la API |
-| Diagramas Mermaid | `docs/SmartX_Mermaid_Diagramas.md` | Diagramas ER y de flujo en Mermaid.js |
-| Arquitectura IA | `../01_Arquitectura_Sistema/SmartX_Arquitectura_IA.docx` | Diseño del sistema completo |
-| Flujo lógico | `../01_Arquitectura_Sistema/SmartX_Flujo_Logico (1).drawio` | Diagrama interactivo draw.io |
-| Esquema de base de datos | `../02_Base_de_Datos/SmartX_2_Esquema_BD.docx` | Tablas y relaciones |
-| Diagrama ER | `../02_Base_de_Datos/SmartX_3_ER_Diagrama.html` | Entidad-relación interactivo |
-| Especificaciones del prototipo | `../03_Prototipo__MVP/SmartX_P1_Prototipo_IA.docx` | Requisitos y alcance del MVP |
+| Schema SQL | `04_Codigo/supabase_schema.sql` | Tablas, índices y políticas RLS |
+| Integración dataset | `04_Codigo/docs/SmartX_Dataset_Integration_Resumen.md` | Performance 87.6% |
+| Guía frontend | `04_Codigo/docs/SmartX_Frontend_Integration_Guide.md` | Conexión dashboard-API |
+| Diagramas Mermaid | `04_Codigo/docs/SmartX_Mermaid_Diagramas.md` | Flujos y ER |
+| Arquitectura IA | `01_Arquitectura_Sistema/SmartX_Arquitectura_IA.docx` | Diseño del sistema |
+| Esquema BD | `02_Base_de_Datos/SmartX_2_Esquema_BD.docx` | Tablas y relaciones |
+| Diagrama ER | `02_Base_de_Datos/SmartX_3_ER_Diagrama.html` | Entidad-relación interactivo |

@@ -1,0 +1,1541 @@
+patient_id,edad,embarazo,motivo_consulta,tiempo_evolucion_horas,intensidad_sintoma,antecedentes_riesgo,fiebre_reportada,tos,dificultad_respiratoria,dolor_toracico,sintomas_digestivos,dolor_al_orinar,sangrado_activo,confusion,disminucion_movimientos_fetales,redflag_disnea_severa,redflag_sangrado_abundante,redflag_deficit_neurologico_subito,redflag_dolor_toracico_opresivo_con_sudoracion
+PX-TR-001273,20,No,Fiebre sin foco claro,53,6,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001284,63,No,Dolor torácico,51,9,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000192,57,No,Problema urinario,16,7,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001357,17,No,Tos o síntomas respiratorios,103,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000638,26,No,Fiebre sin foco claro,69,10,Ninguno,Sí,No,No,No,Náusea,No,Sí,No,No aplica,No,No,No,No
+PX-TR-000359,87,No,Mareo o desmayo,7,9,"Hipertensión, Uso de anticoagulantes",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001538,36,No,Tos o síntomas respiratorios,32,9,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,Sí,No,No aplica,No,Sí,No,No
+PX-TR-000685,10,No,Tos o síntomas respiratorios,8,10,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000934,70,No,Dolor de cabeza,39,2,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001197,26,No,Problema gastrointestinal,222,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001049,41,No,Dolor torácico,153,6,Asma/EPOC,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000246,29,No,Problema gastrointestinal,18,5,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000624,43,No,Dolor torácico,40,10,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001268,66,No,Tos o síntomas respiratorios,12,6,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000347,52,No,Problema urinario,57,5,Diabetes,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-001366,78,No,Fiebre sin foco claro,22,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001304,67,No,Dificultad respiratoria,7,8,Diabetes,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000809,74,No,Dificultad respiratoria,13,7,"Hipertensión, Cardiopatía",No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000081,41,No,Dolor abdominal,67,8,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001098,25,No,Problema urinario,16,5,Ninguno,No,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000701,15,No,Fiebre sin foco claro,36,5,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000690,1,No,Fiebre sin foco claro,90,7,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000870,19,No,Dolor de cabeza,225,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000979,87,No,Problema urinario,16,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000179,55,No,Dolor torácico,6,10,"Hipertensión, Cardiopatía",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000555,29,No,Dolor abdominal,76,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000650,29,No,Problema urinario,42,6,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000490,21,Sí,Embarazo o síntoma relacionado con embarazo,46,8,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000302,47,No,Tos o síntomas respiratorios,62,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000190,53,No,Dolor torácico,71,2,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000382,70,No,Tos o síntomas respiratorios,120,7,Hipertensión,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000256,28,Sí,Embarazo o síntoma relacionado con embarazo,6,6,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000839,36,No,Fiebre sin foco claro,39,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000038,48,No,Dolor torácico,71,2,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001227,79,No,Dolor abdominal,9,3,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000910,40,No,Dolor de cabeza,76,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000550,8,No,Tos o síntomas respiratorios,63,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000151,23,Sí,Embarazo o síntoma relacionado con embarazo,20,10,Ninguno,No,No,No,No,Ninguno,No,Sí,Sí,No,No,No,No,No
+PX-TR-000193,79,No,Mareo o desmayo,29,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000079,55,No,Dolor abdominal,63,5,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001215,8,No,Problema gastrointestinal,25,8,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000644,30,No,Tos o síntomas respiratorios,86,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000403,63,No,Problema urinario,27,4,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000147,9,No,Tos o síntomas respiratorios,69,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001508,50,No,Dolor de cabeza,34,8,"Hipertensión, Cardiopatía",No,Sí,No,Sí,Ninguno,No,No,Sí,No aplica,No,No,No,Sí
+PX-TR-000181,43,No,Problema gastrointestinal,41,5,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000076,21,No,Tos o síntomas respiratorios,70,2,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001387,88,No,Dolor torácico,12,8,"Diabetes, Cardiopatía",No,No,No,Sí,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001111,17,No,Dolor de cabeza,71,9,Uso de anticoagulantes,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000596,70,No,Problema urinario,16,9,Ninguno,Sí,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000792,18,Sí,Embarazo o síntoma relacionado con embarazo,2,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001010,48,No,Problema gastrointestinal,21,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-000673,3,No,Fiebre sin foco claro,119,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001275,43,No,Fiebre sin foco claro,84,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000543,1,No,Tos o síntomas respiratorios,78,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000783,56,No,Tos o síntomas respiratorios,10,5,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000049,38,Sí,Embarazo o síntoma relacionado con embarazo,62,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000334,78,No,Problema urinario,87,6,Hipertensión,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-000175,43,No,Dolor abdominal,29,5,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001414,75,No,Mareo o desmayo,17,2,Hipertensión,No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000642,65,No,Dolor de cabeza,74,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000838,82,No,Mareo o desmayo,7,10,Cardiopatía,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000790,10,No,Dolor abdominal,64,9,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000444,21,Sí,Embarazo o síntoma relacionado con embarazo,16,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001139,26,No,Dolor torácico,28,4,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000422,40,No,Tos o síntomas respiratorios,15,5,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000652,82,No,Dolor torácico,13,8,"Diabetes, Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001286,64,No,Dolor torácico,16,7,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000621,42,No,Fiebre sin foco claro,79,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,Sí,No,No aplica,No,Sí,No,No
+PX-TR-001240,20,Sí,Embarazo o síntoma relacionado con embarazo,14,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000158,86,No,Dolor abdominal,37,9,Diabetes,Sí,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000924,7,No,Dolor de cabeza,65,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001343,34,No,Problema urinario,50,8,"Diabetes, Hipertensión",Sí,No,No,No,Ninguno,Sí,No,Sí,No aplica,No,No,No,No
+PX-TR-001164,51,No,Dificultad respiratoria,3,4,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001207,1,No,Dolor abdominal,43,4,Ninguno,Sí,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001114,69,No,Dolor de cabeza,95,9,Hipertensión,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000017,30,No,Problema gastrointestinal,94,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000333,29,Sí,Embarazo o síntoma relacionado con embarazo,8,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000782,54,No,Dolor abdominal,26,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001140,23,No,Dolor torácico,29,3,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000572,12,No,Fiebre sin foco claro,12,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000798,14,No,Dolor abdominal,42,4,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000821,44,No,Dolor abdominal,14,6,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000198,82,No,Fiebre sin foco claro,38,10,"Diabetes, Hipertensión",Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001483,25,No,Embarazo o síntoma relacionado con embarazo,6,7,"Diabetes, Hipertensión, Cardiopatía",No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-001267,35,No,Tos o síntomas respiratorios,121,5,Ninguno,Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000593,66,No,Dolor abdominal,19,5,Hipertensión,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000135,74,No,Dolor abdominal,15,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001070,30,No,Problema urinario,80,6,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000252,15,No,Tos o síntomas respiratorios,36,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000981,55,No,Dolor torácico,46,3,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000785,17,No,Problema urinario,76,6,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001426,39,No,Fiebre sin foco claro,44,5,"Hipertensión, Cardiopatía",No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001356,3,No,Tos o síntomas respiratorios,18,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001151,80,No,Dolor de cabeza,2,10,"Diabetes, Hipertensión",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001513,35,No,Problema gastrointestinal,8,9,"Diabetes, Hipertensión",No,No,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001503,53,No,Dolor torácico,47,7,"Diabetes, Asma/EPOC, Uso de anticoagulantes",Sí,Sí,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001378,26,No,Tos o síntomas respiratorios,240,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001375,25,No,Tos o síntomas respiratorios,177,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000739,79,No,Dolor torácico,17,7,Cardiopatía,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001137,30,No,Dolor torácico,45,5,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001322,6,No,Fiebre sin foco claro,24,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000306,89,No,Tos o síntomas respiratorios,43,8,Hipertensión,Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000083,47,No,Problema urinario,19,7,Ninguno,No,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000180,54,No,Dificultad respiratoria,2,7,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000897,12,No,Fiebre sin foco claro,63,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000893,35,No,Tos o síntomas respiratorios,80,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000248,36,No,Dolor abdominal,13,3,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000568,27,No,Problema gastrointestinal,28,5,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000119,16,Sí,Embarazo o síntoma relacionado con embarazo,13,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000137,3,No,Problema gastrointestinal,47,6,Ninguno,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000210,22,Sí,Embarazo o síntoma relacionado con embarazo,15,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001040,58,No,Tos o síntomas respiratorios,101,4,Diabetes,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001300,60,No,Dificultad respiratoria,50,8,Asma/EPOC,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000978,19,No,Fiebre sin foco claro,63,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000963,29,No,Fiebre sin foco claro,105,10,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001416,12,No,Problema urinario,35,1,Hipertensión,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000450,79,No,Mareo o desmayo,1,9,"Diabetes, Hipertensión",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000993,4,No,Fiebre sin foco claro,40,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000036,42,No,Fiebre sin foco claro,99,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001026,57,No,Dolor abdominal,12,8,Hipertensión,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000187,16,Sí,Embarazo o síntoma relacionado con embarazo,14,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000886,27,No,Dolor torácico,4,2,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000341,12,No,Problema urinario,13,4,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000401,24,No,Problema urinario,21,8,Ninguno,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-000819,36,No,Dolor de cabeza,130,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000994,69,No,Mareo o desmayo,55,9,Ninguno,No,No,No,No,Diarrea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001454,16,No,Embarazo o síntoma relacionado con embarazo,52,6,Diabetes,No,No,No,No,"Náusea, Vómito",No,No,No,Sí,No,No,No,No
+PX-TR-000730,78,No,Dolor de cabeza,2,9,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001475,60,No,Problema urinario,12,5,"Diabetes, Hipertensión",No,Sí,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000884,14,No,Dolor de cabeza,109,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000772,66,No,Dolor torácico,38,5,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000668,34,No,Dolor abdominal,44,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000129,74,No,Tos o síntomas respiratorios,90,5,"Diabetes, Hipertensión",No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000905,75,No,Mareo o desmayo,1,10,Hipertensión,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001512,41,No,Dolor de cabeza,14,9,"Hipertensión, Uso de anticoagulantes",No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000130,5,No,Problema gastrointestinal,13,2,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000032,16,No,Fiebre sin foco claro,49,10,Diabetes,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000510,45,No,Mareo o desmayo,35,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-000404,31,Sí,Embarazo o síntoma relacionado con embarazo,5,6,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-000812,28,No,Tos o síntomas respiratorios,38,5,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000064,82,No,Dolor torácico,23,7,"Diabetes, Hipertensión, Cardiopatía",No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000801,81,No,Problema urinario,54,6,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000768,69,No,Dolor de cabeza,65,7,"Hipertensión, Uso de anticoagulantes",Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000202,38,Sí,Embarazo o síntoma relacionado con embarazo,26,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-001064,78,No,Problema urinario,35,6,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000888,42,Sí,Embarazo o síntoma relacionado con embarazo,29,5,Ninguno,No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-000508,31,No,Fiebre sin foco claro,46,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000057,13,No,Tos o síntomas respiratorios,68,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001225,62,No,Dolor abdominal,49,6,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001417,9,No,Dolor abdominal,49,3,Hipertensión,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001223,48,No,Dolor abdominal,20,6,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000170,5,No,Dolor abdominal,39,4,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000725,31,No,Problema gastrointestinal,47,4,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000670,76,No,Tos o síntomas respiratorios,147,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000784,47,No,Dolor abdominal,16,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000983,16,No,Tos o síntomas respiratorios,64,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000305,51,No,Dolor torácico,8,10,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Vómito,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000136,64,No,Tos o síntomas respiratorios,47,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000960,17,No,Dolor de cabeza,15,3,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000745,76,No,Fiebre sin foco claro,73,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000815,83,No,Fiebre sin foco claro,95,9,"Diabetes, Hipertensión",Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000760,53,No,Dolor torácico,33,3,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000688,88,No,Dolor abdominal,13,5,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000477,28,No,Dolor torácico,55,5,Hipertensión,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001440,45,No,Problema urinario,7,3,Hipertensión,Sí,Sí,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001232,63,No,Problema gastrointestinal,37,6,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000442,36,No,Fiebre sin foco claro,10,5,Ninguno,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000817,51,No,Problema gastrointestinal,184,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000449,45,Sí,Embarazo o síntoma relacionado con embarazo,5,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000414,32,No,Problema gastrointestinal,66,6,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001031,35,No,Dolor abdominal,17,6,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000708,63,No,Dolor abdominal,11,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000574,51,No,Dolor torácico,5,10,"Diabetes, Cardiopatía",No,No,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000909,49,No,Dolor abdominal,39,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000736,46,No,Dificultad respiratoria,17,7,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000101,22,Sí,Embarazo o síntoma relacionado con embarazo,13,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000617,92,No,Problema urinario,25,5,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000864,47,No,Dolor de cabeza,9,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001231,48,No,Dolor abdominal,91,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000052,1,No,Fiebre sin foco claro,33,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000268,9,No,Dolor abdominal,35,10,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000191,17,No,Tos o síntomas respiratorios,30,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000911,83,No,Problema urinario,89,7,Ninguno,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-000353,23,No,Dolor abdominal,33,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001302,70,No,Dificultad respiratoria,44,7,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000124,20,No,Fiebre sin foco claro,49,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000560,54,No,Tos o síntomas respiratorios,140,7,Asma/EPOC,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000523,23,No,Problema urinario,132,8,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001421,18,No,Mareo o desmayo,95,4,Cardiopatía,No,Sí,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000623,19,No,Tos o síntomas respiratorios,48,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000547,20,Sí,Embarazo o síntoma relacionado con embarazo,28,9,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000787,22,No,Tos o síntomas respiratorios,19,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000841,3,No,Tos o síntomas respiratorios,112,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000935,46,No,Tos o síntomas respiratorios,11,5,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001122,15,Sí,Embarazo o síntoma relacionado con embarazo,13,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,Sí,No,No
+PX-TR-000803,37,No,Tos o síntomas respiratorios,18,5,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001292,42,No,Mareo o desmayo,36,6,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000516,7,No,Dificultad respiratoria,1,4,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001127,22,No,Dolor torácico,29,4,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000148,70,No,Dolor abdominal,3,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001125,46,No,Dolor torácico,61,6,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000992,69,No,Dolor abdominal,15,6,Diabetes,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000727,38,No,Problema urinario,16,5,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000215,33,No,Dolor abdominal,35,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000968,43,No,Dolor de cabeza,119,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000219,40,Sí,Embarazo o síntoma relacionado con embarazo,33,8,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000602,12,No,Dolor de cabeza,56,7,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001219,21,No,Dolor abdominal,30,6,Ninguno,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001496,20,No,Dificultad respiratoria,59,6,"Diabetes, Hipertensión, Uso de anticoagulantes",No,No,Sí,No,Vómito,Sí,Sí,No,No aplica,No,No,No,No
+PX-TR-000296,37,Sí,Embarazo o síntoma relacionado con embarazo,55,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000216,61,No,Problema urinario,89,6,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000999,7,No,Fiebre sin foco claro,84,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000938,74,No,Mareo o desmayo,40,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000301,26,No,Problema gastrointestinal,120,3,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000043,39,No,Dolor torácico,59,5,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001310,77,No,Tos o síntomas respiratorios,107,9,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000376,73,No,Dificultad respiratoria,68,5,Hipertensión,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000985,46,No,Fiebre sin foco claro,93,10,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001355,39,No,Fiebre sin foco claro,23,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000281,27,No,Fiebre sin foco claro,109,6,Asma/EPOC,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000279,64,No,Dolor torácico,8,9,Hipertensión,No,No,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000290,25,No,Tos o síntomas respiratorios,15,5,Ninguno,Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001506,18,No,Embarazo o síntoma relacionado con embarazo,60,9,"Diabetes, Cardiopatía, Uso de anticoagulantes",No,No,No,No,Vómito,No,Sí,No,Sí,No,Sí,No,No
+PX-TR-001005,75,No,Dolor abdominal,25,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-000116,4,No,Fiebre sin foco claro,36,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000464,64,No,Tos o síntomas respiratorios,97,7,Ninguno,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001346,79,No,Fiebre sin foco claro,76,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000317,2,No,Fiebre sin foco claro,37,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001457,36,No,Embarazo o síntoma relacionado con embarazo,29,4,Hipertensión,No,No,No,Sí,Náusea,No,No,No,No,No,No,No,No
+PX-TR-000115,37,No,Dolor torácico,26,2,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000556,36,No,Tos o síntomas respiratorios,13,7,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000606,68,No,Problema gastrointestinal,24,7,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001327,6,No,Dolor de cabeza,76,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001334,82,No,Problema urinario,70,8,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001006,62,No,Dolor abdominal,54,10,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001525,77,No,Problema urinario,74,9,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001352,42,No,Tos o síntomas respiratorios,144,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000307,39,No,Dolor abdominal,38,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000126,5,No,Tos o síntomas respiratorios,107,7,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001194,17,No,Tos o síntomas respiratorios,17,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000682,51,No,Tos o síntomas respiratorios,205,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000618,51,No,Dolor de cabeza,4,8,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001100,53,No,Problema urinario,15,6,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000253,30,No,Dolor abdominal,34,10,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000270,59,No,Tos o síntomas respiratorios,105,7,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000073,32,No,Problema gastrointestinal,19,4,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000507,25,Sí,Embarazo o síntoma relacionado con embarazo,18,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000998,38,No,Dolor de cabeza,119,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000843,12,No,Tos o síntomas respiratorios,46,2,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000123,9,No,Dolor abdominal,18,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001209,13,No,Problema gastrointestinal,41,6,Ninguno,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-001220,51,No,Problema gastrointestinal,9,4,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000022,38,Sí,Embarazo o síntoma relacionado con embarazo,8,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000804,18,No,Fiebre sin foco claro,83,6,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000536,79,No,Dificultad respiratoria,39,8,"Diabetes, Hipertensión",Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001383,45,No,Dolor de cabeza,132,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000612,68,No,Dificultad respiratoria,24,8,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000793,8,No,Tos o síntomas respiratorios,10,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000424,50,No,Tos o síntomas respiratorios,110,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001129,35,No,Dolor torácico,82,5,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001118,30,Sí,Embarazo o síntoma relacionado con embarazo,18,8,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-001276,48,No,Tos o síntomas respiratorios,89,6,Ninguno,Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001008,20,No,Problema gastrointestinal,27,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000348,30,No,Tos o síntomas respiratorios,9,2,Ninguno,Sí,Sí,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000501,13,No,Fiebre sin foco claro,72,5,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000066,29,No,Fiebre sin foco claro,49,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001121,18,Sí,Embarazo o síntoma relacionado con embarazo,20,8,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-001405,52,No,Dolor torácico,13,3,Asma/EPOC,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000098,76,No,Tos o síntomas respiratorios,71,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000731,57,No,Problema urinario,2,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000145,73,No,Dolor abdominal,25,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000678,19,No,Tos o síntomas respiratorios,67,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001466,39,No,Problema urinario,43,4,Cardiopatía,Sí,Sí,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000466,33,No,Problema urinario,10,9,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000569,25,No,Tos o síntomas respiratorios,30,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000411,36,Sí,Embarazo o síntoma relacionado con embarazo,52,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000584,9,No,Problema gastrointestinal,46,6,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000842,90,No,Dificultad respiratoria,41,5,Cardiopatía,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001471,20,No,Dolor de cabeza,45,6,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,No,Sí,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000160,83,No,Tos o síntomas respiratorios,119,7,Ninguno,Sí,Sí,Sí,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000482,55,No,Problema gastrointestinal,63,6,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000171,41,No,Dolor torácico,64,3,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001360,15,No,Tos o síntomas respiratorios,63,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000030,40,No,Dolor abdominal,15,7,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000558,41,No,Problema gastrointestinal,44,5,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001245,17,No,Fiebre sin foco claro,44,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001427,42,No,Embarazo o síntoma relacionado con embarazo,80,1,"Diabetes, Cardiopatía, Uso de anticoagulantes",Sí,No,No,No,Vómito,No,No,No,Sí,No,No,No,No
+PX-TR-000666,79,No,Dolor abdominal,8,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000715,88,No,Mareo o desmayo,50,9,Diabetes,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000858,72,No,Dificultad respiratoria,8,9,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000592,17,No,Problema urinario,118,5,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001294,27,No,Mareo o desmayo,36,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001532,74,No,Problema gastrointestinal,56,8,"Hipertensión, Uso de anticoagulantes",No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001247,13,No,Fiebre sin foco claro,48,6,Hipertensión,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000405,47,No,Dolor abdominal,23,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000003,25,No,Tos o síntomas respiratorios,31,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001189,18,No,Tos o síntomas respiratorios,22,6,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000811,86,No,Problema urinario,82,5,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000824,37,No,Dolor de cabeza,70,8,Ninguno,Sí,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001492,41,No,Dolor de cabeza,3,7,Ninguno,No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000750,32,No,Dolor abdominal,29,8,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000816,44,No,Tos o síntomas respiratorios,163,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001145,61,No,Dolor de cabeza,10,10,"Diabetes, Hipertensión",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001517,43,No,Problema urinario,60,10,Diabetes,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000314,19,Sí,Embarazo o síntoma relacionado con embarazo,4,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,Sí,No,No
+PX-TR-000567,47,No,Dificultad respiratoria,34,8,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000127,34,No,Dolor torácico,33,4,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000320,81,No,Dolor torácico,4,9,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000921,31,No,Fiebre sin foco claro,13,3,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001058,4,No,Problema urinario,113,4,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000766,30,No,Problema gastrointestinal,142,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001053,85,No,Problema urinario,34,4,Ninguno,Sí,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000853,12,No,Tos o síntomas respiratorios,9,9,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000264,71,No,Problema gastrointestinal,60,10,Diabetes,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-001178,48,No,Tos o síntomas respiratorios,27,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000386,53,No,Dolor abdominal,30,7,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001394,29,No,Dolor torácico,5,10,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000028,68,No,Dolor torácico,6,10,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000765,38,Sí,Embarazo o síntoma relacionado con embarazo,16,7,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000717,3,No,Tos o síntomas respiratorios,93,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000878,26,No,Fiebre sin foco claro,19,5,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000010,47,No,Dificultad respiratoria,35,9,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000344,64,No,Dolor torácico,3,10,"Diabetes, Hipertensión",No,No,No,Sí,"Náusea, Vómito",No,No,No,No aplica,No,No,No,Sí
+PX-TR-000818,44,No,Dolor torácico,15,10,"Diabetes, Hipertensión",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000217,78,No,Problema gastrointestinal,73,5,Hipertensión,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000603,10,No,Fiebre sin foco claro,48,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000071,28,Sí,Embarazo o síntoma relacionado con embarazo,12,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000628,9,No,Tos o síntomas respiratorios,45,10,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000235,23,No,Tos o síntomas respiratorios,68,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000161,37,No,Dolor de cabeza,42,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000006,88,No,Dolor torácico,44,10,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000663,62,No,Problema gastrointestinal,46,4,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000595,79,No,Dolor de cabeza,8,8,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000211,44,No,Tos o síntomas respiratorios,33,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000018,16,No,Tos o síntomas respiratorios,60,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000757,54,No,Dolor abdominal,6,3,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000375,71,No,Dolor abdominal,70,9,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000393,55,No,Problema urinario,39,3,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000848,39,Sí,Embarazo o síntoma relacionado con embarazo,7,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000643,41,No,Dolor de cabeza,40,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000425,23,No,Dolor abdominal,7,5,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000742,22,No,Problema urinario,49,3,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000433,52,No,Dolor abdominal,21,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001332,48,No,Problema urinario,73,6,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001361,24,No,Tos o síntomas respiratorios,71,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000922,23,No,Dolor abdominal,10,7,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001474,25,No,Problema urinario,5,7,"Diabetes, Uso de anticoagulantes",No,Sí,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000871,37,No,Problema urinario,12,6,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000582,27,No,Dolor de cabeza,231,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001259,63,No,Fiebre sin foco claro,22,6,Hipertensión,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000447,7,No,Tos o síntomas respiratorios,4,10,Ninguno,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000204,35,No,Fiebre sin foco claro,47,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000478,59,No,Tos o síntomas respiratorios,8,8,Asma/EPOC,Sí,Sí,Sí,Sí,Náusea,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000875,47,No,Problema gastrointestinal,31,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001341,72,No,Problema urinario,79,7,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000504,13,No,Dolor abdominal,31,7,Ninguno,Sí,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001056,49,No,Problema urinario,53,8,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000453,25,Sí,Embarazo o síntoma relacionado con embarazo,10,7,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-000564,22,No,Problema urinario,14,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000774,44,No,Dolor abdominal,24,10,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001174,70,No,Tos o síntomas respiratorios,12,6,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000514,61,No,Dolor abdominal,32,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-001372,12,No,Tos o síntomas respiratorios,110,5,Ninguno,Sí,Sí,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000548,75,No,Dolor abdominal,31,5,Diabetes,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000608,4,No,Dolor abdominal,24,5,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000086,8,No,Problema urinario,65,7,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000898,50,No,Dolor torácico,154,6,Ninguno,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000274,40,No,Tos o síntomas respiratorios,73,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000741,74,No,Dolor de cabeza,244,7,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000977,16,No,Problema gastrointestinal,58,6,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001491,59,No,Dolor torácico,74,4,"Diabetes, Asma/EPOC, Uso de anticoagulantes",No,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000415,24,No,Tos o síntomas respiratorios,69,5,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000980,30,No,Tos o síntomas respiratorios,9,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000218,23,No,Dolor torácico,31,4,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001320,1,No,Fiebre sin foco claro,72,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001377,55,No,Dolor de cabeza,117,7,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000195,48,No,Mareo o desmayo,8,8,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000168,24,No,Tos o síntomas respiratorios,8,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000112,11,No,Tos o síntomas respiratorios,30,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000630,15,No,Problema gastrointestinal,14,4,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000223,77,No,Dolor torácico,5,7,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000406,45,No,Fiebre sin foco claro,35,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000890,42,Sí,Embarazo o síntoma relacionado con embarazo,121,10,Ninguno,No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-001074,87,No,Mareo o desmayo,52,6,Diabetes,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000226,25,Sí,Embarazo o síntoma relacionado con embarazo,2,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001028,12,No,Dolor abdominal,24,8,Hipertensión,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000072,11,No,Tos o síntomas respiratorios,8,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000937,16,No,Fiebre sin foco claro,40,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000261,86,No,Problema gastrointestinal,19,4,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000753,88,No,Fiebre sin foco claro,57,8,Ninguno,Sí,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000687,22,No,Problema urinario,12,5,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000788,29,Sí,Embarazo o síntoma relacionado con embarazo,15,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000931,24,No,Tos o síntomas respiratorios,79,2,Asma/EPOC,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000959,28,Sí,Embarazo o síntoma relacionado con embarazo,7,7,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000232,24,No,Fiebre sin foco claro,87,8,Ninguno,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-001214,42,No,Dolor abdominal,12,4,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000011,11,No,Dolor abdominal,29,4,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000060,21,No,Dolor abdominal,46,10,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000659,71,No,Dolor abdominal,23,5,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000613,35,No,Dificultad respiratoria,10,7,Asma/EPOC,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001484,39,No,Embarazo o síntoma relacionado con embarazo,78,4,"Hipertensión, Cardiopatía",No,No,No,Sí,Náusea,No,No,No,No,No,No,No,No
+PX-TR-001135,55,No,Dolor torácico,24,4,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001213,17,No,Dolor abdominal,19,4,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000887,42,No,Tos o síntomas respiratorios,216,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000557,85,No,Mareo o desmayo,17,5,Hipertensión,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-001420,77,No,Mareo o desmayo,6,3,"Hipertensión, Cardiopatía",No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001425,68,No,Mareo o desmayo,9,1,"Diabetes, Hipertensión, Cardiopatía",No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000900,61,No,Tos o síntomas respiratorios,22,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001126,49,No,Dolor torácico,34,4,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000480,32,No,Tos o síntomas respiratorios,106,7,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000358,67,No,Dolor torácico,3,10,"Diabetes, Hipertensión",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000367,90,No,Dolor torácico,1,6,"Diabetes, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001382,29,No,Dolor de cabeza,240,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000970,1,No,Tos o síntomas respiratorios,68,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001180,19,No,Tos o síntomas respiratorios,48,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000778,1,No,Dolor de cabeza,9,5,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000327,57,No,Tos o síntomas respiratorios,17,5,Ninguno,Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000455,48,No,Dolor abdominal,37,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000493,38,No,Tos o síntomas respiratorios,9,2,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000121,61,No,Tos o síntomas respiratorios,16,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000840,35,No,Dolor abdominal,28,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001531,49,No,Problema gastrointestinal,96,10,Diabetes,No,Sí,Sí,No,Náusea,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001211,73,No,Problema gastrointestinal,27,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000163,17,No,Tos o síntomas respiratorios,25,6,Ninguno,Sí,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000225,8,No,Problema urinario,55,3,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000703,85,No,Dolor de cabeza,10,5,Cardiopatía,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000102,80,No,Fiebre sin foco claro,50,5,"Diabetes, Hipertensión",Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001447,10,No,Mareo o desmayo,14,4,"Hipertensión, Cardiopatía",No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000154,11,No,Fiebre sin foco claro,27,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000600,12,No,Fiebre sin foco claro,20,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000291,68,No,Dolor torácico,2,9,"Diabetes, Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001399,78,No,Dolor torácico,4,10,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000099,49,No,Mareo o desmayo,36,7,Diabetes,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001444,40,No,Dolor abdominal,20,5,Cardiopatía,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001001,32,No,Dolor abdominal,18,8,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001317,2,No,Dolor de cabeza,14,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000562,44,No,Dificultad respiratoria,25,8,"Hipertensión, Cardiopatía",No,No,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-001285,70,No,Dolor torácico,19,8,Hipertensión,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001500,50,No,Problema urinario,69,7,Hipertensión,No,Sí,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000749,24,No,Tos o síntomas respiratorios,72,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001110,26,No,Fiebre sin foco claro,34,8,Ninguno,Sí,No,No,No,Ninguno,No,Sí,No,No aplica,No,No,No,No
+PX-TR-001482,15,No,Embarazo o síntoma relacionado con embarazo,17,6,Asma/EPOC,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000457,4,No,Tos o síntomas respiratorios,12,3,Asma/EPOC,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001290,33,No,Mareo o desmayo,40,6,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000238,33,No,Problema urinario,74,7,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001234,26,Sí,Embarazo o síntoma relacionado con embarazo,37,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000056,89,No,Fiebre sin foco claro,41,9,"Diabetes, Hipertensión, Uso de anticoagulantes",Sí,No,No,No,Ninguno,Sí,No,Sí,No aplica,No,No,No,No
+PX-TR-000292,53,No,Fiebre sin foco claro,74,7,Asma/EPOC,Sí,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000443,22,No,Tos o síntomas respiratorios,46,7,Ninguno,Sí,Sí,Sí,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000138,18,No,Fiebre sin foco claro,77,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000828,46,No,Problema urinario,7,7,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001089,64,No,Problema gastrointestinal,18,4,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000626,69,No,Fiebre sin foco claro,19,10,"Diabetes, Hipertensión",Sí,No,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001498,24,No,Tos o síntomas respiratorios,43,4,"Hipertensión, Cardiopatía",No,No,Sí,No,Náusea,Sí,Sí,No,No aplica,No,No,No,No
+PX-TR-001007,31,No,Dolor abdominal,24,9,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001520,50,No,Problema urinario,20,9,"Hipertensión, Cardiopatía",No,Sí,No,Sí,Ninguno,Sí,No,No,No aplica,No,No,No,Sí
+PX-TR-000973,80,No,Tos o síntomas respiratorios,62,10,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000679,81,No,Problema gastrointestinal,35,5,Diabetes,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000732,74,No,Tos o síntomas respiratorios,157,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001351,40,No,Tos o síntomas respiratorios,112,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000394,60,No,Tos o síntomas respiratorios,9,5,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000150,80,No,Problema gastrointestinal,46,2,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001460,16,No,Embarazo o síntoma relacionado con embarazo,44,7,"Diabetes, Hipertensión, Uso de anticoagulantes",No,No,No,No,Vómito,No,No,No,No,No,No,No,No
+PX-TR-001172,22,No,Dificultad respiratoria,8,8,Ninguno,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000492,23,Sí,Embarazo o síntoma relacionado con embarazo,40,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000310,73,No,Problema urinario,53,6,Diabetes,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001124,38,Sí,Embarazo o síntoma relacionado con embarazo,27,9,Ninguno,Sí,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000561,72,No,Dolor abdominal,77,9,Diabetes,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001423,18,No,Problema urinario,28,5,"Hipertensión, Asma/EPOC",Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001412,46,No,Mareo o desmayo,60,2,Cardiopatía,No,Sí,No,No,Náusea,No,No,No,Sí,No,No,No,No
+PX-TR-000672,56,No,Dolor de cabeza,5,9,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001097,44,No,Problema urinario,13,8,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001002,43,No,Dolor abdominal,8,8,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001450,1,No,Fiebre sin foco claro,49,5,"Diabetes, Uso de anticoagulantes",No,No,No,No,Náusea,Sí,No,Sí,No aplica,No,No,No,No
+PX-TR-000329,39,No,Tos o síntomas respiratorios,82,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000800,52,No,Dolor torácico,24,2,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001354,11,No,Tos o síntomas respiratorios,61,6,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000337,22,Sí,Embarazo o síntoma relacionado con embarazo,1,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001376,37,No,Tos o síntomas respiratorios,75,6,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000495,69,No,Mareo o desmayo,6,8,Hipertensión,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001495,74,No,Dolor torácico,42,6,Cardiopatía,No,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001025,21,No,Dolor abdominal,37,8,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001468,25,No,Dolor torácico,52,4,"Hipertensión, Cardiopatía",No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000379,14,No,Dolor abdominal,11,7,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000566,59,No,Fiebre sin foco claro,32,2,Ninguno,Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000748,1,No,Problema gastrointestinal,17,4,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001243,26,Sí,Embarazo o síntoma relacionado con embarazo,99,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-001364,22,No,Tos o síntomas respiratorios,80,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001113,25,No,Dolor de cabeza,51,8,Ninguno,Sí,No,No,No,Vómito,No,Sí,No,No aplica,No,No,No,No
+PX-TR-000986,7,No,Dificultad respiratoria,8,5,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001062,64,No,Problema urinario,41,6,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000267,26,Sí,Embarazo o síntoma relacionado con embarazo,16,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000696,53,No,Dolor abdominal,10,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000203,31,No,Fiebre sin foco claro,41,9,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001119,35,Sí,Embarazo o síntoma relacionado con embarazo,15,8,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000220,19,No,Tos o síntomas respiratorios,62,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001266,46,No,Tos o síntomas respiratorios,70,7,Ninguno,Sí,Sí,Sí,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000955,54,No,Dolor de cabeza,115,10,Ninguno,Sí,No,No,No,Náusea,No,Sí,No,No aplica,No,Sí,No,No
+PX-TR-000487,57,No,Dolor de cabeza,3,2,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000473,34,No,Problema gastrointestinal,19,3,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001371,28,No,Tos o síntomas respiratorios,45,6,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000206,19,No,Tos o síntomas respiratorios,14,4,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000488,48,No,Problema gastrointestinal,161,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000796,67,No,Dolor de cabeza,7,9,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000762,59,No,Mareo o desmayo,31,6,Diabetes,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000471,33,Sí,Embarazo o síntoma relacionado con embarazo,13,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000892,21,No,Dolor torácico,42,4,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001392,57,No,Dolor torácico,1,8,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001204,22,No,Problema gastrointestinal,73,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001358,11,No,Tos o síntomas respiratorios,92,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001295,9,No,Dolor de cabeza,25,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000383,24,No,Dolor abdominal,12,6,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000427,40,No,Tos o síntomas respiratorios,45,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001374,11,No,Tos o síntomas respiratorios,77,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000186,18,No,Fiebre sin foco claro,53,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000033,16,Sí,Embarazo o síntoma relacionado con embarazo,13,5,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-001108,9,No,Fiebre sin foco claro,147,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001182,27,No,Tos o síntomas respiratorios,12,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001459,37,No,Dolor de cabeza,57,4,"Diabetes, Uso de anticoagulantes",No,No,No,Sí,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000451,35,No,Dolor abdominal,17,7,Ninguno,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-001396,62,No,Dolor torácico,6,10,"Diabetes, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,Sí,No aplica,No,No,No,Sí
+PX-TR-001397,69,No,Dolor torácico,8,9,"Diabetes, Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001463,81,No,Dolor abdominal,83,7,"Diabetes, Cardiopatía",Sí,No,Sí,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000400,64,No,Dificultad respiratoria,18,7,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001187,16,No,Fiebre sin foco claro,36,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001308,44,No,Dificultad respiratoria,27,8,Diabetes,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000854,75,No,Dolor abdominal,33,10,Diabetes,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000876,7,No,Tos o síntomas respiratorios,9,4,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001173,28,No,Tos o síntomas respiratorios,10,5,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000512,35,Sí,Embarazo o síntoma relacionado con embarazo,86,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000120,52,No,Problema gastrointestinal,25,3,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000632,68,No,Dolor de cabeza,5,7,Hipertensión,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001067,65,No,Problema urinario,80,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001160,28,Sí,Embarazo o síntoma relacionado con embarazo,2,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000360,31,Sí,Embarazo o síntoma relacionado con embarazo,25,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000700,35,No,Problema gastrointestinal,86,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000039,27,No,Tos o síntomas respiratorios,65,5,Asma/EPOC,Sí,Sí,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000078,6,No,Tos o síntomas respiratorios,70,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000946,2,No,Dolor de cabeza,53,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000034,38,No,Tos o síntomas respiratorios,33,5,Ninguno,Sí,Sí,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000726,24,Sí,Embarazo o síntoma relacionado con embarazo,9,10,Ninguno,No,No,No,No,Ninguno,No,Sí,Sí,No,No,Sí,No,No
+PX-TR-001059,83,No,Problema urinario,47,8,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000705,45,No,Dolor torácico,2,3,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000091,61,No,Problema urinario,47,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001202,33,No,Problema gastrointestinal,21,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000831,46,No,Fiebre sin foco claro,16,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000929,12,No,Dificultad respiratoria,65,5,Ninguno,Sí,Sí,Sí,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001523,79,No,Problema urinario,21,8,"Diabetes, Asma/EPOC, Uso de anticoagulantes",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000009,21,No,Problema urinario,65,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001076,43,No,Dolor de cabeza,38,5,Ninguno,No,No,No,No,"Vómito, Diarrea",No,No,Sí,No aplica,No,No,No,No
+PX-TR-001020,18,Sí,Embarazo o síntoma relacionado con embarazo,6,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000866,33,No,Tos o síntomas respiratorios,93,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000164,59,No,Dolor abdominal,35,5,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000794,22,Sí,Embarazo o síntoma relacionado con embarazo,10,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001159,25,Sí,Embarazo o síntoma relacionado con embarazo,15,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000577,19,No,Dolor abdominal,35,10,Ninguno,Sí,No,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000901,60,No,Dolor abdominal,6,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000499,17,No,Tos o síntomas respiratorios,46,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001472,31,No,Fiebre sin foco claro,36,6,"Hipertensión, Asma/EPOC",No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000820,38,No,Dolor de cabeza,102,10,Ninguno,Sí,No,No,No,Náusea,No,Sí,No,No aplica,No,No,No,No
+PX-TR-000461,36,No,Fiebre sin foco claro,38,7,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000391,24,Sí,Embarazo o síntoma relacionado con embarazo,118,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000459,64,No,Dificultad respiratoria,36,5,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001452,25,No,Dolor torácico,51,4,Hipertensión,Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001079,59,No,Mareo o desmayo,38,10,"Diabetes, Hipertensión",Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000664,42,No,Tos o síntomas respiratorios,19,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000674,55,No,Problema urinario,36,5,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000908,3,No,Fiebre sin foco claro,95,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000080,77,No,Tos o síntomas respiratorios,17,6,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000082,8,No,Tos o síntomas respiratorios,93,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000758,59,No,Dificultad respiratoria,3,3,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000879,17,No,Fiebre sin foco claro,17,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000144,81,No,Dolor torácico,1,6,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000665,42,Sí,Embarazo o síntoma relacionado con embarazo,15,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000930,53,No,Dolor torácico,2,9,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000134,23,No,Dificultad respiratoria,21,5,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001439,39,No,Embarazo o síntoma relacionado con embarazo,37,5,Asma/EPOC,No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-000614,4,No,Fiebre sin foco claro,41,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000242,62,No,Problema gastrointestinal,35,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000088,62,No,Problema gastrointestinal,37,3,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000610,58,No,Dolor abdominal,22,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000805,9,No,Tos o síntomas respiratorios,30,6,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001326,1,No,Dolor de cabeza,86,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000599,79,No,Dificultad respiratoria,67,7,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001038,68,No,Dolor abdominal,64,7,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000152,8,No,Tos o síntomas respiratorios,32,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000023,1,No,Tos o síntomas respiratorios,117,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001130,20,No,Dolor torácico,52,2,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000125,40,No,Dolor abdominal,38,10,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001497,36,No,Mareo o desmayo,43,7,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000813,40,Sí,Embarazo o síntoma relacionado con embarazo,18,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-001534,30,No,Fiebre sin foco claro,5,8,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,No,No,Náusea,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001077,60,No,Mareo o desmayo,51,6,Ninguno,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001264,8,No,Tos o síntomas respiratorios,78,5,Hipertensión,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000309,41,No,Problema gastrointestinal,21,4,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001338,29,No,Problema urinario,48,8,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000228,21,No,Dolor abdominal,72,9,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001335,27,No,Problema urinario,10,6,Diabetes,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-001307,59,No,Dificultad respiratoria,34,8,Asma/EPOC,Sí,Sí,Sí,Sí,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000230,41,No,Dolor torácico,10,6,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001069,35,No,Problema urinario,119,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000139,62,No,Problema gastrointestinal,47,7,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001530,30,No,Problema gastrointestinal,58,9,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000520,21,Sí,Embarazo o síntoma relacionado con embarazo,23,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-000197,24,No,Tos o síntomas respiratorios,58,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000702,70,No,Dolor abdominal,21,6,Hipertensión,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000275,60,No,Dolor de cabeza,65,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000472,14,No,Tos o síntomas respiratorios,49,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001057,38,No,Problema urinario,63,8,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001336,52,No,Problema urinario,114,7,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000114,24,No,Tos o síntomas respiratorios,15,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000300,67,No,Tos o síntomas respiratorios,24,6,"Diabetes, Asma/EPOC",Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001279,81,No,Dolor torácico,23,8,Cardiopatía,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000434,41,No,Dolor torácico,10,5,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001042,69,No,Tos o síntomas respiratorios,89,4,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000896,11,No,Fiebre sin foco claro,93,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000068,91,No,Tos o síntomas respiratorios,47,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001254,22,No,Fiebre sin foco claro,46,6,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000537,24,No,Dolor abdominal,51,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001000,20,No,Dolor de cabeza,211,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000410,35,No,Dolor de cabeza,15,4,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000417,59,No,Dolor torácico,5,10,"Diabetes, Cardiopatía",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000649,46,No,Fiebre sin foco claro,30,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000014,13,No,Dolor abdominal,34,7,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001242,17,Sí,Embarazo o síntoma relacionado con embarazo,105,10,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000865,25,Sí,Embarazo o síntoma relacionado con embarazo,30,6,Ninguno,No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-001073,90,No,Dolor de cabeza,37,4,Diabetes,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000026,38,No,Dolor torácico,7,10,"Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001489,25,No,Problema urinario,65,4,Cardiopatía,Sí,Sí,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000553,55,No,Dificultad respiratoria,21,7,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000771,14,No,Tos o síntomas respiratorios,29,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000835,72,No,Mareo o desmayo,5,10,"Diabetes, Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000142,11,No,Tos o síntomas respiratorios,110,6,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001133,63,No,Dolor torácico,75,5,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001029,8,No,Problema gastrointestinal,84,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001502,25,No,Embarazo o síntoma relacionado con embarazo,32,7,Hipertensión,No,No,No,No,Náusea,No,Sí,No,No,No,No,No,No
+PX-TR-001060,91,No,Problema urinario,85,9,"Diabetes, Uso de anticoagulantes",Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000128,37,No,Problema urinario,40,2,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000209,6,No,Tos o síntomas respiratorios,25,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000926,37,Sí,Embarazo o síntoma relacionado con embarazo,16,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001389,72,No,Dolor torácico,11,10,"Diabetes, Cardiopatía",No,No,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000385,13,No,Tos o síntomas respiratorios,60,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001433,61,No,Dolor torácico,46,4,Hipertensión,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001092,44,No,Problema gastrointestinal,17,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000641,49,No,Problema urinario,70,10,Ninguno,Sí,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001018,25,Sí,Embarazo o síntoma relacionado con embarazo,4,6,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-000339,66,No,Dolor abdominal,40,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-000571,84,No,Problema urinario,41,7,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000214,64,No,Dolor de cabeza,2,10,Diabetes,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001337,67,No,Problema urinario,40,6,Hipertensión,Sí,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001342,70,No,Problema urinario,42,7,Ninguno,Sí,No,No,No,Náusea,Sí,No,Sí,No aplica,No,No,No,No
+PX-TR-000474,38,No,Fiebre sin foco claro,43,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000162,23,No,Problema urinario,48,2,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001509,35,No,Problema urinario,54,8,Uso de anticoagulantes,No,Sí,No,Sí,Ninguno,Sí,No,No,No aplica,No,No,No,Sí
+PX-TR-000167,38,Sí,Embarazo o síntoma relacionado con embarazo,45,6,Ninguno,No,No,No,No,Vómito,No,No,No,No,No,No,No,No
+PX-TR-000277,35,No,Fiebre sin foco claro,19,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001318,4,No,Tos o síntomas respiratorios,95,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001429,83,No,Dolor torácico,6,5,"Diabetes, Hipertensión, Uso de anticoagulantes",Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000286,9,No,Dolor de cabeza,70,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000021,75,No,Dificultad respiratoria,46,7,Cardiopatía,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000282,15,No,Problema gastrointestinal,45,5,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001323,17,No,Fiebre sin foco claro,8,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000542,29,No,Fiebre sin foco claro,65,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001045,71,No,Tos o síntomas respiratorios,110,8,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001507,10,No,Tos o síntomas respiratorios,19,9,"Diabetes, Uso de anticoagulantes",No,Sí,No,No,Ninguno,No,Sí,No,No aplica,No,Sí,No,No
+PX-TR-000423,44,No,Dolor abdominal,65,9,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001331,50,No,Problema urinario,15,6,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001147,49,No,Dolor de cabeza,7,8,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001379,73,No,Dolor de cabeza,240,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000229,6,No,Tos o síntomas respiratorios,21,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001359,14,No,Fiebre sin foco claro,139,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000436,23,No,Dolor abdominal,10,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000855,49,No,Dolor torácico,7,10,Diabetes,No,No,No,Sí,Vómito,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001238,21,Sí,Embarazo o síntoma relacionado con embarazo,41,8,Ninguno,No,No,No,No,Vómito,No,No,No,No,No,No,No,No
+PX-TR-001186,2,No,Tos o síntomas respiratorios,24,3,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001418,15,No,Embarazo o síntoma relacionado con embarazo,66,5,"Hipertensión, Cardiopatía, Uso de anticoagulantes",Sí,No,No,No,Náusea,No,No,No,Sí,No,No,No,No
+PX-TR-000243,50,No,Dolor de cabeza,42,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001170,35,No,Tos o síntomas respiratorios,8,10,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000917,44,No,Problema urinario,42,4,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000249,27,No,Tos o síntomas respiratorios,90,6,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001086,38,No,Dolor abdominal,17,8,Hipertensión,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000777,6,No,Fiebre sin foco claro,16,2,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001348,52,No,Fiebre sin foco claro,78,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000505,22,No,Mareo o desmayo,65,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000585,30,Sí,Embarazo o síntoma relacionado con embarazo,112,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-001533,46,No,Dolor torácico,4,8,"Diabetes, Uso de anticoagulantes",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,Sí,No
+PX-TR-000936,32,No,Dolor torácico,45,5,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001169,39,No,Dificultad respiratoria,1,8,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000972,75,No,Fiebre sin foco claro,49,3,Hipertensión,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001102,52,No,Problema urinario,13,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000915,62,No,Mareo o desmayo,7,8,"Diabetes, Hipertensión",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000535,85,No,Fiebre sin foco claro,52,7,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000902,38,No,Tos o síntomas respiratorios,1,10,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000767,17,No,Tos o síntomas respiratorios,29,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001107,26,No,Dolor de cabeza,40,6,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000949,33,No,Fiebre sin foco claro,101,6,Ninguno,Sí,Sí,Sí,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000627,34,Sí,Embarazo o síntoma relacionado con embarazo,93,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000231,24,No,Tos o síntomas respiratorios,34,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000227,73,No,Dificultad respiratoria,4,10,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001253,21,No,Fiebre sin foco claro,6,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000448,33,No,Problema urinario,78,7,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000916,13,No,Tos o síntomas respiratorios,132,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000463,60,No,Mareo o desmayo,10,5,Cardiopatía,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000541,11,No,Problema gastrointestinal,66,5,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000775,22,No,Dolor de cabeza,43,6,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001149,84,No,Mareo o desmayo,11,9,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000062,27,Sí,Embarazo o síntoma relacionado con embarazo,12,10,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000944,75,No,Problema urinario,42,3,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000625,8,No,Fiebre sin foco claro,16,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000105,73,No,Dolor abdominal,26,10,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001012,47,No,Dolor abdominal,3,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000108,9,No,Tos o síntomas respiratorios,10,2,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000899,56,No,Problema gastrointestinal,201,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000096,15,No,Dolor torácico,31,3,"Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001261,64,No,Tos o síntomas respiratorios,22,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000234,20,No,Problema gastrointestinal,21,7,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000251,21,No,Problema gastrointestinal,47,5,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000904,11,No,Fiebre sin foco claro,45,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000752,47,No,Fiebre sin foco claro,8,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000956,70,No,Tos o síntomas respiratorios,124,7,Diabetes,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001365,29,No,Tos o síntomas respiratorios,20,6,Hipertensión,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001467,23,No,Problema gastrointestinal,38,6,Uso de anticoagulantes,Sí,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001388,54,No,Dolor torácico,11,8,"Diabetes, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000352,5,No,Tos o síntomas respiratorios,54,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001037,71,No,Dolor abdominal,36,10,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001090,32,No,Dolor abdominal,49,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001333,13,No,Problema urinario,42,6,Diabetes,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-000657,15,Sí,Embarazo o síntoma relacionado con embarazo,12,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000460,46,No,Dolor abdominal,25,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-000467,80,No,Dificultad respiratoria,12,5,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000407,40,No,Dificultad respiratoria,9,10,Ninguno,No,No,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000719,5,No,Tos o síntomas respiratorios,6,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000284,18,No,Dolor abdominal,22,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001166,35,No,Tos o síntomas respiratorios,9,8,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001022,24,Sí,Embarazo o síntoma relacionado con embarazo,11,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001226,40,No,Dolor abdominal,15,2,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000565,4,No,Tos o síntomas respiratorios,118,6,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000576,40,No,Mareo o desmayo,6,8,"Diabetes, Hipertensión",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001510,27,No,Mareo o desmayo,8,10,Asma/EPOC,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000173,73,No,Dolor de cabeza,5,8,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000465,85,No,Dificultad respiratoria,21,5,Cardiopatía,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000691,6,No,Dolor abdominal,39,3,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001453,67,No,Problema urinario,88,6,"Diabetes, Asma/EPOC, Uso de anticoagulantes",No,Sí,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001535,31,No,Embarazo o síntoma relacionado con embarazo,72,10,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,No,No,Ninguno,No,Sí,No,Sí,No,Sí,No,No
+PX-TR-000439,54,No,Tos o síntomas respiratorios,77,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001015,29,Sí,Embarazo o síntoma relacionado con embarazo,12,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001034,36,No,Dolor abdominal,25,10,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001251,33,No,Fiebre sin foco claro,59,3,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000485,67,No,Tos o síntomas respiratorios,61,7,Hipertensión,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001437,21,No,Fiebre sin foco claro,90,2,"Diabetes, Cardiopatía, Uso de anticoagulantes",No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001381,27,No,Dolor de cabeza,75,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000025,50,No,Tos o síntomas respiratorios,17,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001315,68,No,Dificultad respiratoria,63,10,"Diabetes, Hipertensión, Uso de anticoagulantes",Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000743,18,No,Tos o síntomas respiratorios,39,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000313,36,No,Dificultad respiratoria,13,6,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001228,20,No,Problema gastrointestinal,33,2,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000578,23,No,Tos o síntomas respiratorios,62,7,Asma/EPOC,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000526,6,No,Problema gastrointestinal,16,9,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000591,27,No,Fiebre sin foco claro,56,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000402,4,No,Fiebre sin foco claro,68,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000335,55,No,Problema gastrointestinal,29,8,Ninguno,No,No,No,No,Diarrea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000346,5,No,Tos o síntomas respiratorios,53,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001236,16,Sí,Embarazo o síntoma relacionado con embarazo,133,4,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000074,35,No,Tos o síntomas respiratorios,95,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001461,73,No,Dificultad respiratoria,78,4,"Diabetes, Hipertensión",No,No,Sí,No,Náusea,Sí,No,No,Sí,No,No,No,No
+PX-TR-000084,36,No,Dolor de cabeza,36,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000176,59,No,Tos o síntomas respiratorios,13,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000419,72,No,Tos o síntomas respiratorios,59,6,Ninguno,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000681,38,Sí,Embarazo o síntoma relacionado con embarazo,22,10,Uso de anticoagulantes,No,No,No,No,Ninguno,No,Sí,Sí,No,No,Sí,No,No
+PX-TR-000923,28,No,Dolor de cabeza,105,8,Ninguno,Sí,No,No,No,Náusea,No,Sí,No,No aplica,No,No,No,No
+PX-TR-001066,56,No,Problema urinario,30,6,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000283,32,No,Dificultad respiratoria,17,5,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000953,77,No,Dificultad respiratoria,23,6,"Hipertensión, Asma/EPOC",No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001442,28,No,Dolor abdominal,69,5,"Diabetes, Cardiopatía",Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000590,27,No,Dolor de cabeza,27,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001430,19,No,Fiebre sin foco claro,23,1,"Diabetes, Asma/EPOC",No,Sí,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000085,63,No,Tos o síntomas respiratorios,53,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000035,44,No,Problema urinario,37,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000895,47,No,Dolor abdominal,24,9,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001428,17,No,Fiebre sin foco claro,73,5,"Diabetes, Hipertensión, Cardiopatía",No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000594,75,No,Tos o síntomas respiratorios,1,10,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001529,20,No,Embarazo o síntoma relacionado con embarazo,74,8,Cardiopatía,No,No,No,No,Náusea,No,Sí,No,No,No,Sí,No,No
+PX-TR-001455,63,No,Dolor torácico,68,5,Cardiopatía,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000987,79,No,Dolor torácico,42,9,"Diabetes, Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000205,51,No,Dolor torácico,1,9,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000372,25,No,Tos o síntomas respiratorios,19,5,Asma/EPOC,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001218,12,No,Dolor abdominal,11,8,Ninguno,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001435,47,No,Mareo o desmayo,90,4,"Hipertensión, Cardiopatía",No,Sí,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000106,8,No,Tos o síntomas respiratorios,42,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000889,50,No,Dolor de cabeza,4,6,Cardiopatía,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001505,72,No,Fiebre sin foco claro,57,7,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,No,No,Náusea,Sí,No,Sí,No aplica,No,No,No,No
+PX-TR-000350,59,No,Dificultad respiratoria,15,7,Ninguno,Sí,Sí,Sí,Sí,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000797,47,No,Problema urinario,12,9,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000183,35,Sí,Embarazo o síntoma relacionado con embarazo,10,7,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000298,73,No,Tos o síntomas respiratorios,65,5,Hipertensión,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000532,45,No,Fiebre sin foco claro,10,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000655,51,No,Problema gastrointestinal,43,5,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000363,84,No,Tos o síntomas respiratorios,42,7,Diabetes,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000491,25,No,Tos o síntomas respiratorios,92,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000859,88,No,Dolor torácico,1,10,"Diabetes, Uso de anticoagulantes",No,No,No,Sí,Vómito,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000637,44,No,Dificultad respiratoria,10,7,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000475,18,No,Fiebre sin foco claro,120,9,Ninguno,Sí,No,No,No,Vómito,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000699,79,No,Tos o síntomas respiratorios,15,2,Diabetes,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000196,38,Sí,Embarazo o síntoma relacionado con embarazo,33,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000744,22,Sí,Embarazo o síntoma relacionado con embarazo,111,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-001224,15,No,Dolor abdominal,56,4,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000844,8,No,Fiebre sin foco claro,61,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000046,76,No,Dificultad respiratoria,35,8,Hipertensión,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000847,62,No,Tos o síntomas respiratorios,93,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000426,61,No,Dolor torácico,2,10,"Diabetes, Hipertensión",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000065,26,Sí,Embarazo o síntoma relacionado con embarazo,13,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000954,55,No,Dolor abdominal,12,7,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001434,12,No,Dolor torácico,59,5,"Diabetes, Hipertensión, Cardiopatía",No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000020,12,No,Tos o síntomas respiratorios,61,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001349,9,No,Tos o síntomas respiratorios,15,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000961,46,No,Tos o síntomas respiratorios,39,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000754,28,No,Fiebre sin foco claro,41,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001196,62,No,Problema gastrointestinal,24,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001047,6,No,Tos o síntomas respiratorios,141,5,Asma/EPOC,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000697,79,No,Dificultad respiratoria,24,8,"Diabetes, Hipertensión, Uso de anticoagulantes",Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001386,60,No,Dolor torácico,1,8,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001391,95,No,Dolor torácico,1,9,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000097,68,No,Problema gastrointestinal,104,4,Diabetes,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000481,30,No,Problema urinario,67,7,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001393,55,No,Dolor torácico,1,8,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001422,4,No,Fiebre sin foco claro,70,2,Hipertensión,No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001248,75,No,Fiebre sin foco claro,63,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001340,74,No,Problema urinario,77,9,Ninguno,Sí,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001411,85,No,Dolor torácico,35,5,Cardiopatía,No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001314,92,No,Dificultad respiratoria,61,9,Uso de anticoagulantes,Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000166,3,No,Tos o síntomas respiratorios,36,5,Ninguno,Sí,Sí,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000834,36,No,Fiebre sin foco claro,10,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000500,27,Sí,Embarazo o síntoma relacionado con embarazo,23,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000849,49,No,Tos o síntomas respiratorios,28,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000755,63,No,Dolor torácico,47,2,Ninguno,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000069,47,No,Dolor abdominal,33,6,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001469,22,No,Embarazo o síntoma relacionado con embarazo,73,5,"Diabetes, Hipertensión",No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-001249,11,No,Fiebre sin foco claro,12,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000356,82,No,Problema gastrointestinal,28,7,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-001521,30,No,Dolor abdominal,86,9,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001035,40,No,Dolor abdominal,32,8,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000384,75,No,Mareo o desmayo,33,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000918,6,No,Tos o síntomas respiratorios,78,6,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000669,67,No,Mareo o desmayo,3,9,Hipertensión,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000354,34,Sí,Embarazo o síntoma relacionado con embarazo,13,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000321,71,No,Mareo o desmayo,45,5,Diabetes,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000050,27,No,Tos o síntomas respiratorios,38,6,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000729,28,No,Dolor abdominal,38,7,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000342,23,No,Tos o síntomas respiratorios,29,3,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000874,63,No,Tos o síntomas respiratorios,69,9,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000711,50,No,Fiebre sin foco claro,43,7,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000942,15,No,Dolor abdominal,19,8,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000948,42,No,Dolor torácico,1,7,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000133,27,No,Dolor abdominal,13,4,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000609,58,No,Fiebre sin foco claro,109,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001481,79,No,Dificultad respiratoria,86,4,Ninguno,No,No,Sí,No,Vómito,Sí,Sí,No,No aplica,No,No,No,No
+PX-TR-000509,28,No,Dolor de cabeza,127,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001205,91,No,Problema gastrointestinal,46,7,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001401,43,No,Embarazo o síntoma relacionado con embarazo,16,2,Uso de anticoagulantes,No,No,No,No,Ninguno,No,No,No,No,No,No,No,No
+PX-TR-000110,73,No,Problema gastrointestinal,16,7,Hipertensión,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001480,55,No,Dolor torácico,37,6,Uso de anticoagulantes,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001063,33,No,Problema urinario,36,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001138,25,No,Dolor torácico,62,6,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000185,35,No,Problema gastrointestinal,25,7,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000002,59,No,Fiebre sin foco claro,51,6,Diabetes,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-001116,43,No,Fiebre sin foco claro,75,5,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000377,64,No,Dolor abdominal,39,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001024,24,Sí,Embarazo o síntoma relacionado con embarazo,5,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000299,12,No,Problema gastrointestinal,45,6,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000276,63,No,Dolor torácico,61,2,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001272,60,No,Tos o síntomas respiratorios,62,3,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001036,20,No,Dolor abdominal,20,10,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000689,30,Sí,Embarazo o síntoma relacionado con embarazo,20,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001132,35,No,Dolor torácico,12,6,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000883,39,No,Tos o síntomas respiratorios,31,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000515,20,No,Fiebre sin foco claro,69,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000077,31,No,Problema urinario,109,7,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000540,26,No,Dificultad respiratoria,7,10,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001311,17,No,Dificultad respiratoria,38,10,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001233,18,Sí,Embarazo o síntoma relacionado con embarazo,74,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000063,44,No,Dolor abdominal,17,7,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000639,35,No,Dolor de cabeza,209,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001021,15,Sí,Embarazo o síntoma relacionado con embarazo,21,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000387,24,No,Dolor torácico,20,5,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001163,44,No,Tos o síntomas respiratorios,14,8,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001476,27,No,Dolor abdominal,80,4,Diabetes,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000867,91,No,Problema gastrointestinal,14,3,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-001395,49,No,Dolor torácico,3,9,Hipertensión,No,No,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001441,11,No,Problema urinario,6,5,"Diabetes, Uso de anticoagulantes",Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000832,32,Sí,Embarazo o síntoma relacionado con embarazo,8,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-000640,73,No,Dolor torácico,7,10,"Diabetes, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001501,66,No,Dificultad respiratoria,73,5,Cardiopatía,No,No,Sí,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001013,22,Sí,Embarazo o síntoma relacionado con embarazo,12,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000662,20,No,Tos o síntomas respiratorios,108,7,Ninguno,Sí,Sí,Sí,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001142,81,No,Dolor de cabeza,8,7,Cardiopatía,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000094,49,No,Dolor abdominal,19,9,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001158,23,Sí,Embarazo o síntoma relacionado con embarazo,18,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001250,26,No,Fiebre sin foco claro,17,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000629,75,No,Problema urinario,28,5,"Diabetes, Hipertensión",Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000728,32,No,Dolor de cabeza,101,9,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000019,42,No,Problema urinario,39,9,Ninguno,Sí,No,No,No,Vómito,Sí,No,Sí,No aplica,No,No,No,No
+PX-TR-000939,79,No,Tos o síntomas respiratorios,89,7,"Diabetes, Hipertensión",Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001041,21,No,Dolor torácico,164,4,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001183,17,No,Fiebre sin foco claro,33,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000454,9,No,Tos o síntomas respiratorios,9,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000189,60,No,Fiebre sin foco claro,70,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000369,41,Sí,Embarazo o síntoma relacionado con embarazo,75,10,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,Sí,No,No,No,No,No
+PX-TR-000182,79,No,Tos o síntomas respiratorios,66,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000546,79,No,Dolor de cabeza,16,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000693,63,No,Dolor de cabeza,91,6,Ninguno,Sí,No,No,No,Diarrea,No,Sí,No,No aplica,No,No,No,No
+PX-TR-001150,56,No,Dolor de cabeza,7,8,Hipertensión,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000925,81,No,Problema urinario,71,7,"Diabetes, Hipertensión",Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-001244,15,Sí,Embarazo o síntoma relacionado con embarazo,27,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000092,8,No,Tos o síntomas respiratorios,33,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000549,15,No,Dolor de cabeza,25,2,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000837,37,No,Tos o síntomas respiratorios,95,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000042,24,No,Tos o síntomas respiratorios,50,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001363,29,No,Tos o síntomas respiratorios,53,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001023,17,Sí,Embarazo o síntoma relacionado con embarazo,7,9,Ninguno,Sí,No,No,No,Ninguno,No,Sí,No,Sí,No,Sí,No,No
+PX-TR-001051,4,No,Problema urinario,17,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000272,5,No,Problema gastrointestinal,16,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000580,29,No,Fiebre sin foco claro,22,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000531,20,No,Dolor abdominal,31,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000645,42,Sí,Embarazo o síntoma relacionado con embarazo,13,9,Ninguno,No,No,No,No,Ninguno,No,Sí,Sí,No,No,Sí,No,No
+PX-TR-000933,26,No,Fiebre sin foco claro,45,4,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000808,36,No,Fiebre sin foco claro,90,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,Sí,No,No aplica,No,No,No,No
+PX-TR-000188,69,No,Dolor abdominal,21,7,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000122,63,No,Problema urinario,59,7,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000517,89,No,Dificultad respiratoria,39,8,Cardiopatía,No,No,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000431,52,No,Dolor abdominal,36,2,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000829,20,No,Dolor abdominal,29,6,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000680,71,No,Dolor torácico,3,9,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001141,75,No,Dolor de cabeza,1,8,Cardiopatía,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000247,2,No,Dolor de cabeza,96,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000952,34,No,Fiebre sin foco claro,62,2,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001032,14,No,Dolor abdominal,83,8,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000024,44,No,Dificultad respiratoria,19,9,Hipertensión,No,No,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000265,70,No,Dificultad respiratoria,53,7,Asma/EPOC,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000958,29,No,Tos o síntomas respiratorios,248,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000551,23,No,Problema gastrointestinal,27,4,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000872,49,No,Tos o síntomas respiratorios,41,5,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000437,1,No,Dolor de cabeza,12,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001094,64,No,Dolor abdominal,4,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001281,74,No,Dolor torácico,21,9,Cardiopatía,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000416,79,No,Dolor abdominal,15,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000779,38,No,Dolor torácico,6,9,"Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000989,35,Sí,Embarazo o síntoma relacionado con embarazo,13,8,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000345,29,No,Dolor de cabeza,45,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000240,47,No,Problema urinario,1,3,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001321,1,No,Fiebre sin foco claro,28,6,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001449,23,No,Dolor torácico,2,2,Ninguno,No,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000513,76,No,Dolor torácico,32,4,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000713,9,No,Tos o síntomas respiratorios,73,7,Ninguno,Sí,Sí,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001260,80,No,Tos o síntomas respiratorios,128,5,Ninguno,Sí,Sí,Sí,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001400,58,No,Dolor torácico,3,10,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,Sí,No aplica,No,No,No,Sí
+PX-TR-000257,27,No,Tos o síntomas respiratorios,44,5,Ninguno,Sí,Sí,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000489,65,No,Tos o síntomas respiratorios,17,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000704,67,No,Tos o síntomas respiratorios,239,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000349,43,No,Mareo o desmayo,5,10,Diabetes,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001404,83,No,Dificultad respiratoria,88,2,Cardiopatía,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001239,39,Sí,Embarazo o síntoma relacionado con embarazo,118,8,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No,No,No,No,No
+PX-TR-000575,41,No,Dolor abdominal,17,2,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001229,34,No,Dolor abdominal,74,6,Ninguno,Sí,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001464,60,No,Fiebre sin foco claro,38,4,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,Sí,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000776,10,No,Problema gastrointestinal,24,3,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001252,11,No,Fiebre sin foco claro,60,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000894,27,No,Problema urinario,56,8,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001083,86,No,Mareo o desmayo,112,5,Diabetes,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001221,1,No,Problema gastrointestinal,16,5,Ninguno,Sí,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000169,31,No,Problema urinario,54,5,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001055,78,No,Problema urinario,57,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000634,55,No,Fiebre sin foco claro,55,6,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000984,22,No,Dolor abdominal,8,5,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000651,34,No,Tos o síntomas respiratorios,79,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000723,24,No,Dolor torácico,41,2,Asma/EPOC,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001256,19,No,Tos o síntomas respiratorios,39,5,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001175,19,No,Tos o síntomas respiratorios,32,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000165,52,No,Dolor torácico,4,10,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000004,32,No,Problema urinario,53,8,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000598,15,Sí,Embarazo o síntoma relacionado con embarazo,26,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000997,12,No,Tos o síntomas respiratorios,19,5,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000529,43,No,Problema gastrointestinal,124,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001200,30,No,Dolor abdominal,187,3,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001241,31,Sí,Embarazo o síntoma relacionado con embarazo,51,10,Ninguno,No,No,No,No,Náusea,No,No,Sí,No,No,No,No,No
+PX-TR-001298,43,No,Dolor de cabeza,53,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001309,78,No,Dificultad respiratoria,21,7,"Diabetes, Hipertensión",Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-001339,82,No,Problema urinario,66,9,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001518,19,No,Fiebre sin foco claro,64,10,"Diabetes, Hipertensión",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000863,31,No,Fiebre sin foco claro,22,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001099,59,No,Problema urinario,12,8,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000373,19,No,Dolor de cabeza,6,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001091,44,No,Dolor abdominal,18,9,Hipertensión,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000470,27,No,Dolor torácico,6,7,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000503,9,No,Tos o síntomas respiratorios,72,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000802,23,Sí,Embarazo o síntoma relacionado con embarazo,8,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001190,23,No,Fiebre sin foco claro,64,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000058,58,No,Dolor abdominal,12,10,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001167,44,No,Dificultad respiratoria,13,5,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000140,10,No,Tos o síntomas respiratorios,59,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001524,61,No,Problema urinario,94,9,"Hipertensión, Uso de anticoagulantes",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000048,23,No,Problema urinario,45,6,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000001,66,No,Fiebre sin foco claro,32,6,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001277,49,No,Dolor torácico,45,5,"Diabetes, Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000421,82,No,Problema gastrointestinal,65,6,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,Sí,No aplica,No,No,No,No
+PX-TR-001192,14,No,Fiebre sin foco claro,68,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000941,54,No,Tos o síntomas respiratorios,144,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000497,17,No,Dolor torácico,58,3,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001493,20,No,Problema gastrointestinal,18,7,"Diabetes, Asma/EPOC, Uso de anticoagulantes",Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000392,26,No,Dificultad respiratoria,53,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000836,40,No,Dolor torácico,42,3,Hipertensión,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000722,75,No,Dificultad respiratoria,6,10,Diabetes,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000692,43,No,Fiebre sin foco claro,21,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001201,80,No,Problema gastrointestinal,79,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001212,72,No,Dolor abdominal,42,4,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000111,55,No,Dolor torácico,55,4,"Diabetes, Hipertensión",No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001345,2,No,Tos o síntomas respiratorios,82,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000374,59,No,Tos o síntomas respiratorios,110,6,Asma/EPOC,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001117,37,Sí,Embarazo o síntoma relacionado con embarazo,15,8,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000720,56,No,Dolor abdominal,9,5,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001293,34,No,Dolor de cabeza,77,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000974,72,No,Dolor abdominal,21,5,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001177,19,No,Tos o síntomas respiratorios,38,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000845,70,No,Problema urinario,104,6,"Diabetes, Hipertensión",No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001410,15,No,Dificultad respiratoria,71,2,Hipertensión,No,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000646,10,No,Fiebre sin foco claro,32,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001368,10,No,Tos o síntomas respiratorios,99,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001050,61,No,Dolor torácico,57,2,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001208,32,No,Dolor abdominal,22,4,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001128,24,No,Dolor torácico,83,5,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000990,49,No,Tos o síntomas respiratorios,104,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000452,76,No,Dificultad respiratoria,70,9,Uso de anticoagulantes,Sí,Sí,Sí,No,Vómito,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000635,62,No,Dificultad respiratoria,53,10,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000262,25,No,Fiebre sin foco claro,20,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000428,66,No,Mareo o desmayo,37,9,Diabetes,No,No,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001519,81,No,Mareo o desmayo,24,9,"Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000857,38,No,Dolor de cabeza,45,5,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000260,70,No,Dolor torácico,29,8,"Diabetes, Cardiopatía, Uso de anticoagulantes",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001115,32,No,Dolor de cabeza,85,3,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000271,60,No,Problema urinario,14,5,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001235,23,Sí,Embarazo o síntoma relacionado con embarazo,60,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-001446,68,No,Dolor torácico,84,1,"Diabetes, Hipertensión, Uso de anticoagulantes",No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001088,66,No,Problema gastrointestinal,18,5,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000396,51,No,Tos o síntomas respiratorios,10,5,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000364,27,Sí,Embarazo o síntoma relacionado con embarazo,8,6,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001287,55,No,Mareo o desmayo,56,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000814,1,No,Tos o síntomas respiratorios,58,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000295,27,No,Problema gastrointestinal,44,2,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000756,62,No,Problema gastrointestinal,41,3,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000303,70,No,Dolor torácico,3,9,Cardiopatía,No,No,Sí,Sí,Vómito,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000636,83,No,Dificultad respiratoria,44,9,"Diabetes, Hipertensión, Cardiopatía",No,No,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000409,45,No,Dolor abdominal,14,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000891,43,No,Problema urinario,34,5,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001191,13,No,Fiebre sin foco claro,121,3,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000440,39,Sí,Embarazo o síntoma relacionado con embarazo,17,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000059,17,Sí,Embarazo o síntoma relacionado con embarazo,34,4,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-001477,81,No,Dolor torácico,53,6,"Hipertensión, Asma/EPOC",Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000759,38,No,Dolor de cabeza,36,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000368,27,No,Fiebre sin foco claro,11,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000966,49,No,Fiebre sin foco claro,36,5,Ninguno,Sí,Sí,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000763,25,No,Dolor abdominal,6,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001104,59,No,Problema urinario,17,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001299,71,No,Tos o síntomas respiratorios,19,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000172,8,No,Tos o síntomas respiratorios,67,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001384,46,No,Dolor de cabeza,239,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001246,20,No,Fiebre sin foco claro,72,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000996,24,Sí,Embarazo o síntoma relacionado con embarazo,131,9,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000031,81,No,Dificultad respiratoria,8,9,Asma/EPOC,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001301,11,No,Tos o síntomas respiratorios,48,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000445,23,No,Fiebre sin foco claro,35,3,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000051,75,No,Dolor abdominal,32,9,Diabetes,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001206,52,No,Dolor abdominal,61,7,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001528,44,No,Problema urinario,87,9,"Diabetes, Asma/EPOC",No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000856,39,No,Dolor de cabeza,212,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001456,19,No,Dolor torácico,24,6,Asma/EPOC,No,Sí,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000483,40,No,Fiebre sin foco claro,87,5,Asma/EPOC,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000304,33,No,Fiebre sin foco claro,21,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000502,44,No,Dolor torácico,63,4,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000648,78,No,Dolor abdominal,47,9,Hipertensión,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001278,62,No,Dolor torácico,14,8,"Hipertensión, Cardiopatía",No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000833,25,No,Tos o síntomas respiratorios,110,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001448,38,No,Dificultad respiratoria,8,5,Hipertensión,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001402,49,No,Dificultad respiratoria,18,1,"Hipertensión, Asma/EPOC",No,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001109,61,No,Fiebre sin foco claro,88,9,Diabetes,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001297,39,No,Mareo o desmayo,41,4,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000263,39,No,Dolor abdominal,39,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000586,60,No,Dolor abdominal,15,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000656,49,No,Fiebre sin foco claro,73,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001217,8,No,Dolor abdominal,25,8,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,Sí,No aplica,No,No,No,No
+PX-TR-001288,42,No,Mareo o desmayo,49,4,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000519,17,No,Fiebre sin foco claro,18,3,Asma/EPOC,Sí,Sí,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000067,89,No,Dificultad respiratoria,46,8,Diabetes,No,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-001347,7,No,Tos o síntomas respiratorios,91,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001488,23,No,Dolor de cabeza,42,4,"Diabetes, Hipertensión, Asma/EPOC",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000338,22,No,Dolor torácico,35,7,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001155,21,Sí,Embarazo o síntoma relacionado con embarazo,8,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000862,45,No,Tos o síntomas respiratorios,221,6,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000712,30,No,Problema gastrointestinal,49,2,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000149,18,No,Tos o síntomas respiratorios,87,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000029,80,No,Dificultad respiratoria,70,8,Asma/EPOC,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001014,35,Sí,Embarazo o síntoma relacionado con embarazo,13,6,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-000988,54,No,Fiebre sin foco claro,14,7,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001486,43,No,Fiebre sin foco claro,96,6,"Hipertensión, Cardiopatía",No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000233,48,No,Fiebre sin foco claro,70,2,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001413,67,No,Tos o síntomas respiratorios,46,3,Diabetes,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001494,41,No,Dolor torácico,40,6,Diabetes,No,Sí,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000882,82,No,Mareo o desmayo,8,9,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000224,89,No,Dificultad respiratoria,14,8,Ninguno,Sí,Sí,Sí,No,Vómito,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000357,22,No,Tos o síntomas respiratorios,70,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000773,36,No,Tos o síntomas respiratorios,53,5,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000707,16,Sí,Embarazo o síntoma relacionado con embarazo,104,5,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No,No,No,No,No
+PX-TR-000530,59,No,Tos o síntomas respiratorios,50,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000951,8,No,Tos o síntomas respiratorios,51,4,Asma/EPOC,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001095,59,No,Problema urinario,4,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000761,11,No,Dolor de cabeza,53,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001526,77,No,Dolor abdominal,60,9,"Hipertensión, Uso de anticoagulantes",No,Sí,Sí,No,Náusea,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000331,74,No,Dolor torácico,4,9,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,Sí,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000607,32,Sí,Embarazo o síntoma relacionado con embarazo,24,2,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000107,84,No,Dolor torácico,1,9,Diabetes,No,No,Sí,Sí,Ninguno,No,No,Sí,No aplica,No,No,No,Sí
+PX-TR-000239,19,No,Tos o síntomas respiratorios,77,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000109,35,No,Dolor torácico,3,2,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001181,7,No,Tos o síntomas respiratorios,84,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000721,64,No,Tos o síntomas respiratorios,29,7,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000237,31,No,Problema gastrointestinal,53,5,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000873,56,No,Dolor torácico,10,7,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000005,45,Sí,Embarazo o síntoma relacionado con embarazo,4,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001148,76,No,Mareo o desmayo,9,9,Diabetes,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000336,23,No,Tos o síntomas respiratorios,146,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001390,44,No,Dolor torácico,1,9,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000881,68,No,Dolor torácico,20,6,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000093,34,Sí,Embarazo o síntoma relacionado con embarazo,17,9,Ninguno,No,No,No,No,Ninguno,No,Sí,Sí,No,No,Sí,No,No
+PX-TR-000533,36,No,Dolor abdominal,29,4,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000408,44,No,Dolor torácico,32,5,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000683,79,No,Dolor torácico,12,4,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001046,9,No,Tos o síntomas respiratorios,127,5,Ninguno,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001306,82,No,Dificultad respiratoria,9,5,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000622,63,No,Problema urinario,6,4,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001262,71,No,Tos o síntomas respiratorios,65,4,Asma/EPOC,Sí,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001516,80,No,Problema gastrointestinal,43,9,"Hipertensión, Cardiopatía",No,No,Sí,No,Náusea,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000522,16,No,Dolor abdominal,68,10,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000143,41,Sí,Embarazo o síntoma relacionado con embarazo,8,6,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000545,36,No,Tos o síntomas respiratorios,128,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000293,37,No,Dolor de cabeza,15,6,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001093,38,No,Problema gastrointestinal,21,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000770,24,No,Problema gastrointestinal,41,6,Ninguno,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000100,52,No,Dificultad respiratoria,18,8,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000288,71,No,Dolor abdominal,37,6,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001004,45,No,Problema gastrointestinal,54,8,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-000269,59,No,Problema urinario,72,6,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000201,19,No,Fiebre sin foco claro,90,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000868,14,No,Fiebre sin foco claro,93,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000932,37,Sí,Embarazo o síntoma relacionado con embarazo,15,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000885,34,No,Fiebre sin foco claro,30,10,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000971,73,No,Dolor torácico,5,10,"Diabetes, Hipertensión, Cardiopatía",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001081,88,No,Dolor de cabeza,80,8,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000710,10,No,Dolor de cabeza,31,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000366,46,No,Tos o síntomas respiratorios,56,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000159,16,No,Problema urinario,54,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001263,17,No,Tos o síntomas respiratorios,35,6,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001350,13,No,Tos o síntomas respiratorios,188,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000435,35,No,Dolor de cabeza,140,2,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000287,35,No,Problema urinario,93,6,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000324,75,No,Tos o síntomas respiratorios,47,7,Diabetes,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000686,57,No,Dolor torácico,4,9,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-001258,55,No,Fiebre sin foco claro,41,7,"Diabetes, Asma/EPOC",Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000962,62,No,Dolor abdominal,61,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000250,54,No,Problema urinario,2,8,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001112,41,No,Dolor de cabeza,34,9,Diabetes,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001184,6,No,Fiebre sin foco claro,139,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000539,32,No,Fiebre sin foco claro,55,7,Ninguno,Sí,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001222,65,No,Dolor abdominal,35,4,Ninguno,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-001282,81,No,Dolor torácico,16,9,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001016,23,Sí,Embarazo o síntoma relacionado con embarazo,6,6,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000012,35,No,Fiebre sin foco claro,66,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000432,79,No,Problema urinario,55,5,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001369,43,No,Tos o síntomas respiratorios,70,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000940,48,No,Dolor abdominal,8,8,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001328,6,No,Dolor de cabeza,77,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000714,28,Sí,Embarazo o síntoma relacionado con embarazo,121,10,Ninguno,No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-000355,27,No,Tos o síntomas respiratorios,89,2,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000587,52,No,Tos o síntomas respiratorios,5,10,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001373,4,No,Tos o síntomas respiratorios,72,6,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000319,63,No,Mareo o desmayo,2,9,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000579,42,No,Dolor de cabeza,6,8,Hipertensión,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000675,79,No,Tos o síntomas respiratorios,155,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001257,30,No,Fiebre sin foco claro,36,6,Hipertensión,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000851,66,No,Fiebre sin foco claro,54,5,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000605,12,No,Fiebre sin foco claro,38,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001131,47,No,Dolor torácico,56,6,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000633,5,No,Fiebre sin foco claro,48,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000458,38,No,Dolor abdominal,22,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000015,27,No,Tos o síntomas respiratorios,103,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001156,38,Sí,Embarazo o síntoma relacionado con embarazo,15,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001478,36,No,Dolor torácico,31,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001003,59,No,Dolor abdominal,34,8,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-001075,29,No,Mareo o desmayo,13,8,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001134,35,No,Dolor torácico,31,4,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001011,60,No,Dolor abdominal,5,10,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001168,21,No,Tos o síntomas respiratorios,12,6,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001043,6,No,Tos o síntomas respiratorios,123,6,Ninguno,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001030,14,No,Problema gastrointestinal,61,5,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001230,1,No,Problema gastrointestinal,32,6,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000850,70,No,Dolor abdominal,4,6,Hipertensión,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001052,81,No,Problema urinario,67,7,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000496,43,No,Problema gastrointestinal,45,2,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000456,37,Sí,Embarazo o síntoma relacionado con embarazo,36,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,Sí,No,No
+PX-TR-000117,64,No,Dolor abdominal,31,2,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000177,7,No,Problema urinario,51,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000559,25,Sí,Embarazo o síntoma relacionado con embarazo,58,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-001136,80,No,Dolor torácico,34,2,Diabetes,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000053,47,No,Dificultad respiratoria,62,5,Cardiopatía,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001154,23,Sí,Embarazo o síntoma relacionado con embarazo,12,10,Ninguno,No,No,No,No,Ninguno,No,Sí,Sí,No,No,No,No,No
+PX-TR-000573,7,No,Problema gastrointestinal,23,2,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000799,30,No,Tos o síntomas respiratorios,140,6,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000588,23,No,Problema urinario,9,6,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000075,25,Sí,Embarazo o síntoma relacionado con embarazo,112,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-001438,37,No,Problema urinario,15,3,"Hipertensión, Uso de anticoagulantes",No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000521,8,No,Tos o síntomas respiratorios,133,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000089,33,No,Tos o síntomas respiratorios,18,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000527,1,No,Tos o síntomas respiratorios,55,5,Asma/EPOC,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000967,64,No,Dolor de cabeza,70,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000534,53,No,Dolor de cabeza,329,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000429,24,No,Problema gastrointestinal,22,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000055,19,No,Tos o síntomas respiratorios,22,3,Ninguno,Sí,Sí,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001152,61,No,Mareo o desmayo,2,10,Hipertensión,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001120,35,Sí,Embarazo o síntoma relacionado con embarazo,40,6,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-001193,13,No,Tos o síntomas respiratorios,64,5,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000040,83,No,Problema urinario,33,4,Hipertensión,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001087,22,No,Dolor abdominal,50,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001316,52,No,Dificultad respiratoria,31,10,Hipertensión,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001296,20,No,Mareo o desmayo,69,3,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000479,46,No,Fiebre sin foco claro,37,5,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001431,25,No,Embarazo o síntoma relacionado con embarazo,11,4,Ninguno,Sí,No,No,No,Vómito,No,No,No,Sí,No,No,No,No
+PX-TR-000597,30,No,Dolor abdominal,28,5,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000212,65,No,Dolor torácico,41,3,"Diabetes, Hipertensión",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000087,42,No,Tos o síntomas respiratorios,67,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000007,26,No,Dolor abdominal,7,5,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001033,69,No,Dolor abdominal,29,10,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001344,46,No,Problema urinario,74,9,Ninguno,Sí,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000880,12,No,Tos o síntomas respiratorios,58,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000155,35,No,Dolor abdominal,41,9,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000919,51,No,Mareo o desmayo,47,7,Ninguno,Sí,No,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001185,18,No,Fiebre sin foco claro,87,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000013,53,No,Problema urinario,84,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001540,56,No,Dolor torácico,96,8,Diabetes,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,Sí,No
+PX-TR-000468,6,No,Dolor abdominal,17,5,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001105,56,No,Fiebre sin foco claro,111,4,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000660,61,No,Dolor de cabeza,89,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000318,39,Sí,Embarazo o síntoma relacionado con embarazo,23,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001291,13,No,Dolor de cabeza,38,3,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001319,19,No,Dolor de cabeza,65,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001445,73,No,Fiebre sin foco claro,79,1,"Diabetes, Hipertensión",No,Sí,No,No,Náusea,Sí,No,No,Sí,No,No,No,No
+PX-TR-000446,33,No,Fiebre sin foco claro,31,3,Ninguno,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000525,1,No,Dolor de cabeza,76,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000380,58,No,Tos o síntomas respiratorios,63,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001408,33,No,Embarazo o síntoma relacionado con embarazo,75,1,"Diabetes, Asma/EPOC",No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-001103,45,No,Problema urinario,2,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001473,79,No,Dolor torácico,7,4,"Diabetes, Asma/EPOC",No,Sí,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000388,38,No,Fiebre sin foco claro,17,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000528,81,No,Problema urinario,25,2,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001303,64,No,Dificultad respiratoria,27,8,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000684,60,No,Problema urinario,34,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000484,61,No,Dolor torácico,3,10,Cardiopatía,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000222,65,No,Tos o síntomas respiratorios,53,2,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000738,72,No,Tos o síntomas respiratorios,30,6,"Diabetes, Hipertensión",Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001370,11,No,Tos o síntomas respiratorios,54,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001537,37,No,Problema urinario,34,8,"Diabetes, Hipertensión, Asma/EPOC",No,Sí,No,Sí,Ninguno,Sí,No,No,No aplica,No,No,No,Sí
+PX-TR-000746,45,No,Dolor abdominal,44,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,Sí,No aplica,No,No,No,No
+PX-TR-000297,83,No,Mareo o desmayo,53,5,Diabetes,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,Sí,No aplica,No,No,No,No
+PX-TR-000389,54,No,Problema gastrointestinal,11,4,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000381,63,No,Problema urinario,43,7,Ninguno,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-000378,39,No,Tos o síntomas respiratorios,48,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000791,45,No,Tos o síntomas respiratorios,46,4,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001237,36,Sí,Embarazo o síntoma relacionado con embarazo,140,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000351,37,No,Dolor de cabeza,5,9,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001527,49,No,Fiebre sin foco claro,91,10,"Diabetes, Hipertensión, Uso de anticoagulantes",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000780,10,No,Tos o síntomas respiratorios,116,6,Ninguno,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000476,29,No,Dolor de cabeza,171,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000070,22,No,Problema urinario,80,9,Diabetes,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000581,76,No,Fiebre sin foco claro,60,8,Diabetes,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000538,30,No,Tos o síntomas respiratorios,176,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001199,43,No,Dolor abdominal,128,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000361,76,No,Problema urinario,30,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000289,31,Sí,Embarazo o síntoma relacionado con embarazo,12,5,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-001048,64,No,Tos o síntomas respiratorios,190,2,Ninguno,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001283,55,No,Dolor torácico,4,8,Hipertensión,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001171,32,No,Tos o síntomas respiratorios,14,8,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000326,65,No,Dolor abdominal,35,9,Diabetes,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000259,28,No,Dolor abdominal,69,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000676,32,Sí,Embarazo o síntoma relacionado con embarazo,9,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-000827,66,No,Dificultad respiratoria,2,5,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000957,36,No,Dolor torácico,59,6,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001216,27,No,Dolor abdominal,18,4,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001398,44,No,Dolor torácico,1,10,"Diabetes, Hipertensión",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000789,5,No,Fiebre sin foco claro,59,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001271,26,No,Fiebre sin foco claro,134,4,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000213,79,No,Tos o síntomas respiratorios,66,5,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000340,52,No,Tos o síntomas respiratorios,56,5,Ninguno,No,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000807,86,No,Dificultad respiratoria,30,8,"Diabetes, Asma/EPOC, Uso de anticoagulantes",Sí,Sí,Sí,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001409,10,No,Fiebre sin foco claro,7,1,Asma/EPOC,No,Sí,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000413,19,No,Tos o síntomas respiratorios,62,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001123,19,Sí,Embarazo o síntoma relacionado con embarazo,27,9,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000469,14,No,Dolor de cabeza,15,5,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000945,26,Sí,Embarazo o síntoma relacionado con embarazo,20,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000830,40,No,Problema urinario,10,5,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000258,34,Sí,Embarazo o síntoma relacionado con embarazo,6,6,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-001146,41,No,Mareo o desmayo,1,9,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001161,65,No,Tos o síntomas respiratorios,10,6,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000200,75,No,Dolor abdominal,72,7,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001451,64,No,Problema urinario,76,5,"Diabetes, Cardiopatía",No,Sí,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000737,85,No,Dolor torácico,8,10,Cardiopatía,No,No,No,Sí,Náusea,No,No,Sí,No aplica,No,No,No,Sí
+PX-TR-000698,73,No,Problema gastrointestinal,142,5,Ninguno,No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-000786,13,No,Dolor de cabeza,28,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000860,19,Sí,Embarazo o síntoma relacionado con embarazo,10,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000810,25,No,Fiebre sin foco claro,60,7,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000822,1,No,Fiebre sin foco claro,10,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000103,84,No,Problema gastrointestinal,7,5,Ninguno,No,No,No,No,"Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001153,27,Sí,Embarazo o síntoma relacionado con embarazo,14,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000199,75,No,Problema urinario,48,2,"Diabetes, Hipertensión",No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000506,30,No,Fiebre sin foco claro,91,7,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001179,13,No,Tos o síntomas respiratorios,76,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000308,9,No,Tos o síntomas respiratorios,46,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001027,27,No,Dolor abdominal,46,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000221,81,No,Problema gastrointestinal,55,7,Hipertensión,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000323,69,No,Dificultad respiratoria,42,7,"Diabetes, Hipertensión, Cardiopatía",No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001325,5,No,Fiebre sin foco claro,7,3,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000518,29,No,Dolor abdominal,28,2,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001329,1,No,Fiebre sin foco claro,10,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000236,45,No,Problema urinario,55,2,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000328,34,No,Problema gastrointestinal,50,7,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001522,38,No,Dificultad respiratoria,16,10,"Diabetes, Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,Sí,No,No aplica,No,Sí,No,No
+PX-TR-001458,23,No,Fiebre sin foco claro,44,5,Cardiopatía,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000912,55,No,Dolor torácico,2,10,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000695,2,No,Fiebre sin foco claro,15,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001203,12,No,Dolor abdominal,133,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000769,57,No,Mareo o desmayo,2,8,Cardiopatía,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000312,72,No,Dolor abdominal,33,7,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000294,88,No,Problema urinario,75,10,"Diabetes, Hipertensión",Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000498,89,No,Dolor de cabeza,8,9,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000589,31,Sí,Embarazo o síntoma relacionado con embarazo,14,7,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-001305,84,No,Tos o síntomas respiratorios,61,8,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001068,21,No,Problema urinario,22,3,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001071,12,No,Problema urinario,83,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000266,53,No,Dolor abdominal,38,10,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000332,17,No,Problema gastrointestinal,167,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000781,26,No,Dolor de cabeza,50,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000156,15,No,Tos o síntomas respiratorios,25,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000118,47,No,Fiebre sin foco claro,36,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001019,16,Sí,Embarazo o síntoma relacionado con embarazo,27,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001485,20,No,Dolor torácico,15,6,"Diabetes, Uso de anticoagulantes",No,Sí,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000362,82,No,Problema gastrointestinal,72,7,"Diabetes, Hipertensión",No,No,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001470,41,No,Problema urinario,39,6,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,Sí,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000965,15,Sí,Embarazo o síntoma relacionado con embarazo,41,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000315,18,No,Problema urinario,51,5,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000178,2,No,Fiebre sin foco claro,50,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001313,18,No,Dificultad respiratoria,38,8,Hipertensión,Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000153,23,No,Problema urinario,17,10,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001490,13,No,Dolor abdominal,15,7,"Diabetes, Hipertensión",No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000552,54,No,Fiebre sin foco claro,107,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001504,57,No,Dolor de cabeza,94,5,Ninguno,No,No,No,Sí,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-001443,82,No,Mareo o desmayo,44,2,"Hipertensión, Cardiopatía",No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001536,61,No,Problema gastrointestinal,6,10,"Hipertensión, Cardiopatía",No,No,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000914,9,No,Fiebre sin foco claro,53,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000194,69,No,Dolor abdominal,13,9,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000511,13,No,Tos o síntomas respiratorios,26,2,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000016,46,No,Dolor torácico,13,7,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000852,71,No,Fiebre sin foco claro,68,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000398,8,No,Fiebre sin foco claro,22,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000343,53,No,Dolor abdominal,39,10,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000045,32,No,Dolor abdominal,13,7,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000706,76,No,Mareo o desmayo,18,7,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000995,83,No,Tos o síntomas respiratorios,51,8,Uso de anticoagulantes,Sí,Sí,Sí,No,Ninguno,No,No,Sí,No aplica,Sí,No,No,No
+PX-TR-000616,20,No,Fiebre sin foco claro,89,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000735,41,No,Fiebre sin foco claro,64,10,Uso de anticoagulantes,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000907,30,Sí,Embarazo o síntoma relacionado con embarazo,27,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000677,31,No,Fiebre sin foco claro,30,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000095,34,No,Tos o síntomas respiratorios,16,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000399,23,No,Dolor de cabeza,30,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000653,44,No,Dificultad respiratoria,2,10,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000570,20,Sí,Embarazo o síntoma relacionado con embarazo,7,5,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000615,58,No,Dolor torácico,1,5,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000826,29,No,Problema urinario,96,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000462,28,No,Problema gastrointestinal,146,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000273,16,Sí,Embarazo o síntoma relacionado con embarazo,10,9,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-001096,18,No,Problema urinario,16,5,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000245,2,No,Tos o síntomas respiratorios,80,2,Ninguno,No,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001385,67,No,Dolor torácico,3,8,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000280,89,No,Dolor abdominal,14,10,Uso de anticoagulantes,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000906,61,No,Tos o síntomas respiratorios,49,3,Ninguno,Sí,Sí,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001065,90,No,Problema urinario,99,2,Ninguno,No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001353,35,No,Tos o síntomas respiratorios,43,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000619,29,No,Tos o síntomas respiratorios,109,7,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000671,53,No,Dolor torácico,47,4,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001274,1,No,Tos o síntomas respiratorios,41,4,Asma/EPOC,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001362,18,No,Tos o síntomas respiratorios,69,2,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000563,25,No,Problema gastrointestinal,130,2,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000795,84,No,Dolor torácico,11,5,Hipertensión,No,No,Sí,Sí,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000430,37,No,Tos o síntomas respiratorios,144,4,Ninguno,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001330,1,No,Fiebre sin foco claro,63,5,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000694,12,No,Dolor abdominal,27,7,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000486,43,No,Fiebre sin foco claro,40,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000494,48,No,Problema urinario,58,8,Diabetes,Sí,No,No,No,Náusea,Sí,No,Sí,No aplica,No,No,No,No
+PX-TR-001289,68,No,Mareo o desmayo,36,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000982,41,No,Problema urinario,98,5,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001380,64,No,Dolor de cabeza,89,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000869,71,No,Problema urinario,30,9,"Diabetes, Uso de anticoagulantes",Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000964,10,No,Tos o síntomas respiratorios,48,2,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001403,31,No,Tos o síntomas respiratorios,27,2,"Diabetes, Uso de anticoagulantes",Sí,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000061,21,No,Fiebre sin foco claro,44,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000667,89,No,Fiebre sin foco claro,9,4,Hipertensión,Sí,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-001084,75,No,Dolor de cabeza,72,6,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001078,69,No,Mareo o desmayo,16,5,Diabetes,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000631,80,No,Tos o síntomas respiratorios,75,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001432,77,No,Dolor torácico,73,4,"Diabetes, Asma/EPOC, Uso de anticoagulantes",Sí,Sí,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001188,48,No,Tos o síntomas respiratorios,101,5,Ninguno,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000254,70,No,Problema urinario,90,5,Diabetes,Sí,No,No,No,Diarrea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001085,38,No,Dolor abdominal,28,8,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000975,62,No,Dolor torácico,159,7,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000724,56,No,Dolor torácico,47,10,Hipertensión,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000733,21,Sí,Embarazo o síntoma relacionado con embarazo,8,5,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000877,21,Sí,Embarazo o síntoma relacionado con embarazo,111,9,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000601,68,No,Dolor torácico,102,6,Diabetes,Sí,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001198,25,No,Problema gastrointestinal,65,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000441,70,No,Problema urinario,70,6,Ninguno,Sí,No,No,No,Vómito,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000241,18,No,Tos o síntomas respiratorios,79,7,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000823,33,Sí,Embarazo o síntoma relacionado con embarazo,11,5,Ninguno,No,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-001054,52,No,Problema urinario,19,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001415,64,No,Problema gastrointestinal,32,1,"Diabetes, Hipertensión",Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001515,84,No,Problema urinario,35,8,Cardiopatía,No,No,No,Sí,Ninguno,Sí,No,No,No aplica,No,No,No,Sí
+PX-TR-000920,7,No,Tos o síntomas respiratorios,9,3,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000976,53,No,Mareo o desmayo,5,6,Cardiopatía,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001044,67,No,Tos o síntomas respiratorios,162,6,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001017,23,Sí,Embarazo o síntoma relacionado con embarazo,25,8,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000658,28,No,Dolor de cabeza,89,3,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001144,79,No,Mareo o desmayo,6,10,Ninguno,No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-000950,29,No,Dolor de cabeza,72,6,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-001479,13,No,Dolor de cabeza,51,5,"Hipertensión, Cardiopatía",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000371,19,No,Dolor abdominal,39,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000047,17,Sí,Embarazo o síntoma relacionado con embarazo,47,3,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000037,80,No,Dolor abdominal,18,9,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000244,51,No,Dolor abdominal,102,4,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001539,77,No,Mareo o desmayo,12,10,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000709,46,No,Dificultad respiratoria,6,7,Asma/EPOC,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000330,28,No,Problema urinario,6,7,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000365,31,No,Dolor torácico,28,2,Hipertensión,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000747,75,No,Dolor torácico,29,5,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000311,34,No,Tos o síntomas respiratorios,109,6,Ninguno,Sí,Sí,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000370,22,No,Tos o síntomas respiratorios,42,4,Ninguno,No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001255,11,No,Tos o síntomas respiratorios,41,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000928,77,No,Dolor torácico,20,6,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001061,27,No,Problema urinario,24,4,Diabetes,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000943,23,No,Dolor de cabeza,286,7,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000583,45,No,Dolor torácico,1,6,"Diabetes, Cardiopatía",No,No,No,Sí,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000927,48,No,Tos o síntomas respiratorios,33,5,Asma/EPOC,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001419,14,No,Problema gastrointestinal,24,5,"Diabetes, Cardiopatía",No,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001265,1,No,Fiebre sin foco claro,62,7,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000322,45,No,Problema urinario,21,4,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000740,70,No,Dolor abdominal,47,5,Hipertensión,Sí,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-000554,55,No,Dolor torácico,6,9,Hipertensión,No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000418,21,No,Dolor abdominal,19,9,Ninguno,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001106,42,No,Fiebre sin foco claro,104,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001143,74,No,Mareo o desmayo,7,10,"Hipertensión, Cardiopatía",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001280,56,No,Dolor torácico,26,8,Hipertensión,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000846,57,No,Problema gastrointestinal,7,5,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000412,90,No,Problema gastrointestinal,30,5,Diabetes,No,No,No,No,Vómito,No,No,No,No aplica,No,No,No,No
+PX-TR-001210,68,No,Dolor abdominal,55,4,Ninguno,No,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000718,83,No,Fiebre sin foco claro,48,3,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001406,33,No,Fiebre sin foco claro,9,2,"Diabetes, Asma/EPOC",No,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000207,73,No,Dolor de cabeza,35,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000027,87,No,Tos o síntomas respiratorios,95,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000113,63,No,Dolor abdominal,44,10,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000104,20,No,Dificultad respiratoria,36,7,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001462,21,No,Mareo o desmayo,59,4,"Diabetes, Uso de anticoagulantes",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001162,34,No,Dificultad respiratoria,11,4,Asma/EPOC,No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001270,22,No,Tos o síntomas respiratorios,55,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001101,21,No,Problema urinario,4,7,Ninguno,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-001165,75,No,Dificultad respiratoria,21,6,Asma/EPOC,No,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000420,50,No,Dolor de cabeza,17,6,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000325,29,Sí,Embarazo o síntoma relacionado con embarazo,19,7,Ninguno,No,No,No,No,Ninguno,No,Sí,No,Sí,No,No,No,No
+PX-TR-000903,28,No,Fiebre sin foco claro,16,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000090,28,No,Dolor torácico,54,5,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000806,61,No,Dolor de cabeza,10,6,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000544,91,No,Dificultad respiratoria,23,6,"Diabetes, Cardiopatía",No,No,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000654,58,No,Fiebre sin foco claro,66,6,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001009,32,No,Dolor abdominal,12,10,Ninguno,Sí,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001195,74,No,Dolor abdominal,32,4,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000132,41,No,Dolor de cabeza,25,3,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-001080,79,No,Mareo o desmayo,57,10,"Diabetes, Hipertensión",Sí,No,No,No,Náusea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000395,32,No,Dolor de cabeza,42,5,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000044,44,No,Fiebre sin foco claro,93,6,Ninguno,Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000716,25,No,Dolor abdominal,33,5,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001436,58,No,Mareo o desmayo,46,1,Ninguno,No,Sí,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001511,41,No,Problema urinario,24,10,"Diabetes, Asma/EPOC, Uso de anticoagulantes",No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000947,8,No,Dolor abdominal,84,10,Ninguno,Sí,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000157,30,No,Mareo o desmayo,28,2,Ninguno,Sí,No,No,No,"Náusea, Vómito",No,No,No,No aplica,No,No,No,No
+PX-TR-000146,75,No,Problema urinario,15,3,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001039,39,No,Tos o síntomas respiratorios,71,6,Diabetes,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000620,24,Sí,Embarazo o síntoma relacionado con embarazo,38,9,Ninguno,Sí,No,No,No,Ninguno,No,No,No,Sí,No,No,No,No
+PX-TR-000390,51,No,Dolor torácico,48,8,Hipertensión,No,No,Sí,Sí,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000397,49,No,Dolor torácico,8,10,"Hipertensión, Cardiopatía",No,No,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,Sí
+PX-TR-000647,20,Sí,Embarazo o síntoma relacionado con embarazo,101,6,Ninguno,No,No,No,No,Náusea,No,No,No,No,No,No,No,No
+PX-TR-000131,75,No,Problema urinario,51,2,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001367,20,No,Tos o síntomas respiratorios,79,5,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000054,19,No,Problema urinario,85,7,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-000278,90,No,Mareo o desmayo,74,10,Ninguno,No,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001465,20,No,Embarazo o síntoma relacionado con embarazo,29,5,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,No,No,"Náusea, Vómito",No,Sí,No,No,No,No,No,No
+PX-TR-000611,20,No,Problema urinario,101,7,Ninguno,Sí,No,No,No,"Náusea, Vómito",Sí,No,No,No aplica,No,No,No,No
+PX-TR-000524,66,No,Dolor abdominal,16,9,Ninguno,No,No,No,No,Diarrea,No,No,Sí,No aplica,No,No,No,No
+PX-TR-000764,48,No,Dificultad respiratoria,65,10,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-001082,69,No,Dolor de cabeza,27,9,"Diabetes, Hipertensión",No,No,No,No,Diarrea,No,No,No,No aplica,No,No,No,No
+PX-TR-001072,15,No,Problema urinario,37,4,Ninguno,Sí,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001424,79,No,Dolor abdominal,24,3,Cardiopatía,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000255,53,No,Dolor torácico,66,4,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000041,17,No,Problema gastrointestinal,36,5,Ninguno,No,No,No,No,"Náusea, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-000316,51,No,Problema gastrointestinal,8,3,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No
+PX-TR-001157,45,Sí,Embarazo o síntoma relacionado con embarazo,8,10,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,Sí,No,No
+PX-TR-000184,6,No,Dificultad respiratoria,47,6,Ninguno,Sí,Sí,Sí,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001514,65,No,Dolor torácico,4,9,"Hipertensión, Cardiopatía",No,No,No,Sí,Náusea,No,No,No,No aplica,No,No,Sí,No
+PX-TR-001269,63,No,Tos o síntomas respiratorios,42,6,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000991,89,No,Problema urinario,91,10,"Diabetes, Hipertensión",Sí,No,No,No,Náusea,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001487,64,No,Mareo o desmayo,22,4,Ninguno,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001176,13,No,Tos o síntomas respiratorios,8,4,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000438,29,No,Problema urinario,129,9,Ninguno,No,No,No,No,Ninguno,Sí,No,No,No aplica,No,No,No,No
+PX-TR-001499,29,No,Embarazo o síntoma relacionado con embarazo,31,6,"Hipertensión, Cardiopatía, Uso de anticoagulantes",No,No,No,Sí,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000969,30,Sí,Embarazo o síntoma relacionado con embarazo,6,7,Ninguno,Sí,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-000825,15,No,Tos o síntomas respiratorios,62,4,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000861,87,No,Dolor de cabeza,3,10,"Diabetes, Hipertensión",No,No,No,No,Ninguno,No,No,Sí,No aplica,No,No,Sí,No
+PX-TR-001324,11,No,Fiebre sin foco claro,55,6,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000751,28,Sí,Embarazo o síntoma relacionado con embarazo,29,7,Ninguno,No,No,No,No,"Náusea, Vómito",No,No,No,No,No,No,No,No
+PX-TR-000604,38,No,Dolor torácico,3,6,Cardiopatía,No,No,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000661,21,No,Dolor de cabeza,32,5,Ninguno,No,No,No,No,Náusea,No,No,No,No aplica,No,No,No,No
+PX-TR-000285,20,Sí,Embarazo o síntoma relacionado con embarazo,13,6,Ninguno,No,No,No,No,Ninguno,No,Sí,No,No,No,No,No,No
+PX-TR-001312,55,No,Dificultad respiratoria,15,10,Ninguno,Sí,Sí,Sí,No,Ninguno,No,No,No,No aplica,Sí,No,No,No
+PX-TR-000008,86,No,Dificultad respiratoria,60,6,Hipertensión,No,Sí,Sí,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000913,18,Sí,Embarazo o síntoma relacionado con embarazo,17,10,Ninguno,No,No,No,No,Ninguno,No,Sí,Sí,No,No,Sí,No,No
+PX-TR-000174,12,No,Tos o síntomas respiratorios,42,3,Ninguno,Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000734,73,No,Dolor torácico,85,5,Ninguno,No,Sí,No,Sí,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-001407,14,No,Dolor abdominal,18,3,"Hipertensión, Asma/EPOC",Sí,Sí,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000208,44,No,Dolor abdominal,44,10,Ninguno,Sí,No,No,No,Ninguno,No,No,No,No aplica,No,No,No,No
+PX-TR-000141,50,No,Problema gastrointestinal,32,8,Ninguno,Sí,No,No,No,"Náusea, Vómito, Diarrea",No,No,No,No aplica,No,No,No,No

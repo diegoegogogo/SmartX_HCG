@@ -1,0 +1,31 @@
+enfermedad_simulada,patron_sintomatico_usado_para_simulacion,fuente_url
+Selección de padecimientos frecuentes en México,"Fuente contextual usada para privilegiar infecciones respiratorias agudas, faringoamigdalitis, otitis y cuadros febriles frecuentes en atención primaria.",https://www.gob.mx/cms/uploads/attachment/file/890791/Bolet_n-0424.pdf | https://www.gob.mx/cms/uploads/attachment/file/291158/sem02.pdf
+Resfriado común,"Tos o síntomas respiratorios, fiebre ausente o baja y sin disnea marcada.",https://medlineplus.gov/ency/article/000678.htm
+Faringoamigdalitis,Fiebre de inicio súbito y cuadro de garganta; la tos suele ser menos prominente.,https://medlineplus.gov/ency/article/000639.htm
+Otitis media,"Fiebre variable y antecedente de infección respiratoria alta, sobre todo en población pediátrica.",https://medlineplus.gov/ency/article/000638.htm
+Sinusitis,"Dolor de cabeza o facial, congestión, tos y fiebre variable.",https://medlineplus.gov/ency/article/000647.htm
+Influenza / COVID leve-moderado,"Fiebre, tos y malestar; en parte de los casos puede haber dificultad respiratoria o síntomas digestivos.",https://www.cdc.gov/flu/signs-symptoms/index.html | https://www.cdc.gov/covid/signs-symptoms/index.html
+Bronquitis aguda,"Tos persistente, posible dolor torácico al toser, fiebre variable y disnea leve en algunos casos.",https://www.nhs.uk/conditions/bronchitis/
+Exacerbación asmática,"Tos, opresión o dolor torácico y dificultad respiratoria; los casos severos pueden activar red flag respiratoria.",https://www.mayoclinic.org/diseases-conditions/asthma-attack/symptoms-causes/syc-20354268
+Neumonía,"Fiebre, tos, dolor torácico pleurítico, dificultad respiratoria y confusión en adultos mayores.",https://www.cdc.gov/pneumonia/about/index.html
+Gastroenteritis,"Náusea, vómito, diarrea y dolor abdominal; puede progresar a deshidratación.",https://www.nhs.uk/conditions/gastroenteritis/
+Gastritis / dispepsia,"Náusea, malestar epigástrico y vómito ocasional, por lo general sin fiebre.",https://medlineplus.gov/indigestion.html
+Apendicitis,"Dolor abdominal progresivo con náusea, vómito y fiebre creciente.",https://www.mayoclinic.org/diseases-conditions/appendicitis/symptoms-causes/syc-20369543
+Cólico biliar / colecistitis,Dolor abdominal alto con náusea y vómito; en colecistitis puede añadirse fiebre.,https://www.nhs.uk/conditions/gallstones/
+Abdomen agudo / peritonitis,"Dolor abdominal intenso con náusea o vómito, fiebre y deterioro general.",https://www.merckmanuals.com/home/digestive-disorders/acute-abdominal-pain/acute-abdominal-pain
+Cistitis / IVU baja,"Dolor o ardor al orinar, urgencia urinaria y fiebre ausente o leve.",https://medlineplus.gov/ency/article/000521.htm
+Pielonefritis,"Fiebre, náusea o vómito y dolor al orinar; cuadro urinario más serio que la cistitis.",https://www.nhs.uk/conditions/kidney-infection/
+Cólico renal,Dolor intenso en flanco o abdomen con náusea o vómito; puede asociarse a síntomas urinarios.,https://www.nhs.uk/conditions/kidney-stones/
+Dolor torácico no cardiaco,Dolor torácico localizado sin patrón coronario franco ni red flags cardiacas.,https://www.nhs.uk/conditions/costochondritis/
+Síndrome coronario agudo,"Dolor torácico opresivo, sudoración fría, disnea y náusea en parte de los casos.",https://www.heart.org/en/about-us/heart-attack-and-stroke-symptoms
+Insuficiencia cardiaca / descompensación cardiopulmonar,"Dificultad respiratoria, tos y a veces dolor torácico; puede empeorar con congestión o hipoperfusión.",https://www.nhs.uk/conditions/heart-failure/symptoms/
+Migraña / cefalea tensional,"Dolor de cabeza, náusea y vómito en una parte de los casos, sin fiebre ni red flags neurológicas.",https://www.mayoclinic.org/diseases-conditions/migraine-headache/symptoms-causes/syc-20360201
+EVC / ACV,"Déficit neurológico súbito, confusión, alteración del habla o debilidad focal.",https://www.cdc.gov/stroke/signs-symptoms/index.html
+Confusión metabólica / deshidratación severa,"Mareo, confusión y síntomas digestivos o febriles asociados a deshidratación o descompensación metabólica.",https://www.nhs.uk/conditions/dehydration/
+Hiperémesis gravídica,Náusea y vómito intensos en embarazo con riesgo de deshidratación.,https://www.nhs.uk/pregnancy/related-conditions/complications/severe-vomiting/
+Amenaza de aborto / aborto espontáneo,Sangrado vaginal y dolor abdominal bajo durante el embarazo.,https://www.nhs.uk/conditions/miscarriage/symptoms/
+Embarazo ectópico / hemorragia obstétrica,Dolor abdominal y sangrado vaginal; puede evolucionar a cuadro hemorrágico grave.,https://www.nhs.uk/conditions/ectopic-pregnancy/symptoms/
+Disminución de movimientos fetales,"Percepción de menos movimientos fetales de lo habitual, con o sin otros síntomas obstétricos.",https://www.nhs.uk/pregnancy/related-conditions/common-symptoms/reduced-fetal-movements/
+Dengue,"Fiebre, cefalea y náusea o vómito; los casos de alarma pueden incluir dolor abdominal y sangrado.",https://www.cdc.gov/dengue/signs-symptoms/index.html
+Infección viral febril inespecífica,"Fiebre aguda sin foco claro, con síntomas respiratorios o digestivos leves en algunos casos.",https://medlineplus.gov/viralinfections.html
+Registro inconsistente / ruido,Casos sintéticos contradictorios añadidos para robustez y prueba de ruido; no corresponden a una sola enfermedad.,Sintético interno del proyecto

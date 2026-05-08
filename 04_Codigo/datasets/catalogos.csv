@@ -1,0 +1,18 @@
+booleana_si_no,booleana_si_no_na,motivo_consulta,antecedentes_riesgo_catalogo,sintomas_digestivos_catalogo
+Sí,Sí,Tos o síntomas respiratorios,Diabetes,Náusea
+No,No,Dificultad respiratoria,Hipertensión,Vómito
+,No aplica,Dolor torácico,Cardiopatía,Diarrea
+,,Dolor abdominal,Asma/EPOC,Ninguno
+,,Problema gastrointestinal,Uso de anticoagulantes,
+,,Problema urinario,Ninguno,
+,,Dolor de cabeza,,
+,,Mareo o desmayo,,
+,,Embarazo o síntoma relacionado con embarazo,,
+,,Fiebre sin foco claro,,
+,,,,
+,,,,
+,,,,
+Nota,,,,
+Las variables multiselección se registran como texto separado por coma.,,,,
+"Ejemplo antecedentes_riesgo: Diabetes, Hipertensión",,,,
+"Ejemplo sintomas_digestivos: Náusea, Vómito",,,,
